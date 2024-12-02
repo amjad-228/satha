@@ -21,7 +21,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-gray-800">سطحة جدة</h1>
+          <h1 className="text-2xl font-bold text-red-800">سطحة جدة</h1>
           <button onClick={toggleMenu} className="md:hidden">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -29,9 +29,9 @@ export default function Home() {
           </button>
           <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block`}>
             <ul className="md:flex space-y-2 md:space-y-0 md:space-x-4 md:space-x-reverse">
-              <li><a href="#services" className="hover:text-blue-600">خدماتنا</a></li>
-              <li><a href="#about" className="hover:text-blue-600">من نحن</a></li>
-              <li><a href="#contact" className="hover:text-blue-600">اتصل بنا</a></li>
+              <li><a href="#services" className="text-blue-600">خدماتنا</a></li>
+              <li><a href="#about" className="text-blue-600">من نحن</a></li>
+              <li><a href="#contact" className="text-blue-600">اتصل بنا</a></li>
             </ul>
           </nav>
         </div>
@@ -70,18 +70,18 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <FaCar className="text-4xl text-blue-500 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">نقل السيارات</h4>
-              <p>نقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
+              <h4 className="text-2xl text-gray-900 font-semibold mb-2">نقل السيارات</h4>
+              <p  className="text-xl text-gray-700 font-semibold mb-2">نقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <FaTools className="text-4xl text-blue-500 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">سحب السيارات المتعطلة</h4>
-              <p>خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
+              <h4 className="text-2xl text-gray-900 font-semibold mb-2">سحب السيارات المتعطلة</h4>
+              <p className="text-xl text-gray-700 font-semibold mb-2">خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <FaTools className="text-4xl text-blue-500 mb-4" />
-              <h4 className="text-xl font-semibold mb-2">فتح أبواب السيارات المقفلة</h4>
-              <p>فتح أبواب سيارتك المقفلة بدون أي أضرار</p>
+              <h4 className="text-2xl text-gray-900 font-semibold mb-2">فتح أبواب السيارات المقفلة</h4>
+              <p className="text-xl text-gray-700 font-semibold mb-2">فتح أبواب سيارتك المقفلة بدون أي أضرار</p>
             </div>
           </div>
         </section>
@@ -104,23 +104,23 @@ export default function Home() {
         <section id="contact" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">اتصل بنا</h3>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <p className="text-lg mb-4">نحن هنا لمساعدتك على مدار الساعة. لا تتردد في الاتصال بنا لأي استفسار أو خدمة.</p>
+            <p className="text-lg mb-4 text-gray-900">نحن هنا لمساعدتك على مدار الساعة. لا تتردد في الاتصال بنا لأي استفسار أو خدمة.</p>
             <div className="flex flex-col space-y-4">
               <div className="flex items-center">
                 <FaWhatsapp className="text-green-500 text-2xl ml-2" />
-                <span>واتساب: 966535142000</span>
+                <span className="text-gray-900">واتساب: 966535142000</span>
               </div>
               <div className="flex items-center">
                 <FaPhone className="text-blue-500 text-2xl ml-2" />
-                <span>هاتف: 0535142000</span>
+                <span className="text-gray-900">هاتف: 0535142000</span>
               </div>
               <div className="flex items-center">
                 <FaMapMarkerAlt className="text-red-500 text-2xl ml-2" />
-                <span>العنوان: جدة، المملكة العربية السعودية</span>
+                <span  className="text-gray-900">العنوان: جدة، المملكة العربية السعودية</span>
               </div>
               <div className="flex items-center">
                 <FaClock className="text-orange-500 text-2xl ml-2" />
-                <span>ساعات العمل: 24/7</span>
+                <span className="text-gray-900">ساعات العمل: 24/7</span>
               </div>
             </div>
           </div>
