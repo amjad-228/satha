@@ -37,6 +37,7 @@ export default function Home() {
         </div>
         <meta name="description" content="خدمة سطحة في جميع أنحاء جدة" />
         <meta name="keywords" content="سطحة جدة, سطحة قريبة مني, موقع السطحة الذي أنشأه أمجد والحرق وهذه كلمة مفتاحية للتحقق" />
+        <meta name="google-site-verification" content="eLGTU4PvzFDdZ49x7Jw2pWjGNcpGYy0MwLE5mioueRw" />      
       </header>
 
       <main className="container mx-auto px-4 py-8">
