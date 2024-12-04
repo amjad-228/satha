@@ -10,7 +10,7 @@ const amiri = Amiri({
 })
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(true)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
