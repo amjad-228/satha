@@ -19,6 +19,8 @@ export default function Home() {
   return (
     <div className={`${amiri.className} bg-gray-100 min-h-screen text-right`} dir="rtl">
       {/* Header */}
+      <meta name="description" content="خدمة سطحة في جميع أنحاء جدة" />
+      <meta name="keywords" content="سطحة جدة, سطحة قريبة مني, سطحة ابو فارس, اقرب سطحة, اريد سطحة, سطحة هيدروليك, سطحة ابو فارس"/>
       <header className="bg-white shadow-md">
         <title>سطحة جدة</title>
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -36,8 +38,8 @@ export default function Home() {
             </ul>
           </nav>
         </div>
-        <meta name="description" content="خدمة سطحة في جميع أنحاء جدة" />
-        <meta name="keywords" content="سطحة جدة, سطحة قريبة مني, موقع السطحة الذي أنشأه أمجد والحرق وهذه كلمة مفتاحية للتحقق" />
+
+
         <meta name="google-site-verification" content="eLGTU4PvzFDdZ49x7Jw2pWjGNcpGYy0MwLE5mioueRw" />      
       </header>
 
