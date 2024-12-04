@@ -20,6 +20,7 @@ export default function Home() {
     <div className={`${amiri.className} bg-gray-100 min-h-screen text-right`} dir="rtl">
       {/* Header */}
       <header className="bg-white shadow-md">
+        <title>سطحة جدة</title>
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-blue-800">سطحة جدة</h1>
           <button onClick={toggleMenu} className="md:hidden">
