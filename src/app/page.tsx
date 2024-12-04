@@ -23,6 +23,7 @@ export default function Home() {
       <meta name="keywords" content="سطحة جدة, سطحة قريبة مني, سطحة ابو فارس, اقرب سطحة, اريد سطحة, سطحة هيدروليك, سطحة ابو فارس"/>
       <header className="bg-white shadow-md">
         <title>سطحة جدة</title>
+        <title>سطحة ابو فارس</title>
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-red-800">سطحة جدة</h1>
           <button onClick={toggleMenu} className="md:hidden">
