@@ -72,16 +72,16 @@ export default function Home() {
         {/* Services Section */}
         <section id="services" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 text-transparent bg-clip-text">خدماتنا</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <FaCar className="text-4xl text-blue-500 mb-4" />
-              <h4 className="text-2xl text-gray-900 font-semibold mb-2">نقل السيارات</h4>
-              <p  className="text-xl text-gray-700 font-semibold mb-2">نقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+            <div className="bg-white p-3 rounded-lg shadow-2xl">
+              <FaCar className="text-lg text-blue-500 mb-4"/>
+              <h4 className="text-md text-gray-900 font-semibold mb-2">نقل السيارات</h4>
+              <p  className="text-sm text-gray-700 font-semibold mb-2">نقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <FaTools className="text-4xl text-blue-500 mb-4" />
-              <h4 className="text-2xl text-gray-900 font-semibold mb-2">سحب السيارات المتعطلة</h4>
-              <p className="text-xl text-gray-700 font-semibold mb-2">خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
+            <div className="bg-white p-3 rounded-lg shadow-2xl">
+              <FaTools className="text-lg text-blue-500 mb-4" />
+              <h4 className="text-md text-gray-900 font-semibold mb-2">سحب السيارات المتعطلة</h4>
+              <p className="text-sm text-gray-700 font-semibold mb-2">خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <FaTools className="text-4xl text-blue-500 mb-4" />
