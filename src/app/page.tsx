@@ -73,20 +73,20 @@ export default function Home() {
         <section id="services" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 text-transparent bg-clip-text">خدماتنا</h3>
           <div className="flex flex-wrap justify-center gap-6">
-            <div className="bg-white p-3 rounded-lg shadow-2xl flex-1 min-w-[250px]">
+            <div className="bg-white p-3 rounded-lg shadow-2xl flex-6 min-w-[250px]">
               <FaCar className="text-lg text-blue-500 mb-4"/>
               <h4 className="text-md text-gray-900 font-semibold mb-2">نقل السيارات</h4>
               <p  className="text-sm text-gray-700 font-semibold mb-2">نقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
             </div>
-            <div className="bg-white p-3 rounded-lg shadow-2xl flex-1 min-w-[250px]">
+            <div className="bg-white p-3 rounded-lg shadow-2xl flex-6 min-w-[250px]">
               <FaTools className="text-lg text-blue-500 mb-4" />
               <h4 className="text-md text-gray-900 font-semibold mb-2">سحب السيارات المتعطلة</h4>
               <p className="text-sm text-gray-700 font-semibold mb-2">خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <FaTools className="text-4xl text-blue-500 mb-4" />
-              <h4 className="text-2xl text-gray-900 font-semibold mb-2">فتح أبواب السيارات المقفلة</h4>
-              <p className="text-xl text-gray-700 font-semibold mb-2">فتح أبواب سيارتك المقفلة بدون أي أضرار</p>
+            <div className="bg-white p-6 rounded-lg shadow-md flex-6 min-w-[250px]">
+              <FaTools className="text-xl text-blue-500 mb-4" />
+              <h4 className="text-md text-gray-900 font-semibold mb-2">فتح أبواب السيارات المقفلة</h4>
+              <p className="text-sm text-gray-700 font-semibold mb-2">فتح أبواب سيارتك المقفلة بدون أي أضرار</p>
             </div>
           </div>
         </section>
