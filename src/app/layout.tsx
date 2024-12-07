@@ -58,7 +58,7 @@ export default function RootLayout({
     <html lang="ar">
       <head>
         {/* Primary Meta Tags */}
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="سطحة جدة" />
         <meta name="robots" content="index, follow" />
@@ -83,6 +83,21 @@ export default function RootLayout({
         <meta property="og:description" content="احصل على خدمات موثوقة لنقل السيارات المتعطلة وفتح الأبواب بأمان في جدة." />
         <meta property="og:image" content="https://www.sathaapp.com/images/og-image.jpg" />
         <meta property="og:site_name" content="سطحة جدة" />
+
+        {/* Additional Meta Tags */}
+<meta name="fb:page_id" content="1234567890" />
+<meta name="application-name" content="سطحة جدة" />
+<meta name="og:email" content="support@sathaapp.com" />
+<meta name="og:phone_number" content="+966535142000" />
+<meta name="og:fax_number" content="+966535142001" />
+<meta name="og:latitude" content="21.4858" />
+<meta name="og:longitude" content="39.1925" />
+<meta name="og:street-address" content="شارع التحلية" />
+<meta name="og:locality" content="جدة" />
+<meta name="og:region" content="منطقة مكة المكرمة" />
+<meta name="og:postal-code" content="21442" />
+<meta name="og:country-name" content="المملكة العربية السعودية" />
+
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
