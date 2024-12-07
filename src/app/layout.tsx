@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,9 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ar">
-      <Head>
+      <head>
         <link rel="canonical" href="https://www.sathaapp.com" />
-      </Head>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
