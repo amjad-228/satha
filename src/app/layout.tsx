@@ -28,8 +28,8 @@ export default function RootLayout({
     <html lang="ar">
       <head>
         <link rel="canonical" href="https://www.sathaapp.com" />
-        <link rel="alternate" href="https://sathaapp.com" hrefLang="ar" />
-        <link rel="alternate" href="https://sathaapp.com" hrefLang="x-default" />
+        <link rel="alternate" href="http://www.sathaapp.com" hrefLang="x-default" />
+        <link rel="alternate" href="https://www.sathaapp.com" hrefLang="ar" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
