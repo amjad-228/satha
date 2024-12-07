@@ -14,11 +14,11 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "سطحة جدة اقرب سطحة لنقل وسحب السيارات المتعطلة",
+  title: "سطحة جدة - اقرب سطحة لنقل وسحب السيارات المتعطلة",
   description:
-    "سطحة جدة هي خدمة سطحة في جميع انحاء جدة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث, وفتح ابواب السيارات المقفلة بوسائل وطرق آمنة",
+    "سطحة جدة هي خدمة مميزة لنقل وسحب السيارات المتعطلة والمتضررة وفتح أبواب السيارات بأمان.",
   keywords:
-    "سطحة جدة, تطبيق سطحة, سطحة قريبة مني, سطحة ابو فارس, اقرب سطحة, اريد سطحة, سطحة هيدروليك, سطحة جدة لفتح ابواب السيارات المقفلة, فني ممتاز لفتح ابواب السيارات المقفلة ب؛تراف وأمان, كيف اطلب سطحة, اتصل, سطحة, خدمة, المتعطلة, السيارات",
+    "سطحة جدة, تطبيق سطحة, اقرب سطحة, سطحة لنقل السيارات, خدمة فتح الأبواب, السيارات المتعطلة, جدة, سطحة قريبة مني",
   applicationName: "سطحة جدة",
   authors: [{ name: "سطحة جدة فريق الدعم" }],
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "سطحة جدة - اقرب سطحة لنقل وسحب السيارات المتعطلة",
     description:
-      "سطحة جدة هي خدمة سطحة في جميع انحاء جدة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث, وفتح ابواب السيارات المقفلة بوسائل وطرق آمنة",
+      "احصل على خدمات موثوقة لنقل السيارات المتعطلة وفتح الأبواب بأمان في جدة.",
     url: "https://www.sathaapp.com",
     type: "website",
     locale: "ar",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         url: "https://www.sathaapp.com/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "سطحة جدة لنقل السيارات",
+        alt: "سطحة جدة - نقل السيارات",
       },
     ],
   },
@@ -44,13 +44,10 @@ export const metadata: Metadata = {
     site: "@sathaapp",
     title: "سطحة جدة - اقرب سطحة لنقل وسحب السيارات المتعطلة",
     description:
-      "سطحة جدة هي خدمة سطحة في جميع انحاء جدة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث, وفتح ابواب السيارات المقفلة بوسائل وطرق آمنة",
+      "سطحة جدة هي خدمة مميزة لنقل وسحب السيارات المتعطلة والمتضررة وفتح أبواب السيارات بأمان.",
     images: ["https://www.sathaapp.com/images/og-image.jpg"],
   },
 };
-
-
-
 
 export default function RootLayout({
   children,
@@ -60,25 +57,40 @@ export default function RootLayout({
   return (
     <html lang="ar">
       <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Primary Meta Tags */}
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="سطحة جدة" />
         <meta name="robots" content="index, follow" />
+        <meta name="copyright" content="سطحة جدة" />
+        <meta name="language" content="ar" />
+        <meta name="category" content="Business" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="rating" content="General" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="google-site-verification" content="eLGTU4PvzFDdZ49x7Jw2pWjGNcpGYy0MwLE5mioueRw" />
+
+        {/* Canonical and Alternate Links */}
         <link rel="canonical" href="https://www.sathaapp.com" />
         <link rel="alternate" href="https://www.sathaapp.com" hrefLang="x-default" />
         <link rel="alternate" href="https://www.sathaapp.com" hrefLang="ar" />
+
+        {/* Open Graph Meta Tags */}
         <meta property="og:locale" content="ar_AR" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.sathaapp.com" />
         <meta property="og:title" content="سطحة جدة - اقرب سطحة لنقل وسحب السيارات المتعطلة" />
-        <meta property="og:description" content="خدمة موثوقة لنقل السيارات المتعطلة والمتضررة وفتح أبواب السيارات المقفلة بأمان. احصل على أقرب سطحة الآن." />
-        <meta property="og:image" content="https://www.sathaapp.com/assets/og-image.jpg" />
+        <meta property="og:description" content="احصل على خدمات موثوقة لنقل السيارات المتعطلة وفتح الأبواب بأمان في جدة." />
+        <meta property="og:image" content="https://www.sathaapp.com/images/og-image.jpg" />
         <meta property="og:site_name" content="سطحة جدة" />
+
+        {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="سطحة جدة - اقرب سطحة لنقل وسحب السيارات المتعطلة" />
-        <meta name="twitter:description" content="خدمة موثوقة لنقل السيارات المتعطلة والمتضررة وفتح أبواب السيارات المقفلة بأمان. احصل على أقرب سطحة الآن." />
-        <meta name="twitter:image" content="https://www.sathaapp.com/assets/og-image.jpg" />
-        <meta name="google-site-verification" content="eLGTU4PvzFDdZ49x7Jw2pWjGNcpGYy0MwLE5mioueRw" />  
+        <meta name="twitter:description" content="احصل على خدمات موثوقة لنقل السيارات المتعطلة وفتح الأبواب بأمان في جدة." />
+        <meta name="twitter:image" content="https://www.sathaapp.com/images/og-image.jpg" />
 
+        {/* Schema.org Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -86,10 +98,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "سطحة جدة",
-              description:
-                "خدمة نقل وسحب السيارات المتعطلة في جدة، فتح أبواب السيارات بأمان.",
+              description: "خدمة نقل وسحب السيارات المتعطلة في جدة، فتح أبواب السيارات بأمان.",
               url: "https://www.sathaapp.com",
-              telephone: "+966XXXXXXXX",
+              telephone: "+966535142000",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "جدة",
