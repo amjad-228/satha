@@ -22,7 +22,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-red-800">سطحة جدة</h1>
+          <h1 className="text-2xl font-bold text-red-800">سطحة أبو فارس</h1>
           <button onClick={toggleMenu} className="md:hidden">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -80,7 +80,8 @@ export default function Home() {
               <p className="text-md text-gray-700 font-semibold mb-2 mr-3">نقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
               <Image
                 src="/images/satha2.jpg"
-                alt="satha picture"
+                alt="سطحة جدة لنقل السيارات في مدينة جدة المملكة العربية السعودية"
+                title="سطحة جدة اقرب سطحة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث"
                 width={200}
                 height={200}
                 className="rounded-lg shadow-md"
@@ -94,7 +95,8 @@ export default function Home() {
               <p className="text-md text-gray-700 font-semibold mr-3 mb-2">خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
               <Image
               src="/images/satha6.jpg"
-              alt="satha picture"
+              alt="سطحة جدة لسحب السيارات المتعطلة والمتضررة من الحوادث بكل سهولة وامان"
+              title="سطحة جدة اقرب سطحة في جدة تحت خدمة نقل وسحب السيارات المتعطلة والمتضررة من الحوادث"
               width={200}
               height={200}
               className="rounded-lg shadow-md"
@@ -108,7 +110,8 @@ export default function Home() {
               <p className="text-md text-gray-700 font-semibold mr-3 mb-2">فتح أبواب سيارتك المقفلة بدون أي أضرار</p>
               <Image
               src="/images/satha7.jpg"
-              alt="satha picture"
+              alt="سطحة جدة لفتح ابواب السيارات المقفلة بكل احترافية وامان في حال تعذر على المالك فتحها"
+              title="سطحة جدة لفتح ابواب السيارات المقفلة"
               width={200}
               height={200}
               className="rounded-lg shadow-md"
