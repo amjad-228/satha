@@ -3,6 +3,7 @@
 import { Amiri } from 'next/font/google'
 import { FaWhatsapp, FaPhone, FaCar, FaTools, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 import { useState } from 'react'
+import Image from 'next/image';
 
 const amiri = Amiri({ 
   weight: ['400', '700'],
@@ -19,8 +20,6 @@ export default function Home() {
   return (
     <div className={`${amiri.className} bg-gray-100 min-h-screen text-right`} dir="rtl">
       {/* Header */}
-      <meta name="description" content="خدمة سطحة في جميع أنحاء جدة" />
-      <meta name="keywords" content="سطحة جدة, سطحة قريبة مني, سطحة ابو فارس, اقرب سطحة, اريد سطحة, سطحة هيدروليك, سطحة ابو فارس"/>
       <header className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-red-800">سطحة جدة</h1>
@@ -73,20 +72,47 @@ export default function Home() {
         <section id="services" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 text-transparent bg-clip-text">خدماتنا</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <FaCar className="text-4xl text-blue-500 mb-4" />
-              <h4 className="text-2xl text-gray-900 font-semibold mb-2">نقل السيارات</h4>
-              <p  className="text-xl text-gray-700 font-semibold mb-2">نقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
+            <div className="bg-white p-6 rounded-lg shadow-md ">
+              <div className="flex items-center" >
+                <FaCar className="text-lg text-blue-500 mb-4" />
+                <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1 "> نقل السيارات </h4>
+              </div>
+              <p className="text-md text-gray-700 font-semibold mb-2 mr-3">نقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
+              <Image
+                src="/images/satha2.jpg"
+                alt="satha picture"
+                width={200}
+                height={200}
+                className="rounded-lg shadow-md"
+               />
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <FaTools className="text-4xl text-blue-500 mb-4" />
-              <h4 className="text-2xl text-gray-900 font-semibold mb-2">سحب السيارات المتعطلة</h4>
-              <p className="text-xl text-gray-700 font-semibold mb-2">خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
+              <div className="flex items-center">
+                <FaTools className="text-lg text-blue-500 mb-4" />
+                <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">سحب السيارات المتعطلة</h4>
+              </div>
+              <p className="text-md text-gray-700 font-semibold mr-3 mb-2">خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
+              <Image
+              src="/images/satha6.jpg"
+              alt="satha picture"
+              width={200}
+              height={200}
+              className="rounded-lg shadow-md"
+              />
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <FaTools className="text-4xl text-blue-500 mb-4" />
-              <h4 className="text-2xl text-gray-900 font-semibold mb-2">فتح أبواب السيارات المقفلة</h4>
-              <p className="text-xl text-gray-700 font-semibold mb-2">فتح أبواب سيارتك المقفلة بدون أي أضرار</p>
+              <div className="flex items-center">
+                <FaTools className="text-lg text-blue-500 mb-4" />
+                <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">فتح أبواب السيارات المقفلة</h4>
+              </div>
+              <p className="text-md text-gray-700 font-semibold mr-3 mb-2">فتح أبواب سيارتك المقفلة بدون أي أضرار</p>
+              <Image
+              src="/images/satha7.jpg"
+              alt="satha picture"
+              width={200}
+              height={200}
+              className="rounded-lg shadow-md"
+              />
             </div>
           </div>
         </section>
