@@ -81,6 +81,8 @@ export default function RootLayout({
           hrefLang="x-default"
         />
         <link rel="alternate" href="https://www.sathaapp.com" hrefLang="ar" />
+        <link rel="alternate" hrefLang="ar-sa" href="https://www.sathaapp.com"/>
+
 
         {/* Open Graph Meta Tags */}
         <meta property="og:locale" content="ar_AR" />
