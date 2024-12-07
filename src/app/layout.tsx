@@ -101,9 +101,9 @@ export default function RootLayout({
         <meta property="og:site_name" content="سطحة جدة" />
 
         {/* Additional Meta Tags */}
-        <meta name="fb:page_id" content="1234567890" />
+        {/* <meta name="fb:page_id" content="1234567890" /> */}
         <meta name="application-name" content="سطحة جدة" />
-        <meta name="og:email" content="support@sathaapp.com" />
+        {/* <meta name="og:email" content="support@sathaapp.com" /> */}
         <meta name="og:phone_number" content="+966535142000" />
         <meta name="og:fax_number" content="+966535142001" />
         <meta name="og:latitude" content="21.4858" />
