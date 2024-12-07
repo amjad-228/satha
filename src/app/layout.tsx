@@ -78,6 +78,27 @@ export default function RootLayout({
         <meta name="twitter:description" content="خدمة موثوقة لنقل السيارات المتعطلة والمتضررة وفتح أبواب السيارات المقفلة بأمان. احصل على أقرب سطحة الآن." />
         <meta name="twitter:image" content="https://www.sathaapp.com/assets/og-image.jpg" />
         <meta name="google-site-verification" content="eLGTU4PvzFDdZ49x7Jw2pWjGNcpGYy0MwLE5mioueRw" />  
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "سطحة جدة",
+              description:
+                "خدمة نقل وسحب السيارات المتعطلة في جدة، فتح أبواب السيارات بأمان.",
+              url: "https://www.sathaapp.com",
+              telephone: "+966XXXXXXXX",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "جدة",
+                addressCountry: "SA",
+              },
+              image: "https://www.sathaapp.com/images/og-image.jpg",
+            }),
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
