@@ -38,7 +38,7 @@ export default function Home() {
         </div>
 
 
-        <meta name="google-site-verification" content="eLGTU4PvzFDdZ49x7Jw2pWjGNcpGYy0MwLE5mioueRw" />      
+          
       </header>
 
       <main className="container mx-auto px-4 py-8">

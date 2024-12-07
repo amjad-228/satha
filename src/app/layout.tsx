@@ -77,6 +77,7 @@ export default function RootLayout({
         <meta name="twitter:title" content="سطحة جدة - اقرب سطحة لنقل وسحب السيارات المتعطلة" />
         <meta name="twitter:description" content="خدمة موثوقة لنقل السيارات المتعطلة والمتضررة وفتح أبواب السيارات المقفلة بأمان. احصل على أقرب سطحة الآن." />
         <meta name="twitter:image" content="https://www.sathaapp.com/assets/og-image.jpg" />
+        <meta name="google-site-verification" content="eLGTU4PvzFDdZ49x7Jw2pWjGNcpGYy0MwLE5mioueRw" />  
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
