@@ -1,3 +1,5 @@
 User-agent: *
 Disallow:
 Sitemap: https://sathaapp.com/sitemap.xml
+Whatsapp: https://wa.me/966535142000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D8%A5%D9%84%D9%89%20%D8%AE%D8%AF%D9%85%D8%A9%20%D8%B3%D8%B7%D8%AD%D8%A9
+Phone: tel:0535142000
