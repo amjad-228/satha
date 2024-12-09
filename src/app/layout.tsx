@@ -75,7 +75,7 @@ export default function RootLayout({
 
         {/* Canonical and Alternate Links */}
         <link rel="canonical" href="https://sathaapp.com" />
-
+        <link rel="alternate" href="https://sathaapp.com/#services" hrefLang="ar-sa" />
         <link rel="alternate" href="https://sathaapp.com" hrefLang="x-default" />
         
         
