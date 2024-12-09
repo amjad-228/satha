@@ -75,13 +75,8 @@ export default function RootLayout({
 
         {/* Canonical and Alternate Links */}
         <link rel="canonical" href="https://www.sathaapp.com" />
-        <link
-          rel="alternate"
-          href="https://www.sathaapp.com"
-          hrefLang="x-default"
-        />
-        <link rel="alternate" href="https://www.sathaapp.com" hrefLang="ar" />
-        <link rel="alternate" hrefLang="ar-sa" href="https://www.sathaapp.com"/>
+        <link rel="alternate" href="https://www.sathaapp.com" hrefLang="x-default" />
+        <link rel="alternate" href="https://www.sathaapp.com" hrefLang="ar-sa" />
 
 
         {/* Open Graph Meta Tags */}
