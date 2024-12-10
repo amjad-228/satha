@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: 'https://www.sathaapp.com/:path*',
+        source: '/:path*',
         destination: 'https://sathaapp.com/:path*',
         permanent: true, // إعادة توجيه 301 دائمة
       },
