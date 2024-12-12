@@ -19,6 +19,24 @@ export default function Home() {
 
   return (
     <div className={`${amiri.className} bg-gray-100 min-h-screen text-right`} dir="rtl">
+      {/* أزرار الاتصال الثابتة */}
+      <div className="fixed top-1/2 left-0 transform -translate-y-1/2 flex flex-col items-center space-y-4 z-10">
+        <a 
+          href="https://wa.me/966535142000?text=مرحبا،%20أحتاج%20إلى%20خدمة%20سطحة" 
+          className="bg-green-500 text-white p-4 rounded-full flex items-center hover:bg-green-600 transition duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp className="ml-2" />
+        </a>
+        <a 
+          href="tel:0535142000" 
+          className="bg-blue-500 text-white p-4 rounded-full flex items-center hover:bg-blue-600 transition duration-300"
+        >
+          <FaPhone className="ml-2" />
+        </a>
+      </div>
+
       {/* Header */}
       <header className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -36,9 +54,6 @@ export default function Home() {
             </ul>
           </nav>
         </div>
-
-
-          
       </header>
 
       <main className="container mx-auto px-4 py-8">
@@ -68,84 +83,84 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Services Section */}
+        {/* خدماتنا Section */}
         <section id="خدماتنا" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 text-transparent bg-clip-text">خدماتنا</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
               <div>
-              <div className="flex items-center" >
-                <FaCar className="text-lg text-blue-500 mb-2" />
-                <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1 "> نقل السيارات </h4>
-              </div>
-              <p className="text-md text-gray-700 font-semibold text-center "> اقرب سطحة في جدة لنقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
+                <div className="flex items-center">
+                  <FaCar className="text-lg text-blue-500 mb-2" />
+                  <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">نقل السيارات</h4>
+                </div>
+                <p className="text-md text-gray-700 font-semibold text-center">أقرب سطحة في جدة لنقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
               </div>
               <Image
                 src="/images/satha2.jpg"
-                alt="سطحة جدة لنقل السيارات في مدينة جدة المملكة العربية السعودية"
-                title="سطحة جدة اقرب سطحة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث"          
-                object-fit= "cover"
+                alt="سطحة جدة لنقل السيارات في مدينة جدة"
+                title="سطحة جدة اقرب سطحة لنقل وسحب السيارات المتعطلة"
+                object-fit="cover"
                 width={100}
                 height={100}
                 className="rounded-lg shadow-md mr-2"
                 loading="lazy"
-               />
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md flex items-center" >
-              <div>
-              <div className="flex items-center">
-                <FaTools className="text-lg text-blue-500 mb-2" />
-                <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">سحب السيارات المتعطلة</h4>
-              </div>
-              <p className="text-md text-gray-700 font-semibold text-center ">سطحة جدة اقرب خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
-              </div>
-              <Image
-              className="rounded-lg shadow-md mr-3"
-              src="/images/satha6.jpg"
-              alt="سطحة جدة لسحب السيارات المتعطلة والمتضررة من الحوادث بكل سهولة وامان"
-              title="سطحة جدة اقرب سطحة في جدة تحت خدمة نقل وسحب السيارات المتعطلة والمتضررة من الحوادث"
-              width={100}
-              height={100}
-              loading="lazy"
               />
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
               <div>
-              <div className="flex items-center">
-                <FaTools className="text-lg text-blue-500 mb-2" />
-                <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">فتح أبواب السيارات المقفلة</h4>
-              </div>
-              <p className="text-md text-gray-700 font-semibold text-center">اقرب سطحة في جدة لفتح أبواب سيارتك المقفلة بدون أي أضرار</p>
+                <div className="flex items-center">
+                  <FaTools className="text-lg text-blue-500 mb-2" />
+                  <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">سحب السيارات المتعطلة</h4>
+                </div>
+                <p className="text-md text-gray-700 font-semibold text-center">سطحة جدة أقرب خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
               </div>
               <Image
-              src="/images/satha7.jpg"
-              alt="سطحة جدة لفتح ابواب السيارات المقفلة بكل احترافية وامان في حال تعذر على المالك فتحها"
-              title="سطحة جدة لفتح ابواب السيارات المقفلة"
-              width={100}
-              height={100}
-              className="rounded-lg shadow-md mr-3"
-              loading="lazy"
+                className="rounded-lg shadow-md mr-3"
+                src="/images/satha6.jpg"
+                alt="سطحة جدة لسحب السيارات المتعطلة"
+                title="سطحة جدة تحت خدمة نقل وسحب السيارات المتعطلة"
+                width={100}
+                height={100}
+                loading="lazy"
+              />
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
+              <div>
+                <div className="flex items-center">
+                  <FaTools className="text-lg text-blue-500 mb-2" />
+                  <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">فتح أبواب السيارات المقفلة</h4>
+                </div>
+                <p className="text-md text-gray-700 font-semibold text-center">أقرب سطحة في جدة لفتح أبواب سيارتك المقفلة بدون أي أضرار</p>
+              </div>
+              <Image
+                src="/images/satha7.jpg"
+                alt="سطحة جدة لفتح ابواب السيارات المقفلة"
+                title="سطحة جدة لفتح أبواب السيارات المقفلة"
+                width={100}
+                height={100}
+                className="rounded-lg shadow-md mr-3"
+                loading="lazy"
               />
             </div>
           </div>
         </section>
 
-        {/* About Section */}
+        {/* من نحن Section */}
         <section id="من نحن" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-yellow-600 to-red-600 text-transparent bg-clip-text">من نحن</h3>
           <p className="text-lg text-gray-700 mb-4">
- سطحة جدة هي سطحة رائدة في مجال خدمات السيارات في جدة. سطحة جدة تقدم خدمات سريعة وموثوقة لنقل وسحب السيارات المتعطلة. سطحة جدة ايضا تقدم خدمات فتح أبواب السيارات المقفلة. فريقنا من الفنيين المهرة جاهز لمساعدتك على مدار الساعة.
+            سطحة جدة هي سطحة رائدة في مجال خدمات السيارات في جدة. تقدم خدمات سريعة وموثوقة لنقل وسحب السيارات المتعطلة وفتح أبواب السيارات المقفلة. فريقنا من الفنيين المهرة جاهز للمساعدة على مدار الساعة.
           </p>
           <ul className="list-disc list-inside text-gray-700">
-            <li>خبرة أكثر من 10 سنوات في مجال خدمات السيارات</li>
+            <li>خبرة أكثر من 10 سنوات في خدمات السيارات</li>
             <li>فريق متخصص ومدرب على أحدث التقنيات</li>
             <li>خدمة عملاء متميزة وسرعة في الاستجابة</li>
             <li>تغطية شاملة لجميع أنحاء جدة</li>
-            <li>اسعار مناسبة ورخيصة</li>
+            <li>أسعار مناسبة ورخيصة</li>
           </ul>
         </section>
 
-        {/* Contact Section */}
+        {/* اتصل بنا Section */}
         <section id="اتصل بنا" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">اتصل بنا</h3>
           <div className="bg-white p-6 rounded-lg shadow-md">
@@ -161,11 +176,11 @@ export default function Home() {
               </div>
               <div className="flex items-center">
                 <FaMapMarkerAlt className="text-red-500 text-2xl ml-2" />
-                <span  className="text-gray-900">العنوان: جدة، المملكة العربية السعودية</span>
+                <span className="text-gray-900">العنوان: جدة، المملكة العربية السعودية</span>
               </div>
               <div className="flex items-center">
                 <FaClock className="text-orange-500 text-2xl ml-2" />
-                <span className="text-gray-900">ساعات العمل: 24/7</span>
+                <span className="text-gray-900">نحن متاحون على مدار الساعة</span>
               </div>
             </div>
           </div>
@@ -173,17 +188,16 @@ export default function Home() {
       </main>
 
       <footer className="bg-gray-800 text-white py-6">
-  <div className="container mx-auto px-4 text-center">
-    <p>&copy; {new Date().getFullYear()} سطحة جدة. جميع الحقوق محفوظة.</p>
-    <div className="mt-4">
-      <a href="/privacy-policy" className="text-white hover:text-gray-400">سياسة الخصوصية</a>
-      <span className="mx-2">|</span>
-      <a href="/terms" className="text-white hover:text-gray-400">الشروط والأحكام</a>
-    </div>
-  </div>
-</footer>
+        <div className="container mx-auto px-4 text-center">
+          <p>&copy; {new Date().getFullYear()} سطحة جدة. جميع الحقوق محفوظة.</p>
+          <div className="mt-4">
+            <a href="/privacy-policy" className="text-white hover:text-gray-400">سياسة الخصوصية</a>
+            <span className="mx-2">|</span>
+            <a href="/terms" className="text-white hover:text-gray-400">الشروط والأحكام</a>
+          </div>
+        </div>
+      </footer>
 
     </div>
   )
 }
-
