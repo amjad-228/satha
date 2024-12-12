@@ -47,7 +47,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
             سطحة جدة لنقل وسحب السيارات المتعطلة
           </h2>
-          <p className="text-xl text-gray-700 mb-6">خدمة سريعة وموثوقة على مدار الساعة</p>
+          <p className="text-xl text-gray-700 mb-6">سطحة جدة هي خدمة سريعة وموثوقة على مدار الساعة</p>
           <div className="flex justify-center space-x-4 space-x-reverse">
             <a 
               href="https://wa.me/966535142000?text=مرحبا،%20أحتاج%20إلى%20خدمة%20سطحة" 
