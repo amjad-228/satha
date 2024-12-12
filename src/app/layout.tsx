@@ -16,7 +16,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "سطحة جدة - اقرب سطحة لنقل وسحب السيارات المتعطلة",
   description:
-    "سطحة جدة هي خدمة مميزة لنقل وسحب السيارات المتعطلة والمتضررة وفتح أبواب السيارات بأمان.",
+    "سطحة جدة هي اقرب سطحة غي جدة تقدم خدمات مميزة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث وتقديرها في شيخ المعارض. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.",
   keywords:
     "سطحة جدة, تطبيق سطحة, اقرب سطحة, سطحة لنقل السيارات, خدمة فتح الأبواب, السيارات المتعطلة, جدة, سطحة قريبة مني",
   applicationName: "سطحة جدة",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   robots: "index, follow",
   openGraph: {
-    title: "سطحة جدة - اقرب سطحة لنقل وسحب السيارات المتعطلة",
+    title: "سطحة جدة - اقرب سطحة في جدة لنقل وسحب السيارات المتعطلة",
     description:
       "احصل على خدمات موثوقة لنقل السيارات المتعطلة وفتح الأبواب بأمان في جدة.",
     url: "https://sathaapp.com",
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@sathaapp",
-    title: "سطحة جدة - اقرب سطحة لنقل وسحب السيارات المتعطلة",
+    title: "سطحة جدة - اقرب سطحة في جدة لنقل وسحب السيارات المتعطلة",
     description:
-      "سطحة جدة هي خدمة مميزة لنقل وسحب السيارات المتعطلة والمتضررة وفتح أبواب السيارات بأمان.",
+      "سطحة جدة هي اقرب سطحة في جدة تقدم خدمات مميزة لنقل وسحب السيارات المتعطلة والمتضررة. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وسهولة.",
     images: ["https://sathaapp.com/images/satha2.jpg"],
   },
 };
@@ -57,6 +57,15 @@ export default function RootLayout({
   return (
     <html lang="ar">
       <head>
+        
+      <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M7JBS5GD');</script>
+<!-- End Google Tag Manager -->
+
         {/* Primary Meta Tags */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -87,7 +96,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://sathaapp.com" />
         <meta
           property="og:title"
-          content="سطحة جدة - اقرب سطحة لنقل وسحب السيارات المتعطلة"
+          content="سطحة جدة - اقرب سطحة في جدة لنقل وسحب السيارات المعطلة"
         />
         <meta
           property="og:description"
@@ -107,7 +116,7 @@ export default function RootLayout({
         <meta name="og:fax_number" content="+966535142001" />
         <meta name="og:latitude" content="21.4858" />
         <meta name="og:longitude" content="39.1925" />
-        <meta name="og:street-address" content="شارع التحلية" />
+        <meta name="og:street-address" content="شارع المدارس" />
         <meta name="og:locality" content="جدة" />
         <meta name="og:region" content="منطقة مكة المكرمة" />
         <meta name="og:postal-code" content="21442" />
@@ -117,7 +126,7 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="سطحة جدة - اقرب سطحة لنقل وسحب السيارات المتعطلة"
+          content="سطحة جدة - اقرب سطحة في جدة لنقل وسحب السيارات المتعطلة"
         />
         <meta
           name="twitter:description"
@@ -151,8 +160,13 @@ export default function RootLayout({
         />
       </head>
       <body
+      
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M7JBS5GD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
         {children}
       </body>
     </html>

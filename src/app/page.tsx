@@ -75,10 +75,10 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
               <div>
               <div className="flex items-center" >
-                <FaCar className="text-lg text-blue-500 mb-4" />
+                <FaCar className="text-lg text-blue-500 mb-2" />
                 <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1 "> نقل السيارات </h4>
               </div>
-              <p className="text-md text-gray-700 font-semibold mb-2 mr-3">اقرب سطحة في جدة لنقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
+              <p className="text-md text-gray-700 font-semibold text-center "> اقرب سطحة في جدة لنقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
               </div>
               <Image
                 src="/images/satha2.jpg"
@@ -87,24 +87,25 @@ export default function Home() {
                 object-fit= "cover"
                 width={100}
                 height={100}
-                className="rounded-lg shadow-md"
+                className="rounded-lg shadow-md mr-2"
                />
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex items-center" >
               <div>
               <div className="flex items-center">
-                <FaTools className="text-lg text-blue-500 mb-4" />
+                <FaTools className="text-lg text-blue-500 mb-2" />
                 <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">سحب السيارات المتعطلة</h4>
               </div>
-              <p className="text-md text-gray-700 font-semibold mr-3 mb-2">سطحة جدة اقرب خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
+              <p className="text-md text-gray-700 font-semibold text-center ">سطحة جدة اقرب خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
               </div>
               <Image
+              className="rounded-lg shadow-md mr-3"
               src="/images/satha6.jpg"
               alt="سطحة جدة لسحب السيارات المتعطلة والمتضررة من الحوادث بكل سهولة وامان"
               title="سطحة جدة اقرب سطحة في جدة تحت خدمة نقل وسحب السيارات المتعطلة والمتضررة من الحوادث"
               width={100}
               height={100}
-              className="rounded-lg shadow-md"
+              
               />
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
