@@ -30,9 +30,9 @@ export default function Home() {
           </button>
           <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block`}>
             <ul className="md:flex space-y-2 md:space-y-0 md:space-x-4 md:space-x-reverse">
-              <li><a href="#services" className="text-blue-600">خدماتنا</a></li>
-              <li><a href="#about" className="text-blue-600">من نحن</a></li>
-              <li><a href="#contact" className="text-blue-600">اتصل بنا</a></li>
+              <li><a href="#خدماتنا" className="text-blue-600">خدماتنا</a></li>
+              <li><a href="#من نحن" className="text-blue-600">من نحن</a></li>
+              <li><a href="#اتصل بنا" className="text-blue-600">اتصل بنا</a></li>
             </ul>
           </nav>
         </div>
@@ -69,7 +69,7 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="mb-12">
+        <section id="خدماتنا" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 text-transparent bg-clip-text">خدماتنا</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
@@ -88,6 +88,7 @@ export default function Home() {
                 width={100}
                 height={100}
                 className="rounded-lg shadow-md mr-2"
+                loading="lazy"
                />
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex items-center" >
@@ -105,16 +106,16 @@ export default function Home() {
               title="سطحة جدة اقرب سطحة في جدة تحت خدمة نقل وسحب السيارات المتعطلة والمتضررة من الحوادث"
               width={100}
               height={100}
-              
+              loading="lazy"
               />
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
               <div>
               <div className="flex items-center">
-                <FaTools className="text-lg text-blue-500 mb-4" />
+                <FaTools className="text-lg text-blue-500 mb-2" />
                 <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">فتح أبواب السيارات المقفلة</h4>
               </div>
-              <p className="text-md text-gray-700 font-semibold mr-3 mb-2">اقرب سطحة في جدة لفتح أبواب سيارتك المقفلة بدون أي أضرار</p>
+              <p className="text-md text-gray-700 font-semibold text-center">اقرب سطحة في جدة لفتح أبواب سيارتك المقفلة بدون أي أضرار</p>
               </div>
               <Image
               src="/images/satha7.jpg"
@@ -122,14 +123,15 @@ export default function Home() {
               title="سطحة جدة لفتح ابواب السيارات المقفلة"
               width={100}
               height={100}
-              className="rounded-lg shadow-md"
+              className="rounded-lg shadow-md mr-3"
+              loading="lazy"
               />
             </div>
           </div>
         </section>
 
         {/* About Section */}
-        <section id="about" className="mb-12">
+        <section id="من نحن" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-yellow-600 to-red-600 text-transparent bg-clip-text">من نحن</h3>
           <p className="text-lg text-gray-700 mb-4">
  سطحة جدة هي سطحة رائدة في مجال خدمات السيارات في جدة. سطحة جدة تقدم خدمات سريعة وموثوقة لنقل وسحب السيارات المتعطلة. سطحة جدة ايضا تقدم خدمات فتح أبواب السيارات المقفلة. فريقنا من الفنيين المهرة جاهز لمساعدتك على مدار الساعة.
@@ -144,7 +146,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="mb-12">
+        <section id="اتصل بنا" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">اتصل بنا</h3>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-lg mb-4 text-gray-900">سطحة جدة هنا لمساعدتك على مدار الساعة. لا تتردد في الاتصال بنا لأي استفسار أو خدمة.</p>
@@ -171,10 +173,16 @@ export default function Home() {
       </main>
 
       <footer className="bg-gray-800 text-white py-6">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; {new Date().getFullYear()} سطحة جدة. جميع الحقوق محفوظة.</p>
-        </div>
-      </footer>
+  <div className="container mx-auto px-4 text-center">
+    <p>&copy; {new Date().getFullYear()} سطحة جدة. جميع الحقوق محفوظة.</p>
+    <div className="mt-4">
+      <a href="/privacy-policy" className="text-white hover:text-gray-400">سياسة الخصوصية</a>
+      <span className="mx-2">|</span>
+      <a href="/terms" className="text-white hover:text-gray-400">الشروط والأحكام</a>
+    </div>
+  </div>
+</footer>
+
     </div>
   )
 }

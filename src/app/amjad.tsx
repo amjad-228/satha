@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -60,8 +59,7 @@ export default function RootLayout({
     <html lang="ar">
       <head>
         {/* Google Analytics */} 
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7HMBRLRML" 
-        />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7HMBRLRML" />
         <Script id="google-analytics">
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -70,13 +68,10 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* title and description*/}
-        <title>{String(metadata.title) || "الصفحة الرئيسية لسطحة جدة"}</title>
-        <meta name="description" content={metadata.description || "وصف افتراضي للموقع إذا كانت الوصف غير موجود لسطحة جدة."} />
-        <meta name="keywords" content={Array.isArray(metadata.keywords) ? metadata.keywords.join(", ") : metadata.keywords || "الكلمات المفتاحية الافتراضية, سطحة جدة"} />
-        
-
-
+        {/* title and description */}
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
         
         {/* Primary Meta Tags */}
         <meta charSet="UTF-8" />
@@ -93,38 +88,23 @@ export default function RootLayout({
 
         {/* Canonical and Alternate Links */}
         <link rel="canonical" href="https://www.sathaapp.com" />
-        <link rel="alternate" href="https://sathaapp.com/#خدماتنا" hrefLang="ar-sa" />
+        <link rel="alternate" href="https://sathaapp.com/#services" hrefLang="ar-sa" />
         <link rel="alternate" href="https://sathaapp.com" hrefLang="x-default" />
-        
 
         {/* Open Graph Meta Tags */}
         <meta property="og:locale" content="ar_SA" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sathaapp.com" />
-        <meta property="og:title" content={(metadata.openGraph?.title as string) || "عنوان افتراضي"} />
-        <meta property="og:description" content={metadata.openGraph!.description}/>
-        <meta property="og:image" content="https://sathaapp.com/images/satha2.jpg" />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
         <meta property="og:site_name" content="سطحة جدة" />
-
-        {/* Additional Meta Tags */}
-        {/* <meta name="fb:page_id" content="1234567890" /> */}
-        <meta name="application-name" content="سطحة جدة" />
-        {/* <meta name="og:email" content="support@sathaapp.com" /> */}
-        <meta name="og:phone_number" content="+966535142000" />
-        <meta name="og:fax_number" content="+966535142001" />
-        <meta name="og:latitude" content="21.4858" />
-        <meta name="og:longitude" content="39.1925" />
-        <meta name="og:street-address" content="شارع المدارس" />
-        <meta name="og:locality" content="جدة" />
-        <meta name="og:region" content="منطقة مكة المكرمة" />
-        <meta name="og:postal-code" content="21442" />
-        <meta name="og:country-name" content="المملكة العربية السعودية" />
 
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="سطحة جدة - اقرب سطحة في جدة لنقل وسحب السيارات المتعطلة" />
-        <meta name="twitter:description" content="احصل على خدمات موثوقة لنقل السيارات المتعطلة وفتح الأبواب بأمان في جدة." />
-        <meta name="twitter:image" content="https://sathaapp.com/images/satha2.jpg" />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta name="twitter:image" content={metadata.twitter.images[0]} />
 
         {/* Schema.org Structured Data */}
         <script
@@ -148,9 +128,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
