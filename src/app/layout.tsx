@@ -16,11 +16,6 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "سطحة جدة - أفضل سطحة في جدة لنقل وسحب السيارات المتعطلة بسرعة وأمان",
-  description:
-    "سطحة جدة هي اقرب سطحة غي جدة تقدم خدمات مميزة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث وتقديرها في شيخ المعارض. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.",
-  keywords:
-    "سطحة جدة, تطبيق سطحة, اقرب سطحة, سطحة لنقل السيارات, خدمة فتح الأبواب, السيارات المتعطلة, جدة, سطحة قريبة مني, خدمة سحب السيارات في جدة, سطحة لنقل السيارات, سيارات الطوارئ جدة",
   applicationName: "سطحة جدة",
   authors: [{ name: "سطحة جدة فريق الدعم" }],
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
@@ -71,9 +66,9 @@ export default function RootLayout({
         </Script>
 
         {/* title and description*/}
-        <title>{String(metadata.title) || "الصفحة الرئيسية لسطحة جدة"}</title>
-        <meta name="description" content={metadata.description || "وصف افتراضي للموقع إذا كانت الوصف غير موجود لسطحة جدة."} />
-        <meta name="keywords" content={Array.isArray(metadata.keywords) ? metadata.keywords.join(", ") : metadata.keywords || "الكلمات المفتاحية الافتراضية, سطحة جدة"} />
+        <title>سطحة جدة - أفضل سطحة في جدة لنقل وسحب السيارات المتعطلة بسرعة وأمان</title>
+        <meta name="description" content={"سطحة جدة هي اقرب سطحة غي جدة تقدم خدمات مميزة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث وتقديرها في شيخ المعارض. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان."} />
+        <meta name="keywords" content={"سطحة جدة, تطبيق سطحة, اقرب سطحة, سطحة لنقل السيارات, خدمة فتح الأبواب, السيارات المتعطلة, جدة, سطحة قريبة مني, خدمة سحب السيارات في جدة, سطحة لنقل السيارات, سيارات الطوارئ جدة"} />
         
 
 
@@ -101,7 +96,7 @@ export default function RootLayout({
         <meta property="og:locale" content="ar_SA" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sathaapp.com" />
-        <meta property="og:title" content={(metadata.openGraph?.title as string) || "عنوان افتراضي"} />
+        <meta property="og:title" content={"سطحة جدة - أفضل سطحة في جدة لنقل وسحب السيارات المتعطلة بسرعة وأمان"} />
         <meta property="og:description" content={metadata.openGraph!.description}/>
         <meta property="og:image" content="https://sathaapp.com/images/satha2.jpg" />
         <meta property="og:site_name" content="سطحة جدة" />
