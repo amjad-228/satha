@@ -47,7 +47,7 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
             سطحة جدة لنقل وسحب السيارات المتعطلة
           </h2>
-          <p className="text-xl text-gray-700 mb-6">سطحة جدة هي خدمة سريعة وموثوقة على مدار الساعة</p>
+          <p className="text-xl text-gray-700 mb-6">سطحة جدة هي خدمة سطحة سريعة وموثوقة على مدار الساعة</p>
           <div className="flex justify-center space-x-4 space-x-reverse">
             <a 
               href="https://wa.me/966535142000?text=مرحبا،%20أحتاج%20إلى%20خدمة%20سطحة" 
@@ -72,48 +72,55 @@ export default function Home() {
         <section id="services" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 text-transparent bg-clip-text">خدماتنا</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-md ">
+            <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
+              <div>
               <div className="flex items-center" >
                 <FaCar className="text-lg text-blue-500 mb-4" />
                 <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1 "> نقل السيارات </h4>
               </div>
-              <p className="text-md text-gray-700 font-semibold mb-2 mr-3">نقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
+              <p className="text-md text-gray-700 font-semibold mb-2 mr-3">اقرب سطحة في جدة لنقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
+              </div>
               <Image
                 src="/images/satha2.jpg"
                 alt="سطحة جدة لنقل السيارات في مدينة جدة المملكة العربية السعودية"
-                title="سطحة جدة اقرب سطحة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث"
-                width={200}
-                height={200}
+                title="سطحة جدة اقرب سطحة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث"          
+                object-fit= "cover"
+                width={100}
+                height={100}
                 className="rounded-lg shadow-md"
                />
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md flex items-center" >
+              <div>
               <div className="flex items-center">
                 <FaTools className="text-lg text-blue-500 mb-4" />
                 <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">سحب السيارات المتعطلة</h4>
               </div>
-              <p className="text-md text-gray-700 font-semibold mr-3 mb-2">خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
+              <p className="text-md text-gray-700 font-semibold mr-3 mb-2">سطحة جدة اقرب خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
+              </div>
               <Image
               src="/images/satha6.jpg"
               alt="سطحة جدة لسحب السيارات المتعطلة والمتضررة من الحوادث بكل سهولة وامان"
               title="سطحة جدة اقرب سطحة في جدة تحت خدمة نقل وسحب السيارات المتعطلة والمتضررة من الحوادث"
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               className="rounded-lg shadow-md"
               />
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
+              <div>
               <div className="flex items-center">
                 <FaTools className="text-lg text-blue-500 mb-4" />
                 <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">فتح أبواب السيارات المقفلة</h4>
               </div>
-              <p className="text-md text-gray-700 font-semibold mr-3 mb-2">فتح أبواب سيارتك المقفلة بدون أي أضرار</p>
+              <p className="text-md text-gray-700 font-semibold mr-3 mb-2">اقرب سطحة في جدة لفتح أبواب سيارتك المقفلة بدون أي أضرار</p>
+              </div>
               <Image
               src="/images/satha7.jpg"
               alt="سطحة جدة لفتح ابواب السيارات المقفلة بكل احترافية وامان في حال تعذر على المالك فتحها"
               title="سطحة جدة لفتح ابواب السيارات المقفلة"
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               className="rounded-lg shadow-md"
               />
             </div>
@@ -124,13 +131,14 @@ export default function Home() {
         <section id="about" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-yellow-600 to-red-600 text-transparent bg-clip-text">من نحن</h3>
           <p className="text-lg text-gray-700 mb-4">
-            نحن شركة رائدة في مجال خدمات السيارات في جدة. نقدم خدمات سريعة وموثوقة لنقل وسحب السيارات المتعطلة وفتح أبواب السيارات المقفلة. فريقنا من الفنيين المهرة جاهز لمساعدتك على مدار الساعة.
+ سطحة جدة هي سطحة رائدة في مجال خدمات السيارات في جدة. سطحة جدة تقدم خدمات سريعة وموثوقة لنقل وسحب السيارات المتعطلة. سطحة جدة ايضا تقدم خدمات فتح أبواب السيارات المقفلة. فريقنا من الفنيين المهرة جاهز لمساعدتك على مدار الساعة.
           </p>
           <ul className="list-disc list-inside text-gray-700">
             <li>خبرة أكثر من 10 سنوات في مجال خدمات السيارات</li>
             <li>فريق متخصص ومدرب على أحدث التقنيات</li>
             <li>خدمة عملاء متميزة وسرعة في الاستجابة</li>
             <li>تغطية شاملة لجميع أنحاء جدة</li>
+            <li>اسعار مناسبة ورخيصة</li>
           </ul>
         </section>
 
@@ -138,7 +146,7 @@ export default function Home() {
         <section id="contact" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">اتصل بنا</h3>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <p className="text-lg mb-4 text-gray-900">نحن هنا لمساعدتك على مدار الساعة. لا تتردد في الاتصال بنا لأي استفسار أو خدمة.</p>
+            <p className="text-lg mb-4 text-gray-900">سطحة جدة هنا لمساعدتك على مدار الساعة. لا تتردد في الاتصال بنا لأي استفسار أو خدمة.</p>
             <div className="flex flex-col space-y-4">
               <div className="flex items-center">
                 <FaWhatsapp className="text-green-500 text-2xl ml-2" />
