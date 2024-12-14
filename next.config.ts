@@ -9,15 +9,15 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: 'host', // نحدد أن التوجيه يحدث بناءً على المضيف
-            value: 'www.sathaapp.com', // إذا كان الرابط يحتوي على www
+            value: 'sathaapp.com', // إذا كان الرابط يحتوي على www
           },
         ],
-        destination: 'https://sathaapp.com/:path*', // التوجيه إلى sathaapp.com بدون www
+        destination: 'https://www.sathaapp.com/:path*', // التوجيه إلى sathaapp.com بدون www
         permanent: true, // التوجيه دائم (301)
       },
     ]
   },
-  
+
   // تفعيل وضع Strict Mode ل React
   reactStrictMode: true, 
   
