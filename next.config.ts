@@ -1,6 +1,23 @@
 import { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
+
+  async redirects() {
+    return [
+      {
+        source: '/:path*', // أي مسار في الموقع
+        has: [
+          {
+            type: 'host', // نحدد أن التوجيه يحدث بناءً على المضيف
+            value: 'www.sathaapp.com', // إذا كان الرابط يحتوي على www
+          },
+        ],
+        destination: 'https://sathaapp.com/:path*', // التوجيه إلى sathaapp.com بدون www
+        permanent: true, // التوجيه دائم (301)
+      },
+    ]
+  },
+  
   // تفعيل وضع Strict Mode ل React
   reactStrictMode: true, 
   
