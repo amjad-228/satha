@@ -60,8 +60,7 @@ export default function RootLayout({
         <title>سطحة جدة - أفضل واقرب خدمة سطحة في جدة لسحب السيارات </title>
         <meta name="description" content={"سطحة جدة هي اقرب سطحة في جدة توفر خدمة نقل وسحب السيارات وتقديرها في شيخ المعارض. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان."} />
         <meta name="keywords" content={"سطحة جدة, تطبيق سطحة, اقرب سطحة, سطحة لنقل السيارات, خدمة فتح الأبواب, السيارات المتعطلة, جدة, سطحة قريبة مني, خدمة سحب السيارات في جدة, سطحة لنقل السيارات, سيارات الطوارئ جدة"} />
-        
-        <link rel="stylesheet" href="/src/app/globals.css" />
+        <link rel="icon" href="/favicon.ico" />
 
 
         
@@ -125,6 +124,7 @@ export default function RootLayout({
                 "خدمة نقل وسحب السيارات المتعطلة في جدة، فتح أبواب السيارات بأمان.",
               url: "https://sathaapp.com",
               telephone: "+966535142000",
+              priceRange: "$$",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "جدة",
