@@ -19,3 +19,18 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@font-face {
+  font-family: "Geist Sans";
+  src: url("/fonts/GeistVF.woff") format("woff");
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMonoVF.woff") format("woff");
+  font-display: swap;
+  font-weight: 100 900;
+}

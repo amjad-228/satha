@@ -31,6 +31,7 @@ const nextConfig: NextConfig = {
       {
         source: '/(.*)',
         headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
           { key: 'X-Content-Type-Options', value: 'nosniff' }, // منع المتصفح من محاولة اكتشاف نوع الملف
           { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains' }, // تعزيز أمان الاتصال عبر HTTPS
         ],
