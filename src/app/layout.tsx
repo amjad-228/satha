@@ -61,7 +61,7 @@ export default function RootLayout({
         <meta name="description" content={"سطحة جدة هي اقرب سطحة في جدة توفر خدمة نقل وسحب السيارات وتقديرها في شيخ المعارض. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان."} />
         <meta name="keywords" content={"سطحة جدة, تطبيق سطحة, اقرب سطحة, سطحة لنقل السيارات, خدمة فتح الأبواب, السيارات المتعطلة, جدة, سطحة قريبة مني, خدمة سحب السيارات في جدة, سطحة لنقل السيارات, سيارات الطوارئ جدة"} />
         
-        <link rel="stylesheet" href="/globals.css" />
+        <link rel="stylesheet" href="/src/app/globals.css" />
 
 
         
