@@ -96,7 +96,7 @@ export default function Home() {
                 <p className="text-md text-gray-700 font-semibold text-center">أقرب سطحة في جدة لنقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
               </div>
               <Image
-                src="/images/satha2.jpg"
+                src="/images/satha2.webp"
                 alt="سطحة جدة لنقل السيارات في مدينة جدة"
                 title="سطحة جدة اقرب سطحة لنقل وسحب السيارات المتعطلة"
                 object-fit="cover"
@@ -116,7 +116,7 @@ export default function Home() {
               </div>
               <Image
                 className="rounded-lg shadow-md mr-3"
-                src="/images/satha6.jpg"
+                src="/images/satha6.webp"
                 alt="سطحة جدة لسحب السيارات المتعطلة"
                 title="سطحة جدة تحت خدمة نقل وسحب السيارات المتعطلة"
                 width={100}
@@ -133,7 +133,7 @@ export default function Home() {
                 <p className="text-md text-gray-700 font-semibold text-center">أقرب سطحة في جدة لفتح أبواب سيارتك المقفلة بدون أي أضرار</p>
               </div>
               <Image
-                src="/images/satha7.jpg"
+                src="/images/satha7.webp"
                 alt="سطحة جدة لفتح ابواب السيارات المقفلة"
                 title="سطحة جدة لفتح أبواب السيارات المقفلة"
                 width={100}

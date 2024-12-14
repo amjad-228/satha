@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: "ar",
     images: [
       {
-        url: "https://sathaapp.com/images/satha2.jpg",
+        url: "https://sathaapp.com/images/satha2.webp",
         width: 1200,
         height: 630,
         alt: "سطحة جدة - نقل السيارات",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "سطحة جدة - اقرب خدمة سحب سيارات سريعة وآمنة في جدة",
     description:
       "سطحة جدة هي اقرب سطحة في جدة تقدم خدمات مميزة لنقل وسحب السيارات المتعطلة والمتضررة. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وسهولة.",
-    images: ["https://sathaapp.com/images/satha2.jpg"],
+    images: ["https://sathaapp.com/images/satha2.webp"],
   },
 };
 
@@ -98,7 +98,7 @@ export default function RootLayout({
         <meta property="og:url" content="https://sathaapp.com" />
         <meta property="og:title" content={"سطحة جدة - أفضل سطحة في جدة لنقل وسحب السيارات المتعطلة بسرعة وأمان"} />
         <meta property="og:description" content={metadata.openGraph!.description}/>
-        <meta property="og:image" content="https://sathaapp.com/images/satha2.jpg" />
+        <meta property="og:image" content="https://sathaapp.com/images/satha2.webp" />
         <meta property="og:site_name" content="سطحة جدة" />
 
         {/* Additional Meta Tags */}
@@ -119,7 +119,7 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="سطحة جدة - اقرب سطحة في جدة لنقل وسحب السيارات المتعطلة" />
         <meta name="twitter:description" content="احصل على خدمات موثوقة لنقل السيارات المتعطلة وفتح الأبواب بأمان في جدة." />
-        <meta name="twitter:image" content="https://sathaapp.com/images/satha2.jpg" />
+        <meta name="twitter:image" content="https://sathaapp.com/images/satha2.webp" />
 
         {/* Schema.org Structured Data */}
         <script
@@ -138,7 +138,7 @@ export default function RootLayout({
                 addressLocality: "جدة",
                 addressCountry: "SA",
               },
-              image: "https://sathaapp.com/images/satha2.jpg",
+              image: "https://sathaapp.com/images/satha2.webp",
             }),
           }}
         />
