@@ -66,8 +66,8 @@ export default function RootLayout({
         </Script>
 
         {/* title and description*/}
-        <title>سطحة جدة - أفضل سطحة في جدة لنقل وسحب السيارات المتعطلة بسرعة وأمان</title>
-        <meta name="description" content={"سطحة جدة هي اقرب سطحة غي جدة تقدم خدمات مميزة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث وتقديرها في شيخ المعارض. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان."} />
+        <title>سطحة جدة - أفضل واقرب سطحة في جدة لنقل وسحب السيارات بسرعة وأمان</title>
+        <meta name="description" content={"سطحة جدة هي اقرب سطحة في جدة تقدم خدمات مميزة لنقل وسحب السيارات المتعطلة والمتضررة من الحوادث وتقديرها في شيخ المعارض. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان."} />
         <meta name="keywords" content={"سطحة جدة, تطبيق سطحة, اقرب سطحة, سطحة لنقل السيارات, خدمة فتح الأبواب, السيارات المتعطلة, جدة, سطحة قريبة مني, خدمة سحب السيارات في جدة, سطحة لنقل السيارات, سيارات الطوارئ جدة"} />
         
 
@@ -87,7 +87,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="eLGTU4PvzFDdZ49x7Jw2pWjGNcpGYy0MwLE5mioueRw" />
 
         {/* Canonical and Alternate Links */}
-        <link rel="canonical" href="https://www.sathaapp.com" />
+        <link rel="canonical" href="https://www.sathaapp.com/" />
         <link rel="alternate" href="https://sathaapp.com/#خدماتنا" hrefLang="ar-sa" />
         <link rel="alternate" href="https://sathaapp.com" hrefLang="x-default" />
         
