@@ -87,9 +87,9 @@ export default function RootLayout({
         <meta name="google-site-verification" content="eLGTU4PvzFDdZ49x7Jw2pWjGNcpGYy0MwLE5mioueRw" />
 
         {/* Canonical and Alternate Links */}
-        <link rel="canonical" href="https://sathaapp.com/" />
+        <link rel="canonical" href="https://sathaapp.com" />
         <link rel="alternate" href="https://sathaapp.com/#خدماتنا" hrefLang="ar-sa" />
-        <link rel="alternate" href="https://sathaapp.com/" hrefLang="x-default" />
+        <link rel="alternate" href="https://sathaapp.com" hrefLang="x-default" />
         
 
         {/* Open Graph Meta Tags */}
