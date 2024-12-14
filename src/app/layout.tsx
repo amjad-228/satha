@@ -54,7 +54,16 @@ export default function RootLayout({
   return (
     <html lang="ar">
       <head>
-        
+        {/* Google Analytics */} 
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7HMBRLRML" 
+        />
+        <Script id="google-analytics">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y7HMBRLRML');
+          `}
+        </Script>
 
         {/* title and description*/}
         <title>سطحة جدة - أفضل واقرب خدمة سطحة في جدة لسحب السيارات </title>
@@ -138,16 +147,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Google Analytics */} 
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7HMBRLRML" 
-        />
-        <Script id="google-analytics">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-Y7HMBRLRML');
-          `}
-        </Script>
+        
         {children}
       </body>
     </html>
