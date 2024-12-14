@@ -22,6 +22,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['sathaapp.com'], // إضافة المجالات التي تحتوي على الصور في موقعك
     formats: ['image/avif', 'image/webp'], // إضافة تنسيقات صور جديدة لتقليل الحجم
+    
   },
 
   // تكوين إعدادات الأمان

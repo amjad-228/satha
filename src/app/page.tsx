@@ -103,6 +103,7 @@ export default function Home() {
                 width={100}
                 height={100}
                 className="rounded-lg shadow-md mr-2"
+                priority
                 loading="lazy"
               />
             </div>
@@ -121,6 +122,7 @@ export default function Home() {
                 title="سطحة جدة تحت خدمة نقل وسحب السيارات المتعطلة"
                 width={100}
                 height={100}
+                priority
                 loading="lazy"
               />
             </div>
@@ -139,6 +141,7 @@ export default function Home() {
                 width={100}
                 height={100}
                 className="rounded-lg shadow-md mr-3"
+                priority
                 loading="lazy"
               />
             </div>
