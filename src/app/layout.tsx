@@ -14,8 +14,9 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-{/*
+
 export const metadata: Metadata = {
+  /*
   applicationName: "سطحة جدة",
   authors: [{ name: "سطحة جدة فريق الدعم" }],
   robots: "index, follow",
@@ -43,8 +44,9 @@ export const metadata: Metadata = {
       "سطحة جدة هي اقرب سطحة في جدة تقدم خدمات مميزة لنقل وسحب السيارات المتعطلة والمتضررة. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وسهولة.",
     images: ["https://sathaapp.com/images/satha2.webp"],
   },
+  */
 };
-*/}
+
 
 export default function RootLayout({
   children,
