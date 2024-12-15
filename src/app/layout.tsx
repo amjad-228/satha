@@ -56,24 +56,12 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <head>
-        {/* Google Analytics */} 
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7HMBRLRML" 
-        />
-        <Script id="google-analytics">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-Y7HMBRLRML', { 'cookie_flags': 'SameSite=None; Secure' });
-          `}
-        </Script>
-
+        
         {/* title and description*/}
         <title>سطحة جدة - أفضل واقرب خدمة سطحة في جدة لسحب السيارات </title>
         <meta name="description" content={"سطحة جدة هي اقرب سطحة في جدة توفر خدمة نقل وسحب السيارات وتقديرها في شيخ المعارض. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان."} />
         <meta name="keywords" content={"سطحة جدة, تطبيق سطحة, اقرب سطحة, سطحة لنقل السيارات, خدمة فتح الأبواب, السيارات المتعطلة, جدة, سطحة قريبة مني, خدمة سحب السيارات في جدة, سطحة لنقل السيارات, سيارات الطوارئ جدة"} />
         <link rel="icon" href="/favicon.ico" />
-
-
         
         {/* Primary Meta Tags */}
         <meta charSet="UTF-8" />

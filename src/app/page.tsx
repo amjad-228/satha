@@ -1,6 +1,6 @@
 'use client'
 
-import { Amiri } from 'next/font/google'
+import { Amiri } from 'next/font/google' 
 import { FaWhatsapp, FaPhone, FaCar, FaTools, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 import { useState } from 'react'
 import Image from 'next/image';
