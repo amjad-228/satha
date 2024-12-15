@@ -14,7 +14,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
+{/*
 export const metadata: Metadata = {
   applicationName: "سطحة جدة",
   authors: [{ name: "سطحة جدة فريق الدعم" }],
@@ -44,6 +44,7 @@ export const metadata: Metadata = {
     images: ["https://sathaapp.com/images/satha2.webp"],
   },
 };
+*/}
 
 export default function RootLayout({
   children,
@@ -95,7 +96,7 @@ export default function RootLayout({
         <meta property="og:locale" content="ar_SA" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sathaapp.com" />
-        <meta property="og:title" content= "سطحة جدة - أفضل سطحة في جدة لنقل وسحب السيارات المتعطلة بسرعة وأمان" />
+        <meta property="og:title" content= "سطحة جدة - أفضل واقرب سطحة في جدة لنقل وسحب السيارات المتعطلة بسرعة وأمان" />
         <meta property="og:description" content= "احصل على خدمات موثوقة لنقل السيارات المتعطلة وفتح الأبواب بأمان في جدة."/>
         <meta property="og:image" content="https://sathaapp.com/images/satha2.webp" />
         <meta property="og:image:secure_url" content="https://sathaapp.com/images/satha2.webp" />
