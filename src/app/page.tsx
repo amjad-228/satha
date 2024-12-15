@@ -104,7 +104,6 @@ export default function Home() {
                 height={100}
                 className="rounded-lg shadow-md mr-2"
                 priority
-                loading="lazy"
               />
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
@@ -123,7 +122,6 @@ export default function Home() {
                 width={100}
                 height={100}
                 priority
-                loading="lazy"
               />
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md flex items-center">
@@ -142,7 +140,6 @@ export default function Home() {
                 height={100}
                 className="rounded-lg shadow-md mr-3"
                 priority
-                loading="lazy"
               />
             </div>
           </div>

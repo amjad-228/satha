@@ -18,7 +18,6 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   applicationName: "سطحة جدة",
   authors: [{ name: "سطحة جدة فريق الدعم" }],
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
   robots: "index, follow",
   openGraph: {
     title: "سطحة جدة - اقرب سطحة في جدة لنقل وسحب السيارات المتعطلة",
@@ -52,7 +51,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar">
+    <html lang="ar" dir="rtl">
       <head>
         {/* Google Analytics */} 
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7HMBRLRML" 
@@ -61,7 +60,7 @@ export default function RootLayout({
           {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-Y7HMBRLRML');
+          gtag('config', 'G-Y7HMBRLRML', { 'cookie_flags': 'SameSite=None; Secure' });
           `}
         </Script>
 
@@ -96,15 +95,19 @@ export default function RootLayout({
         <meta property="og:locale" content="ar_SA" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sathaapp.com" />
-        <meta property="og:title" content={"سطحة جدة - أفضل سطحة في جدة لنقل وسحب السيارات المتعطلة بسرعة وأمان"} />
-        <meta property="og:description" content={metadata.openGraph!.description}/>
+        <meta property="og:title" content= "سطحة جدة - أفضل سطحة في جدة لنقل وسحب السيارات المتعطلة بسرعة وأمان" />
+        <meta property="og:description" content= "احصل على خدمات موثوقة لنقل السيارات المتعطلة وفتح الأبواب بأمان في جدة."/>
         <meta property="og:image" content="https://sathaapp.com/images/satha2.webp" />
+        <meta property="og:image:secure_url" content="https://sathaapp.com/images/satha2.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="سطحة جدة" />
 
         {/* Additional Meta Tags */}
         {/* <meta name="fb:page_id" content="1234567890" /> */}
         <meta name="application-name" content="سطحة جدة" />
-        {/* <meta name="og:email" content="support@sathaapp.com" /> */}
+        <meta name="og:email" content="amjad@sathaapp.com" />
         <meta name="og:phone_number" content="+966535142000" />
         <meta name="og:fax_number" content="+966535142001" />
         <meta name="og:latitude" content="21.4858" />
@@ -119,7 +122,10 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="سطحة جدة - اقرب سطحة في جدة لنقل وسحب السيارات المتعطلة" />
         <meta name="twitter:description" content="احصل على خدمات موثوقة لنقل السيارات المتعطلة وفتح الأبواب بأمان في جدة." />
+        <meta name="twitter:site" content="@sathaapp" />
         <meta name="twitter:image" content="https://sathaapp.com/images/satha2.webp" />
+        <meta name="twitter:image:width" content="1200" /> 
+        <meta name="twitter:image:height" content="620" />
 
         {/* Schema.org Structured Data */}
         <script

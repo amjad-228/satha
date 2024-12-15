@@ -1,9 +1,10 @@
 import { NextConfig } from 'next'
+const isProd = process.env.NODE_ENV === 'production'; // تعريف isProd
 
 const nextConfig: NextConfig = {
 
   async redirects() {
-    return [
+    return isProd ? [
       {
         source: '/:path*', // أي مسار في الموقع
         has: [
@@ -16,24 +17,12 @@ const nextConfig: NextConfig = {
         permanent: true, // التوجيه دائم (301)
       },
     ]
+    : [];
   },
 
   // تفعيل وضع Strict Mode ل React
   reactStrictMode: true, 
-  
-  // تفعيل تقليص JavaScript
-  swcMinify: true, 
 
-  // إعدادات Webpack لتقليل حجم الملفات
-  webpack(config) {
-    config.optimization = {
-      ...config.optimization,
-      splitChunks: {
-        chunks: 'all',
-      },
-    }
-    return config
-  },
 
   // إعدادات الصور لتحسينها
   images: {
@@ -56,12 +45,6 @@ const nextConfig: NextConfig = {
     ]
   },
 
-  // تمكين استعمال PWA
-  pwa: {
-    dest: 'public',
-    register: true,
-    skipWaiting: true,
-  },
 }
 
 export default nextConfig
