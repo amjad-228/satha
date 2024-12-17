@@ -77,7 +77,7 @@ export default function Home() {
           >
             سطحة جدة لنقل وسحب السيارات المتعطلة
           </h2>
-          <p className="text-xl text-gray-700 mb-6">سطحة جدة هي خدمة سطحة سريعة وموثوقة على مدار الساعة</p>
+          <p className={`${isLoaded ?'text-xl text-gray-700 mb-6' : 'text-lg text-gray-600 mb-6'}`}>سطحة جدة هي خدمة سطحة سريعة وموثوقة على مدار الساعة</p>
           <div className="flex justify-center space-x-4 space-x-reverse">
             
             <a 
