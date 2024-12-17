@@ -26,7 +26,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoaded(true); // بعد ثانية، نغير حالة `isLoaded` لتطبيق التدرج
-    }, 1000); // تأخير 1 ثانية
+    }, 7000); // تأخير 1 ثانية
     return () => clearTimeout(timer); // تنظيف المؤقت
   }, []);
 
