@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "sourceMap": true, // تمكين خرائط المصدر
+    "inlineSources": true, // تضمين الشيفرة المصدرية داخل الخرائط
+    "outDir": "./dist", // مخرج البناء
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -15,7 +18,7 @@
     "incremental": true,
     "plugins": [
       {
-        "name": "next"
+        "name": "next"  
       }
     ],
     "paths": {

@@ -2,6 +2,7 @@ import { NextConfig } from 'next'
 const isProd = process.env.NODE_ENV === 'production'; // تعريف isProd
 
 const nextConfig: NextConfig = {
+  productionBrowserSourceMaps: true, // تمكين خرائط المصدر في الإنتاج
 
   async redirects() {
     return isProd ? [
