@@ -3,10 +3,10 @@
 import { Amiri } from 'next/font/google' 
 import dynamic from 'next/dynamic';
 import {FaCar, FaTools, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image';
 
-const amiri = Amiri({ 
+const amiri = Amiri({
   weight: ['400', '700'],
   subsets: ['arabic'],
 })
@@ -17,10 +17,18 @@ const FaPhone = dynamic(() => import('react-icons/fa').then((mod) => mod.FaPhone
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isLoaded, setIsLoaded] = useState(false); // إضافة حالة للتحكم في التأخير
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
-  }
+  };
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true); // بعد ثانية، نغير حالة `isLoaded` لتطبيق التدرج
+    }, 1000); // تأخير 1 ثانية
+    return () => clearTimeout(timer); // تنظيف المؤقت
+  }, []);
 
   return (
     <div className={`${amiri.className} bg-gray-100 min-h-screen text-right`} dir="rtl">
@@ -64,7 +72,9 @@ export default function Home() {
       <main className="container mx-auto px-4 py-8">
         {/* Hero Section */}
         <section className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
+          <h2 
+            className={`text-4xl font-bold mb-4 ${isLoaded ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text' : 'text-blue-600'}`}
+          >
             سطحة جدة لنقل وسحب السيارات المتعطلة
           </h2>
           <p className="text-xl text-gray-700 mb-6">سطحة جدة هي خدمة سطحة سريعة وموثوقة على مدار الساعة</p>
