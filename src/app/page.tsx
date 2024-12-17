@@ -1,16 +1,15 @@
 'use client'
 
-import { Amiri } from 'next/font/google' 
+//import { Amiri } from 'next/font/google' 
 import dynamic from 'next/dynamic';
 import {FaCar, FaTools, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 import { useState, useEffect } from 'react'
 import Image from 'next/image';
 
-const amiri = Amiri({
+/*const amiri = Amiri({
   weight: ['400', '700'],
   subsets: ['arabic'],
-})
-
+})*/
 const FaWhatsapp = dynamic(() => import('react-icons/fa').then((mod) => mod.FaWhatsapp));
 const FaPhone = dynamic(() => import('react-icons/fa').then((mod) => mod.FaPhone));
 
