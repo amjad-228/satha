@@ -26,7 +26,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoaded(true); // بعد ثانية، نغير حالة `isLoaded` لتطبيق التدرج
-    }, 7000); // تأخير 1 ثانية
+    }, 7000); // تأخير 7 ثانية
     return () => clearTimeout(timer); // تنظيف المؤقت
   }, []);
 
@@ -73,7 +73,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="text-center mb-12">
           <h2 
-            className={`text-4xl font-bold mb-4 ${isLoaded ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text' : 'text-blue-600'}`}
+            className={`${isLoaded ? 'text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text' : 'text-xl font-bold mb-4 text-blue-600'}`}
           >
             سطحة جدة لنقل وسحب السيارات المتعطلة
           </h2>
