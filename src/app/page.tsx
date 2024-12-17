@@ -1,7 +1,8 @@
 'use client'
 
 import { Amiri } from 'next/font/google' 
-import { FaWhatsapp, FaPhone, FaCar, FaTools, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
+import dynamic from 'next/dynamic';
+import {FaCar, FaTools, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 import { useState } from 'react'
 import Image from 'next/image';
 
@@ -9,6 +10,10 @@ const amiri = Amiri({
   weight: ['400', '700'],
   subsets: ['arabic'],
 })
+
+const FaWhatsapp = dynamic(() => import('react-icons/fa').then((mod) => mod.FaWhatsapp));
+const FaPhone = dynamic(() => import('react-icons/fa').then((mod) => mod.FaPhone));
+
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -40,7 +45,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-blue-800">سطحة جدة</h1>
+          <h1 className="text-2xl font-bold text-red-800">سطحة جدة</h1>
           <button onClick={toggleMenu} className="md:hidden">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -64,6 +69,7 @@ export default function Home() {
           </h2>
           <p className="text-xl text-gray-700 mb-6">سطحة جدة هي خدمة سطحة سريعة وموثوقة على مدار الساعة</p>
           <div className="flex justify-center space-x-4 space-x-reverse">
+            
             <a 
               href="https://wa.me/966535142000?text=مرحبا،%20أحتاج%20إلى%20خدمة%20سطحة" 
               className="bg-green-500 text-white px-6 py-2 rounded-full flex items-center hover:bg-green-600 transition duration-300"

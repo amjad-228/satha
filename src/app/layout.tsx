@@ -62,6 +62,11 @@ export default function RootLayout({
         <meta name="keywords" content={"سطحة جدة, تطبيق سطحة, اقرب سطحة, سطحة لنقل السيارات, خدمة فتح الأبواب, السيارات المتعطلة, جدة, سطحة قريبة مني, خدمة سحب السيارات في جدة, سطحة لنقل السيارات, سيارات الطوارئ جدة"} />
         <link rel="icon" href="/favicon.ico" />
         
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap"
+            as="style"
+          />
         {/* Primary Meta Tags */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
