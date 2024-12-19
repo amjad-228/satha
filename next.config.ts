@@ -7,15 +7,28 @@ const nextConfig: NextConfig = {
   async redirects() {
     return isProd ? [
       {
-        source: '/:path*', // أي مسار في الموقع
+        source: "/:path*", // أي مسار في الموقع
         has: [
           {
-            type: 'host', // نحدد أن التوجيه يحدث بناءً على المضيف
-            value: 'www.sathaapp.com', // إذا كان الرابط يحتوي على www
+            type: "host", // نحدد أن التوجيه يحدث بناءً على المضيف
+            key: "host",
+            value: "www.sathaapp.com", // إذا كان الرابط يحتوي على www
           },
         ],
-        destination: 'https://sathaapp.com/:path*', // التوجيه إلى sathaapp.com بدون www
+        destination: "https://sathaapp.com/:path*", // التوجيه إلى sathaapp.com بدون www
         permanent: true, // التوجيه دائم (301)
+      },
+      {
+        source: "/:path*", // يطابق أي مسار
+        has: [
+          {
+            type: "protocol",
+            key: "protocol",
+            value: "http", // إعادة التوجيه من HTTP
+          },
+        ],
+        destination: "https://sathaapp.com/:path*", // الوجهة
+        permanent: true, // إعادة توجيه 301
       },
     ]
     : [];
