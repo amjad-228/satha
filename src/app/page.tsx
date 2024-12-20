@@ -54,16 +54,16 @@ export default function Home() {
       <header className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-red-800">سطحة جدة</h1>
-          <button onClick={toggleMenu} className="md:hidden">
+          <button onClick={toggleMenu} className="md:hidden" aria-label="فتح القائمة" aria-expanded={isMenuOpen ? 'true' : 'false'}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
-          <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+          <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block`} role="navigation">
             <ul className="md:flex space-y-2 md:space-y-0 md:space-x-4 md:space-x-reverse">
-              <li><a href="#خدماتنا" className="text-blue-600">خدماتنا</a></li>
-              <li><a href="#من نحن" className="text-blue-600">من نحن</a></li>
-              <li><a href="#اتصل بنا" className="text-blue-600">اتصل بنا</a></li>
+              <li><a href="#خدماتنا" className="text-blue-600" aria-current={window.location.hash === "#خدماتنا" ? "page" : undefined}>خدماتنا</a></li>
+              <li><a href="#من نحن" className="text-blue-600" aria-current={window.location.hash === "#من نحن" ? "page" : undefined}>من نحن</a></li>
+              <li><a href="#اتصل بنا" className="text-blue-600" aria-current={window.location.hash === "#اتصل بنا" ? "page" : undefined}>اتصل بنا</a></li>
             </ul>
           </nav>
         </div>
