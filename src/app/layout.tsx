@@ -76,9 +76,9 @@ export default function RootLayout({
         
         {/* Primary Meta Tags */}
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0" />
         <meta name="author" content="سطحة جدة" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="copyright" content="سطحة جدة لنقل السيارات" />
         <meta name="language" content="ar" />
         <meta name="category" content="Business" />
