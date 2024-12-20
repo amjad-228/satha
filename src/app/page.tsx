@@ -207,9 +207,9 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <p>&copy; {new Date().getFullYear()} سطحة جدة. جميع الحقوق محفوظة.</p>
           <div className="mt-4">
-            <a href="/privacy-policy" className="text-white hover:text-gray-400">سياسة الخصوصية</a>
+            <a className="text-white hover:text-gray-400">سياسة الخصوصية</a>
             <span className="mx-2">|</span>
-            <a href="/terms" className="text-white hover:text-gray-400">الشروط والأحكام</a>
+            <a className="text-white hover:text-gray-400">الشروط والأحكام</a>
           </div>
         </div>
       </footer>
