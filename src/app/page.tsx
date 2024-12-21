@@ -85,6 +85,7 @@ export default function Home() {
               className="bg-green-500 text-white px-6 py-2 rounded-full flex items-center hover:bg-green-600 transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="تواصل عبر واتساب للحصول على خدمة سطحة"
             >
               <FaWhatsapp className="ml-2" />
               واتساب
@@ -92,6 +93,7 @@ export default function Home() {
             <a 
               href="tel:0535142000" 
               className="bg-blue-500 text-white px-6 py-2 rounded-full flex items-center hover:bg-blue-600 transition duration-300"
+              aria-label="اتصل الآن على الرقم 0535142000"
             >
               <FaPhone className="ml-2" />
               اتصل الآن
