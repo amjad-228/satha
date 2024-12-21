@@ -55,7 +55,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-red-700">سطحة جدة</h1>
+          <h1 className="text-2xl font-bold text-red-700">سطحة جدة لنقل السيارات</h1>
           <button onClick={toggleMenu} className="md:hidden" aria-label="فتح القائمة" aria-expanded={isMenuOpen ? 'true' : 'false'}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -84,7 +84,7 @@ export default function Home() {
             
             <a 
               href="https://wa.me/966535142000?text=مرحبا،%20أحتاج%20إلى%20خدمة%20سطحة" 
-              title="الذهاب الى محادثةواتساب"
+              title="الذهاب الى محادثة واتساب"
               className="bg-green-500 text-white px-6 py-2 rounded-full flex items-center hover:bg-green-600 transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
