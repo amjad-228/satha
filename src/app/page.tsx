@@ -61,9 +61,9 @@ export default function Home() {
           </button>
           <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block`} role="navigation">
             <ul className="md:flex space-y-2 md:space-y-0 md:space-x-4 md:space-x-reverse">
-              <li><a href="#خدماتنا" className="text-blue-600" aria-current={window.location.hash === "#خدماتنا" ? "page" : undefined}>خدماتنا</a></li>
-              <li><a href="#من نحن" className="text-blue-600" aria-current={window.location.hash === "#من نحن" ? "page" : undefined}>من نحن</a></li>
-              <li><a href="#اتصل بنا" className="text-blue-600" aria-current={window.location.hash === "#اتصل بنا" ? "page" : undefined}>اتصل بنا</a></li>
+              <li><a href="#خدماتنا" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#خدماتنا" ? "page" : undefined}>خدماتنا</a></li>
+              <li><a href="#من نحن" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#من نحن" ? "page" : undefined}>من نحن</a></li>
+              <li><a href="#اتصل بنا" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#اتصل بنا" ? "page" : undefined}>اتصل بنا</a></li>
             </ul>
           </nav>
         </div>
