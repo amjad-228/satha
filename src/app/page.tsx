@@ -206,15 +206,28 @@ export default function Home() {
       </main>
 
       <footer className="bg-gray-800 text-white py-6">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; {new Date().getFullYear()} سطحة جدة. جميع الحقوق محفوظة.</p>
-          <div className="mt-4">
-            <a className="text-white hover:text-gray-400">سياسة الخصوصية</a>
-            <span className="mx-2">|</span>
-            <a className="text-white hover:text-gray-400">الشروط والأحكام</a>
-          </div>
-        </div>
-      </footer>
+  <div className="container mx-auto px-4 text-center">
+    <p>&copy; {new Date().getFullYear()} سطحة جدة. جميع الحقوق محفوظة.</p>
+    <div className="mt-4 space-y-2 md:space-y-0 md:flex md:justify-center md:items-center">
+      <a 
+        href="/privacy-policy" 
+        className="text-white hover:text-gray-400 focus:outline focus:outline-2 focus:outline-gray-500"
+        aria-label="عرض سياسة الخصوصية"
+      >
+        سياسة الخصوصية
+      </a>
+      <span className="mx-2 hidden md:inline">|</span>
+      <a 
+        href="/terms-and-conditions" 
+        className="text-white hover:text-gray-400 focus:outline focus:outline-2 focus:outline-gray-500"
+        aria-label="عرض الشروط والأحكام"
+      >
+        الشروط والأحكام
+      </a>
+    </div>
+  </div>
+</footer>
+
 
     </div>
   )
