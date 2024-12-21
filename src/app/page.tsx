@@ -36,6 +36,7 @@ export default function Home() {
       <div className="fixed top-1/2 left-0 transform -translate-y-1/2 flex flex-col items-center space-y-4 z-10">
         <a 
           href="https://wa.me/966535142000?text=مرحبا،%20أحتاج%20إلى%20خدمة%20سطحة" 
+          title="الذهاب الى محادثة واتساب"
           className="bg-green-500 text-white p-4 rounded-full flex items-center hover:bg-green-600 transition duration-300"
           target="_blank"
           rel="noopener noreferrer"
@@ -44,6 +45,7 @@ export default function Home() {
         </a>
         <a 
           href="tel:0535142000" 
+          title="اجراء مكالمة هاتفية"
           className="bg-blue-500 text-white p-4 rounded-full flex items-center hover:bg-blue-600 transition duration-300"
         >
           <FaPhone className="ml-2" />
@@ -61,9 +63,9 @@ export default function Home() {
           </button>
           <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block`} role="navigation">
             <ul className="md:flex space-y-2 md:space-y-0 md:space-x-4 md:space-x-reverse">
-              <li><a href="#خدماتنا" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#خدماتنا" ? "page" : undefined}>خدماتنا</a></li>
-              <li><a href="#من نحن" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#من نحن" ? "page" : undefined}>من نحن</a></li>
-              <li><a href="#اتصل بنا" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#اتصل بنا" ? "page" : undefined}>اتصل بنا</a></li>
+              <li><a href="#خدماتنا" title="الذهاب الى قسم خدماتنا" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#خدماتنا" ? "page" : undefined}>خدماتنا</a></li>
+              <li><a href="#من نحن" title="الذهاب الى قسم من نحن" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#من نحن" ? "page" : undefined}>من نحن</a></li>
+              <li><a href="#اتصل بنا" title="الذهاب الى قسم اتصل بنا" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#اتصل بنا" ? "page" : undefined}>اتصل بنا</a></li>
             </ul>
           </nav>
         </div>
@@ -82,6 +84,7 @@ export default function Home() {
             
             <a 
               href="https://wa.me/966535142000?text=مرحبا،%20أحتاج%20إلى%20خدمة%20سطحة" 
+              title="الذهاب الى محادثةواتساب"
               className="bg-green-500 text-white px-6 py-2 rounded-full flex items-center hover:bg-green-600 transition duration-300"
               target="_blank"
               rel="noopener noreferrer"
@@ -92,6 +95,7 @@ export default function Home() {
             </a>
             <a 
               href="tel:0535142000" 
+              title="اجراء مكالمة هاتفية"
               className="bg-blue-500 text-white px-6 py-2 rounded-full flex items-center hover:bg-blue-600 transition duration-300"
               aria-label="اتصل الآن على الرقم 0535142000"
             >
@@ -211,6 +215,7 @@ export default function Home() {
     <div className="mt-4 space-y-2 md:space-y-0 md:flex md:justify-center md:items-center">
       <a 
         href="/privacy-policy" 
+        title="عرض سياسة الخصوصية"
         className="text-white hover:text-gray-400 focus:outline focus:outline-2 focus:outline-gray-500"
         aria-label="عرض سياسة الخصوصية"
       >
@@ -219,6 +224,7 @@ export default function Home() {
       <span className="mx-2 hidden md:inline">|</span>
       <a 
         href="/terms-and-conditions" 
+        title="عرض الشروط والاحكام"
         className="text-white hover:text-gray-400 focus:outline focus:outline-2 focus:outline-gray-500"
         aria-label="عرض الشروط والأحكام"
       >
