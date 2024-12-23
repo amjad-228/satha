@@ -70,16 +70,7 @@ export default function RootLayout({
           href="https://sathaapp.com/#خدماتنا/"
         />
 
-        {/* Google Analytics */} 
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7HMBRLRML" 
-        />
-        <Script id="google-analytics">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-Y7HMBRLRML', { 'cookie_flags': 'SameSite=None; Secure' });
-          `}
-        </Script>
+        
         
         {/* Primary Meta Tags */}
         <meta charSet="UTF-8" />
@@ -366,6 +357,16 @@ export default function RootLayout({
             }),
           }}
         />
+        {/* Google Analytics */} 
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7HMBRLRML" 
+        />
+        <Script id="google-analytics">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y7HMBRLRML', { 'cookie_flags': 'SameSite=None; Secure' });
+          `}
+        </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

@@ -1,11 +1,10 @@
 import { NextConfig } from 'next'
-const isProd = process.env.NODE_ENV === 'production'; // تعريف isProd
 
 const nextConfig: NextConfig = {
   productionBrowserSourceMaps: true, // تمكين خرائط المصدر في الإنتاج
 
   async redirects() {
-    return isProd ? [
+    return [
       {
         source: '/:path*', // أي مسار في الموقع
         has: [
@@ -18,11 +17,17 @@ const nextConfig: NextConfig = {
         permanent: true, // التوجيه دائم (301)
       },
     ]
-    : [];
   },
 
   // تفعيل وضع Strict Mode ل React
   reactStrictMode: true, 
+  webpack(config, { isServer }) {
+    if (!isServer) {
+      // تأكيد تصفية ملفات CSS و JS في الإنتاج
+      config.optimization!.minimize = true; // استخدام "!" للإشارة إلى أن minimize يجب أن يكون موجودًا
+    }
+    return config;
+  },
 
 
   // إعدادات الصور لتحسينها
