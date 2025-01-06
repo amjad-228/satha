@@ -1,0 +1,41 @@
+.articleContent {
+    @apply text-gray-800 leading-relaxed;
+  }
+  
+  .articleContent h1 {
+    @apply text-3xl font-bold mb-4 mt-6;
+  }
+  
+  .articleContent h2 {
+    @apply text-2xl font-semibold mb-3 mt-5;
+  }
+  
+  .articleContent h3 {
+    @apply text-xl font-semibold mb-2 mt-4;
+  }
+  
+  .articleContent p {
+    @apply mb-4;
+  }
+  
+  .articleContent ul, .articleContent ol {
+    @apply mb-4 ml-6;
+  }
+  
+  .articleContent li {
+    @apply mb-2;
+  }
+  
+  .articleContent ul {
+    @apply list-disc;
+  }
+  
+  .articleContent ol {
+    @apply list-decimal;
+  }
+  
+  .articleContent a {
+    @apply text-blue-600 hover:text-blue-800 underline;
+  }
+  
+  

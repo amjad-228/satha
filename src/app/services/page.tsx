@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { FaCar, FaTruck, FaKey, FaArrowLeft } from 'react-icons/fa'
+import { FaCar, FaTruck, FaKey, FaArrowLeft, FaHome, FaBook, FaLightbulb } from 'react-icons/fa'
 import { Button } from '@/components/ui/button'
 
 const services = [
@@ -30,19 +30,23 @@ const services = [
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white py-12 px-4 sm:px-6 lg:px-8" dir="rtl">
+    <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white py-12 px-4 sm:px-6 lg:px-8 -mt-6" dir="rtl">
       <div className="max-w-7xl mx-auto">
-        <nav className="mb-8">
-          <Link href="/" className="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-              <path
-                fillRule="evenodd"
-                d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-            العودة إلى الصفحة الرئيسية
+        <nav className="mb-10 flex justify-between items-center">
+          <Link href="/" className=" bg-gradient-to-l from-blue-600 to-purple-600 text-transparent bg-clip-text hover:text-blue-800 transition duration-300 flex items-center">
+            <FaHome className="ml-1 text-blue-600" />
+            الرئيسية
           </Link>
+          <div className="flex space-x-6 space-x-reverse ">
+            <Link href="/blog" className=" bg-gradient-to-l from-blue-600 to-purple-600 text-transparent bg-clip-text hover:text-blue-800 transition duration-300 flex items-center">
+              <FaBook className="ml-1 text-blue-600" />
+              المدونة
+            </Link>
+            <Link href="/faq" className=" bg-gradient-to-l from-blue-600 to-purple-600 text-transparent bg-clip-text hover:text-blue-800 transition duration-300 flex items-center">
+              <FaLightbulb className="ml-1 text-blue-600" />
+              الأسئلة الشائعة
+            </Link>
+          </div>
         </nav>
 
         <h1 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
@@ -92,7 +96,7 @@ export default function ServicesPage() {
                 <Button
                   asChild
                   size="lg"
-                  className="rounded-[50] text-white font-semibold py-3 px-6 shadow-lg transform transition duration-300 hover:scale-105"
+                  className="rounded-[70] text-white font-semibold py-3 px-6 shadow-lg transform transition duration-300 hover:scale-105"
                   style={{
                     backgroundColor:
                       service.color === 'blue'

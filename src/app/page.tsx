@@ -2,11 +2,14 @@
 
 //import { Amiri } from 'next/font/google' 
 import dynamic from 'next/dynamic';
-import {FaCar, FaTools, FaMapMarkerAlt, FaClock, FaArrowLeft } from 'react-icons/fa'
+import {} from 'react-icons/fa'
+import { Car, Axis3d, Key, MapPin, Clock, ArrowLeft } from 'lucide-react';
 import { useState, useEffect } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
 import {Button} from '@/components/ui/button'
+import { SocialMediaButtons } from '@/components/SocialMediaButtons'
+import Testimonials from '@/components/Testimonials'
 
 
 /*const amiri = Amiri({
@@ -18,12 +21,8 @@ const FaPhone = dynamic(() => import('react-icons/fa').then((mod) => mod.FaPhone
 
 
 export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isLoaded, setIsLoaded] = useState(false); // إضافة حالة للتحكم في التأخير
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -56,34 +55,18 @@ export default function Home() {
       </div>
 
       {/* Header */}
-      <header className="bg-white shadow-md">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-red-800">سطحة جدة لنقل السيارات</h1>
-          <button onClick={toggleMenu} className="md:hidden" aria-label="فتح القائمة" aria-expanded={isMenuOpen ? 'true' : 'false'}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-          <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block`} role="navigation">
-            <ul className="md:flex space-y-2 md:space-y-0 md:space-x-4 md:space-x-reverse">
-              <li><a href="#خدماتنا" title="الذهاب الى قسم خدماتنا" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#خدماتنا" ? "page" : undefined}>خدماتنا</a></li>
-              <li><a href="#من نحن" title="الذهاب الى قسم من نحن" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#من نحن" ? "page" : undefined}>من نحن</a></li>
-              <li><a href="#اتصل بنا" title="الذهاب الى قسم اتصل بنا" className="text-blue-600" aria-current={typeof window !== "undefined" && window.location.hash === "#اتصل بنا" ? "page" : undefined}>اتصل بنا</a></li>
-              <li><Link href="/faq" title="عرض الأسئلة الشائعة" className="text-blue-600 hover:text-yellow-600 transition duration-300">الأسئلة الشائعة</Link></li>
-              <li><Link href="/blog" title="عرض المقالات" className="text-blue-600 hover:text-yellow-600 transition duration-300">المقالات</Link></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
+      
       <main className="container mx-auto px-4 py-8">
         {/* Hero Section */}
+        <div className="mt-4 w-full flex justify-center">
+            <SocialMediaButtons />
+          </div>
         <section className="text-center mb-20">
-          <h2 
+          <h1 
             className={`${isLoaded ? 'text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text' : 'text-xl font-bold mb-4 text-blue-600'}`}
           >
             سطحة جدة لنقل وسحب السيارات المتعطلة
-          </h2>
+          </h1>
           <p className={`${isLoaded ?'text-xl text-gray-700 mb-6' : 'text-lg text-gray-600 mb-6'}`}>سطحة جدة هي خدمة سطحة سريعة وموثوقة على مدار الساعة</p>
           <div className="flex justify-center space-x-4 space-x-reverse">
             
@@ -118,7 +101,7 @@ export default function Home() {
           <Link href="/services/car-transport" className="bg-white p-6 rounded-lg shadow-md shadow-inner hover:shadow-lg transition duration-300 flex items-center">
               <div>
                 <div className="flex items-center">
-                  <FaCar className="text-lg text-blue-500 mb-2" />
+                  <Car className="text-lg text-blue-500 mb-2" />
                   <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">نقل السيارات</h4>
                 </div>
                 <p className="text-md text-gray-700 font-semibold text-center">أقرب سطحة في جدة لنقل سريع وآمن لسيارتك إلى أي مكان في جدة</p>
@@ -137,7 +120,7 @@ export default function Home() {
             <Link href="/services/car-towing" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center">
               <div>
                 <div className="flex items-center">
-                  <FaTools className="text-lg text-blue-500 mb-2" />
+                  <Axis3d className="text-lg text-blue-500 mb-2" />
                   <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">سحب السيارات المتعطلة</h4>
                 </div>
                 <p className="text-md text-gray-700 font-semibold text-center">سطحة جدة أقرب خدمة سحب للسيارات المتعطلة بسرعة واحترافية</p>
@@ -156,7 +139,7 @@ export default function Home() {
             <Link href="/services/car-unlocking" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center">
               <div>
                 <div className="flex items-center">
-                  <FaTools className="text-lg text-blue-500 mb-2" />
+                  <Key className="text-lg text-blue-500 mb-2" />
                   <h4 className="text-lg text-gray-900 font-semibold mr-3 mb-1">فتح أبواب السيارات المقفلة</h4>
                 </div>
                 <p className="text-md text-gray-700 font-semibold text-center">أقرب سطحة في جدة لفتح أبواب سيارتك المقفلة بدون أي أضرار</p>
@@ -178,11 +161,11 @@ export default function Home() {
           <Button
             asChild
             size="lg"
-            className="rounded-[50] bg-gradient-to-r from-green-600 to-blue-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3 px-6 shadow-lg transform transition duration-300 hover:scale-105 "
+            className="rounded-[70] bg-gradient-to-r from-green-600 to-blue-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3 px-6 shadow-lg transform transition duration-300 hover:scale-105 "
           >
             <Link href="/services" className="flex items-center">
                 عرض جميع الخدمات
-                <FaArrowLeft className="mr-2 h-5 w-5" />
+                <ArrowLeft className="mr-2 h-5 w-5" />
              
             </Link>
           </Button>
@@ -219,54 +202,41 @@ export default function Home() {
                 <span className="text-gray-900">هاتف: 0535142000</span>
               </div>
               <div className="flex items-center">
-                <FaMapMarkerAlt className="text-red-500 text-2xl ml-2" />
+                <MapPin className="text-red-500 text-2xl ml-2" />
                 <span className="text-gray-900">العنوان: جدة، المملكة العربية السعودية</span>
               </div>
               <div className="flex items-center">
-                <FaClock className="text-orange-500 text-2xl ml-2" />
+                <Clock className="text-orange-500 text-2xl ml-2" />
                 <span className="text-gray-900">نحن متاحون على مدار الساعة</span>
               </div>
             </div>
           </div>
         </section>
 
+        {/* Testimonials Section */}
+        <section id="آراء عملاؤنا" className="mb-12">
+          <Testimonials />
+        </section>
+
         {/* FAQ Section */}
-        <section className="mb-12 text-center">
+        <section className="mb-16 text-center">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-yellow-600 to-red-600 text-transparent bg-clip-text">الأسئلة الشائعة</h3>
           <p className="text-lg text-gray-700 mb-4">هل لديك أسئلة حول خدماتنا؟ تفضل بزيارة صفحة الأسئلة الشائعة للحصول على إجابات لأكثر الأسئلة شيوعًا.</p>
           <Link href="/faq" className="inline-block bg-yellow-500 text-white px-6 py-2 rounded-full hover:bg-yellow-600 transition duration-300">
             الأسئلة الشائعة
           </Link>
         </section>
+        
+        {/* Blog Section */}
+        <section className="mb-12 text-center">
+          <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-green-600 text-transparent bg-clip-text">المدونة</h3>
+          <p className="text-lg text-gray-700 mb-4">اكتشف أحدث المقالات والنصائح المفيدة حول العناية بسيارتك وخدمات السطحة.</p>
+          <Link href="/blog" className="inline-block bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300">
+            تصفح المدونة
+          </Link>
+        </section>
 
       </main>
-
-      <footer className="bg-gray-800 text-white py-6">
-  <div className="container mx-auto px-4 text-center">
-    <p>&copy; {new Date().getFullYear()} سطحة جدة. جميع الحقوق محفوظة.</p>
-    <div className="mt-4 space-y-2 md:space-y-0 md:flex md:justify-center md:items-center">
-      <a 
-        href="/privacy-policy" 
-        title="عرض سياسة الخصوصية"
-        className="text-white hover:text-gray-400 focus:outline focus:outline-2 focus:outline-gray-500"
-        aria-label="عرض سياسة الخصوصية"
-      >
-        سياسة الخصوصية
-      </a>
-      <span className="mx-2 md:inline">|</span>
-      <a 
-        href="/terms-and-conditions" 
-        title="عرض الشروط والاحكام"
-        className="text-white hover:text-gray-400 focus:outline focus:outline-2 focus:outline-gray-500"
-        aria-label="عرض الشروط والأحكام"
-      >
-      الشروط والأحكام
-      </a>
-    </div>
-  </div>
-</footer>
-
-
     </div>
   )
 }

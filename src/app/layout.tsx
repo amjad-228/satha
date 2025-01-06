@@ -3,6 +3,8 @@ import Script from "next/script";
 import localFont from "next/font/local";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 
 const geistSans = localFont({
@@ -57,7 +59,6 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl">
       <head>
-        
         {/* title and description*/}
         <title>سطحة جدة - أفضل واقرب خدمة سطحة في جدة 0535142000 </title>
         <meta name="description" content={"سطحة جدة هي اقرب سطحة في جدة 0535142000 توفر خدمة سحب السيارات بأسعار مناسبة. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان."} />
@@ -372,9 +373,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <SpeedInsights />
-        {children}
+              <div className="flex flex-col min-h-screen">
+                <Navbar />
+                <main className="flex-grow bg-gradient-to-b from-purple-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+                <SpeedInsights />
+                  {children}
+                </main>
+                <Footer />
+              </div>
+        
       </body>
     </html>
   );
 }
+

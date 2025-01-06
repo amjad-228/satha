@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { FaChevronDown, FaChevronUp, FaQuestionCircle } from 'react-icons/fa'
+import { FaChevronDown, FaChevronUp, FaQuestionCircle, FaHome, FaBook, FaShieldAlt } from 'react-icons/fa'
 
 const faqs = [
   {
@@ -35,15 +35,23 @@ export default function FAQ() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-yellow-100 to-white py-12 px-4 sm:px-6 lg:px-8" dir="rtl">
+    <div className="min-h-screen bg-gradient-to-b from-yellow-100 to-white py-12 px-4 sm:px-6 lg:px-8 -mt-6" dir="rtl">
       <div className="max-w-3xl mx-auto">
-        <nav className="mb-8">
-          <Link href="/" className="text-yellow-600 hover:text-yellow-800 transition duration-300 flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
-            </svg>
-            العودة إلى الصفحة الرئيسية
+        <nav className="mb-10 flex justify-between items-center">
+          <Link href="/" className="text-yellow-700 hover:text-yellow-800 transition duration-300 flex items-center">
+            <FaHome className="ml-2" />
+            الرئيسية
           </Link>
+          <div className="flex space-x-4 space-x-reverse">
+            <Link href="/blog" className="text-yellow-700 hover:text-yellow-800 transition duration-300 flex items-center">
+              <FaBook className="ml-1" />
+              المدونة
+            </Link>
+            <Link href="/services" className="text-yellow-700 hover:text-yellow-800 transition duration-300 flex items-center">
+              <FaShieldAlt className="ml-1" />
+              الخدمات
+            </Link>
+          </div>
         </nav>
         <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition-all hover:scale-105 duration-300">
           <div className="px-4 py-5 sm:p-6">
