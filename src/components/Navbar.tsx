@@ -34,7 +34,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div className="flex items-center space-x-2">
-              <Button asChild className="shadow-lg rounded-[60] w-f h-8">
+              <Button asChild className="shadow-lg rounded-[50] bg-gradient-to-r from-blue-600 to-purple-600 w-f h-8">
                 <Link href="/blog">المدونة</Link>
               </Button>
               <div className="-mr-2 flex items-center sm:hidden">

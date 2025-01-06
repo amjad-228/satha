@@ -39,7 +39,7 @@ export default function Home() {
         <a 
           href="tel:0535142000" 
           title="اجراء مكالمة هاتفية"
-          className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-4 py-4 rounded-full flex items-center transition duration-300 hover:scale-105"
+          className="bg-blue-600 hover:from-indigo-700 hover:to-purple-700 text-white px-4 py-4 rounded-full flex items-center transition duration-300 hover:scale-105"
         >
           <FaPhone className="ml-2" />
         </a>
@@ -73,7 +73,7 @@ export default function Home() {
           <a 
               href="tel:0535142000" 
               title="اجراء مكالمة هاتفية"
-              className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-6 py-2 rounded-full flex items-center transition duration-300 hover:scale-105"
+              className="bg-blue-600 hover:from-indigo-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full flex items-center transition duration-300 hover:scale-105"
               aria-label="اتصل الآن على الرقم 0535142000"
             >
               <FaPhone className="ml-2" />
@@ -83,7 +83,7 @@ export default function Home() {
             <a 
               href="https://wa.me/966535142000?text=مرحبا،%20أحتاج%20إلى%20خدمة%20سطحة" 
               title="الذهاب الى محادثة واتساب"
-              className="bg-green-500 text-white px-6 py-2 rounded-full flex items-center hover:bg-green-600 transition duration-300 hover:scale-105"
+              className="bg-green-500 hover:bg-green-700 text-white px-6 py-2 rounded-full flex items-center hover:bg-green-600 transition duration-300 hover:scale-105"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="تواصل عبر واتساب للحصول على خدمة سطحة"
@@ -161,7 +161,7 @@ export default function Home() {
           <Button
             asChild
             size="lg"
-            className="rounded-[70] bg-gradient-to-r from-green-600 to-blue-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3 px-6 shadow-lg transform transition duration-300 hover:scale-105 "
+            className="rounded-[50] bg-gradient-to-r from-green-600 to-blue-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3 px-6 shadow-lg transform transition duration-300 hover:scale-105 "
           >
             <Link href="/services" className="flex items-center">
                 عرض جميع الخدمات
