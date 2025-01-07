@@ -96,7 +96,7 @@ export default function ServicesPage() {
                 <Button
                   asChild
                   size="lg"
-                  className="rounded-[50] text-white font-semibold py-3 px-6 shadow-lg transform transition duration-300 hover:scale-105"
+                  className="rounded-[70] text-white font-semibold py-3 px-6 shadow-lg transform transition duration-300 hover:scale-105"
                   style={{
                     backgroundColor:
                       service.color === 'blue'

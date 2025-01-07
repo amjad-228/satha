@@ -161,7 +161,7 @@ export default function Home() {
           <Button
             asChild
             size="lg"
-            className="rounded-[50] bg-gradient-to-r from-green-600 to-blue-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3 px-6 shadow-lg transform transition duration-300 hover:scale-105 "
+            className="rounded-[70] bg-gradient-to-r from-green-600 to-blue-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3 px-6 shadow-lg transform transition duration-300 hover:scale-105 "
           >
             <Link href="/services" className="flex items-center">
                 عرض جميع الخدمات
