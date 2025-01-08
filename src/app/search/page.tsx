@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import { FaArrowLeft } from 'react-icons/fa'
+import { Suspense } from 'react'
 
 // هذه الوظيفة ستحتاج إلى تنفيذ فعلي للبحث في محتوى الموقع
 const searchContent = async (query: string) => {
@@ -20,7 +21,15 @@ const searchContent = async (query: string) => {
   )
 }
 
-export default function SearchResults() {
+export default function SearchResultsPage() {
+  return (
+    <Suspense fallback={<div>جاري التحميل...</div>}>
+      <SearchResults />
+    </Suspense>
+  )
+}
+
+function SearchResults() {
   const searchParams = useSearchParams()
   const query = searchParams.get('q') || ''
   const [results, setResults] = useState<Array<{ title: string, url: string }>>([])
@@ -62,4 +71,3 @@ export default function SearchResults() {
     </div>
   )
 }
-

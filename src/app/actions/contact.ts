@@ -12,9 +12,10 @@ export async function submitContactForm(formData: FormData) {
   const email = formData.get('email')
   const phone = formData.get('phone')
   const message = formData.get('message')
-
   console.log('بدء عملية إرسال النموذج:', { name, email, phone })
-
+  if (!name || !email || !phone || !message) {
+    return { success: false, error: 'جميع الحقول مطلوبة' }
+  }
   const msg = {
     to: 'sathatjida@gmail.com', // قم بتغيير هذا إلى بريدك الإلكتروني
     from: 'aymanalsabry83@gmail.com', // يجب أن يكون هذا بريد إلكتروني مُتحقق منه في حساب SendGrid الخاص بك
@@ -41,7 +42,6 @@ export async function submitContactForm(formData: FormData) {
     return { success: true }
   } catch (error) {
     console.error('حدث خطأ أثناء إرسال البريد الإلكتروني:', error)
-    return { success: false, error: JSON.stringify(error) }
+    return { success: false, error: 'حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.' }
   }
 }
-
