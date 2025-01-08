@@ -2,10 +2,8 @@
 
 import sgMail from '@sendgrid/mail'
 
-const sendGridApiKey = process.env.SENDGRID_API_KEY;
-
 // قم بتعيين مفتاح API الخاص بـ SendGrid
-sgMail.setApiKey(sendGridApiKey as string)
+sgMail.setApiKey('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' as string)
 
 export async function submitContactForm(formData: FormData) {
   const name = formData.get('name')
