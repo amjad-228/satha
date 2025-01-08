@@ -33,21 +33,21 @@ const Navbar = () => {
                 <span className="text-xl font-bold text-indigo-600 dark:text-white">سطحة جدة</span>
               </Link>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center">
               <Button asChild className="shadow-lg rounded-[50] bg-gradient-to-r from-blue-600 to-purple-600 w-f h-8">
                 <Link href="/blog">المدونة</Link>
               </Button>
-              <div className="-mr-2 flex items-center sm:hidden">
+              <div className="mr-4 flex items-center sm:hidden">
                 <button
                   onClick={() => setIsOpen(!isOpen)}
-                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 dark:text-gray-300 dark:hover:bg-gray-700/10 dark:hover:text-gray-100 dark:focus:ring-indigo-500"
+                  className="inline-flex items-center justify-center rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 dark:text-gray-300 dark:hover:bg-gray-700/10 dark:hover:text-gray-100 dark:focus:ring-indigo-500"
                   aria-expanded="false"
                 >
                   <span className="sr-only">openMainMenu</span>
                   {isOpen ? (
-                    <X className="block h-4 w-4" aria-hidden="true" />
+                    <X className="block h-6 w-6" aria-hidden="true" />
                   ) : (
-                    <Menu className="block h-4 w-4" aria-hidden="true" />
+                    <Menu className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </button>
               </div>
@@ -57,9 +57,11 @@ const Navbar = () => {
           <div className={`hidden sm:flex sm:space-x-8 mt-4 sm:space-x-reverse`}>
             <NavLink href="/">الرئيسية</NavLink>
             <NavLink href="/services">خدماتنا</NavLink>
-            <NavLink href="#من نحن">من نحن</NavLink>
-            <NavLink href="#اتصل بنا">اتصل بنا</NavLink>
-            <NavLink href="/#">آراء عملاؤنا</NavLink>
+            <NavLink href="/about">من نحن</NavLink>
+            <NavLink href="/coverage">التغطية الجغرافية</NavLink>
+            <NavLink href="/#مناطق الخدمة">مناطق الخدمة</NavLink>
+            <NavLink href="/contact">اتصل بنا</NavLink>
+            <NavLink href="/#آراء عملاؤنا">آراء عملاؤنا</NavLink>
             <NavLink href="/faq">الأسئلة الشائعة</NavLink>
             <NavLink href="/blog">المدونة</NavLink>
           </div>
@@ -79,7 +81,9 @@ const Navbar = () => {
             <NavLink href="/">الرئيسية</NavLink>
             <NavLink href="/services">خدماتنا</NavLink>
             <NavLink href="/about">من نحن</NavLink>
-            <NavLink href="/#اتصل بنا">اتصل بنا</NavLink>
+            <NavLink href="/coverage">التغطية الجغرافية</NavLink>
+            <NavLink href="/#مناطق الخدمة">مناطق الخدمة</NavLink>
+            <NavLink href="/contact">اتصل بنا</NavLink>
             <NavLink href="/#آراء عملاؤنا">آراء عملاؤنا</NavLink>
             <NavLink href="/faq">الأسئلة الشائعة</NavLink>
             <NavLink href="/blog">المدونة</NavLink>

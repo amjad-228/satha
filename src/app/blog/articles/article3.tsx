@@ -44,7 +44,7 @@ export const article3: ArticleType = {
         <li>أبلغ الشرطة فوراً</li>
         <li>اتصل بشركة التأمين</li>
         <li>راجع كاميرات المراقبة القريبة</li>
-        <li>تواصل مع <a href="https://www.sathaapp.com" class="text-blue-600 hover:text-blue-800">سطحة جدة</a> للمساعدة</li>
+        <li>تواصل مع <a href="https://www.sathaapp.com" class="text-blue-600 hover:text-blue-800">سطحة جده</a> للمساعدة</li>
       </ol>
     </div>
 
@@ -87,6 +87,6 @@ export const article3: ArticleType = {
   `,
   date: '2024-01-15',
   category: 'أمان',
-  image: '/images/satha2.webp',
+  image: '/images/blog/article2.webp',
 }
 

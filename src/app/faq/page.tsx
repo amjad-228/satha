@@ -1,8 +1,8 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { useState } from 'react'
-import { FaChevronDown, FaChevronUp, FaQuestionCircle, FaHome, FaBook, FaShieldAlt } from 'react-icons/fa'
+import { FaChevronDown, FaChevronUp, FaQuestionCircle, FaHome, FaBook, FaShieldAlt, FaSearch } from 'react-icons/fa'
 
 const faqs = [
   {
@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "ما هي تكلفة خدمة السطحة؟",
-    answer: "تعتمد التكلفة على عدة عوامل مثل المسافة ونوع السيارة. سنقدم لك تقديرًا دقيقًا للتكلفة عند طلب الخدمة."
+    answer: "تعتمد التكلفة على عدة عوامل مثل المسافة ون��ع السيارة. سنقدم لك تقديرًا دقيقًا للتكلفة عند طلب الخدمة."
   },
   {
     question: "هل خدمتكم متوفرة 24 ساعة؟",
@@ -24,15 +24,45 @@ const faqs = [
   {
     question: "هل تقدمون خدمات أخرى غير سحب السيارات؟",
     answer: "نعم، بالإضافة إلى سحب السيارات، نقدم خدمات فتح الأبواب المغلقة وشحن البطاريات وتغيير الإطارات."
+  },
+  {
+    question: "ما هي المناطق التي تغطيها خدمتكم؟",
+    answer: "نغطي جميع أنحاء مدينة جدة وضواحيها. يمكنك الاطلاع على خريطة مناطق الخدمة على صفحتنا الرئيسية."
+  },
+  {
+    question: "كم من الوقت يستغرق وصول السطحة؟",
+    answer: "نسعى جاهدين للوصول في أسرع وقت ممكن، عادة في غضون 30 إلى 45 دقيقة، اعتمادًا على موقعك وحركة المرور."
+  },
+  {
+    question: "هل يمكنني حجز خدمة السطحة مسبقًا؟",
+    answer: "نعم، يمكنك حجز خدمة السطحة مسبقًا لنقل سيارتك في وقت محدد. يرجى الاتصال بنا لترتيب ذلك."
+  },
+  {
+    question: "ما هي طرق الدفع المقبولة؟",
+    answer: "نقبل الدفع النقدي وبطاقات الائتمان والدفع عبر التطبيقات الإلكترونية مثل Apple Pay وSTC Pay."
+  },
+  {
+    question: "هل لديكم تأمين على السيارات أثناء النقل؟",
+    answer: "نعم، جميع عمليات النقل مؤمنة بالكامل لضمان سلامة سيارتك."
   }
 ]
 
 export default function FAQ() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredFaqs, setFilteredFaqs] = useState(faqs);
 
   const toggleQuestion = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
+
+  useEffect(() => {
+    const filtered = faqs.filter(faq => 
+      faq.question.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      faq.answer.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredFaqs(filtered);
+  }, [searchTerm]);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-yellow-100 to-white py-12 px-4 sm:px-6 lg:px-8 -mt-6" dir="rtl">
@@ -61,8 +91,21 @@ export default function FAQ() {
               <FaQuestionCircle className="text-5xl text-yellow-500" />
             </div>
             
+            <div className="mb-6">
+              <div className="relative">
+                <input
+                  type="text"
+                  placeholder="ابحث في الأسئلة الشائعة..."
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="text-gray-700 w-full px-4 py-2 pr-10 border rounded-full focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                />
+                <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+              </div>
+            </div>
+            
             <div className="space-y-4">
-              {faqs.map((faq, index) => (
+              {filteredFaqs.map((faq, index) => (
                 <div key={index} className="border-b border-gray-200 pb-4">
                   <button
                     onClick={() => toggleQuestion(index)}

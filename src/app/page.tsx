@@ -10,6 +10,8 @@ import Link from 'next/link';
 import {Button} from '@/components/ui/button'
 import { SocialMediaButtons } from '@/components/SocialMediaButtons'
 import Testimonials from '@/components/Testimonials'
+import SearchBar from '@/components/SearchBar' // Added import for SearchBar
+import { motion } from 'framer-motion';
 
 
 /*const amiri = Amiri({
@@ -18,7 +20,20 @@ import Testimonials from '@/components/Testimonials'
 })*/
 const FaWhatsapp = dynamic(() => import('react-icons/fa').then((mod) => mod.FaWhatsapp));
 const FaPhone = dynamic(() => import('react-icons/fa').then((mod) => mod.FaPhone));
+// استيراد المكون مع تعطيل الـ SSR
+const LocalMapComponent = dynamic(() => import('@/components/MapComponent'), {
+  ssr: false, // تعطيل الـ SSR للمكون
+})
 
+// بيانات مناطق التغطية
+const coverageAreas = [
+  { name: 'وسط جدة', response: '15-20 دقيقة' },
+  { name: 'شمال جدة', response: '20-25 دقيقة' },
+  { name: 'جنوب جدة', response: '20-25 دقيقة' },
+  { name: 'شرق جدة', response: '25-30 دقيقة' },
+  { name: 'غرب جدة', response: '15-20 دقيقة' },
+  { name: 'أبحر الشمالية', response: '30-35 دقيقة' },
+];
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false); // إضافة حالة للتحكم في التأخير
@@ -92,6 +107,11 @@ export default function Home() {
               واتساب
             </a>
           </div>
+        </section>
+
+        {/* SearchBar Section */}
+        <section className="mb-12">
+          <SearchBar />
         </section>
 
         {/* خدماتنا Section */}
@@ -187,6 +207,49 @@ export default function Home() {
           </ul>
         </section>
 
+        {/* قسم التغطية الجغرافية */}
+        <section className="mb-12">
+          <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-green-600 text-transparent bg-clip-text">التغطية الجغرافية</h3>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
+              {coverageAreas.slice(0, 6).map((area, index) => (
+                <motion.div 
+                  key={index}
+                  className="text-gray-700 bg-gray-100 p-4 rounded-lg"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <h4 className="font-semibold text-lg mb-2">{area.name}</h4>
+                  <p className="text-sm text-gray-600">
+                    <Clock className="inline mr-2 text-blue-500" />
+                    {area.response}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+            <div className="text-center">
+              <Button
+                asChild
+                size="lg"
+                className="rounded-full bg-gradient-to-r from-blue-500 to-green-500 hover:from-blue-600 hover:to-green-600 text-white font-semibold py-2 px-6 shadow-lg transform transition duration-300 hover:scale-105"
+              >
+                <Link href="/coverage" className="flex items-center justify-center">
+                  عرض جميع مناطق التغطية
+                  <ArrowLeft className="mr-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Interactive Map Section */}
+        <section id="مناطق الخدمة" className="mb-12">
+          <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-green-600 text-transparent bg-clip-text">مناطق الخدمة</h3>
+          <div className="bg-white p-4 rounded-lg shadow-md">
+            <LocalMapComponent />
+          </div>
+        </section>
+
         {/* اتصل بنا Section */}
         <section id="اتصل بنا" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">اتصل بنا</h3>
@@ -240,3 +303,4 @@ export default function Home() {
     </div>
   )
 }
+

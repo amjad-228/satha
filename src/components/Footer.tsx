@@ -19,7 +19,9 @@ const Footer = () => {
               <li><Link href="/" className="text-indigo-200 hover:text-white">الرئيسية</Link></li>
               <li><Link href="/services" className="text-indigo-200 hover:text-white">خدماتنا</Link></li>
               <li><Link href="/about" className="text-indigo-200 hover:text-white">من نحن</Link></li>
-              <li><Link href="/#اتصل بنا" className="text-indigo-200 hover:text-white">اتصل بنا</Link></li>
+              <li><Link href="/coverage" className="text-indigo-200 hover:text-white">التغطية الجغرافية</Link></li>
+              <li><Link href="/#مناطق الخدمة" className="text-indigo-200 hover:text-white">مناطق الخدمة</Link></li>
+              <li><Link href="/contact" className="text-indigo-200 hover:text-white">اتصل بنا</Link></li>
               <li><Link href="/#آراء عملاؤنا" className="text-indigo-200 hover:text-white">آراء عملاؤنا</Link></li>
               <li><Link href="/faq" className="text-indigo-200 hover:text-white">الأسئلة الشائعة</Link></li>
               <li><Link href="/blog" className="text-indigo-200 hover:text-white">المدونة</Link></li>

@@ -89,6 +89,6 @@ export const article1: ArticleType = {
   `,
   date: '2024-01-05',
   category: 'نصائح',
-  image: '/images/satha2.webp',
+  image: '/images/blog/article5.webp',
 }
 

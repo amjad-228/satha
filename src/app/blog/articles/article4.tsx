@@ -41,8 +41,8 @@ export const article4: ArticleType = {
     </ul>
     <h3>روابط مفيدة:</h3>
     <ul>
-      <li><a href="https://sathaapp.com" class="text-blue-600 hover:text-blue-800">خدمات سطحة جدة</a></li>
-      <li><a href="https://example.com/road-assistance-apps" class="text-blue-600 hover:text-blue-800">أفضل تطبيقات المساعدة على الطريق</a></li>
+      <li><a href="https://sathaapp.com" class="text-blue-600 hover:text-blue-800">أقرب سطحة في جدة</a></li>
+      <li><a href="https://www.sathaapp.com/contact" class="text-blue-600 hover:text-blue-800">أفضل مواقع ويب للمساعدة على الطريق</a></li>
     </ul>
 
     <h2>الخطوة الخامسة: التحضير المسبق</h2>
@@ -67,12 +67,13 @@ export const article4: ArticleType = {
 
     <h3>مقالات ذات صلة:</h3>
     <ul>
-      <li><a href="https://sathaapp.com/blog/maintenance-tips" class="text-blue-600 hover:text-blue-800">أهمية الصيانة الدورية لسيارتك</a></li>
-      <li><a href="https://sathaapp.com/blog/safe-driving-weather" class="text-blue-600 hover:text-blue-800">نصائح للقيادة الآمنة في الأحوال الجوية السيئة</a></li>
+      <li><a href="https://sathaapp.com/blog/2" class="text-blue-600 hover:text-blue-800">أهمية الصيانة الدورية لسيارتك</a></li>
+      <li><a href="https://sathaapp.com/blog/1" class="text-blue-600 hover:text-blue-800">كيفية التعامل مع تعطل السيارة على الطريق في جدة</a></li>
+      <li><a href="https://sathaapp.com/blog/3" class="text-blue-600 hover:text-blue-800">دليل شامل لحماية سيارتك من السرقة والأضرار في جدة</a></li>
     </ul>
   `,
   date: '2024-01-20',
   category: 'نصائح',
-  image: '/images/satha2.webp',
+  image: '/images/blog/article1.webp',
 }
 
