@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { FaMapMarkerAlt, FaClock, FaTruck, FaHome } from 'react-icons/fa'
+import { FaClock, FaTruck, FaHome } from 'react-icons/fa'
 import dynamic from 'next/dynamic'
 
 const MapComponent = dynamic(() => import('@/components/MapComponent'), { ssr: false })
