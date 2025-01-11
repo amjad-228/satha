@@ -1,11 +1,12 @@
 'use client'
 
-//import { Amiri } from 'next/font/google' 
 import dynamic from 'next/dynamic';
+import { Suspense } from 'react'
+import { FaBook, FaBuilding } from 'react-icons/fa' // Updated import for FaBook and added FaBuilding
 import {} from 'react-icons/fa'
 import { Car, Axis3d, Key, MapPin, Clock, ArrowLeft } from 'lucide-react';
 import { useState, useEffect } from 'react'
-import Image from 'next/image';
+import Image from 'next/image'
 import Link from 'next/link';
 import {Button} from '@/components/ui/button'
 import { SocialMediaButtons } from '@/components/SocialMediaButtons'
@@ -21,8 +22,9 @@ import { motion } from 'framer-motion';
 const FaWhatsapp = dynamic(() => import('react-icons/fa').then((mod) => mod.FaWhatsapp));
 const FaPhone = dynamic(() => import('react-icons/fa').then((mod) => mod.FaPhone));
 // استيراد المكون مع تعطيل الـ SSR
-const LocalMapComponent = dynamic(() => import('@/components/MapComponent'), {
-  ssr: false, // تعطيل الـ SSR للمكون
+const MapComponent = dynamic(() => import('@/components/MapComponent'), { 
+  ssr: false,
+  loading: () => <p>جاري تحميل الخريطة...</p>
 })
 
 // بيانات مناطق التغطية
@@ -44,6 +46,13 @@ export default function Home() {
       setIsLoaded(true); // بعد ثانية، نغير حالة `isLoaded` لتطبيق التدرج
     }, 3000); // تأخير 3 ثانية
     return () => clearTimeout(timer); // تنظيف المؤقت
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 3000); // تأخير 3 ثوانٍ
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -130,11 +139,12 @@ export default function Home() {
                 src="/images/satha2.webp"
                 alt="سطحة جدة لنقل السيارات في مدينة جدة"
                 title="سطحة جدة اقرب سطحة لنقل وسحب السيارات المتعطلة"
-                object-fit="cover"
                 width={100}
                 height={100}
                 className="rounded-lg shadow-md mr-2"
-                loading = "lazy"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
               />
             </Link>
             <Link href="/services/car-towing" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center">
@@ -153,7 +163,9 @@ export default function Home() {
                 width={100}
                 object-fit="cover"
                 height={100}
-                loading = "lazy"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
               />
             </Link>
             <Link href="/services/car-unlocking" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 flex items-center">
@@ -172,7 +184,9 @@ export default function Home() {
                 height={100}
                 object-fit="cover"
                 className="rounded-lg shadow-md mr-3"
-                loading = "lazy"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
               />
             </Link>
           </div>
@@ -190,6 +204,34 @@ export default function Home() {
             </Link>
           </Button>
         </div>
+        </section>
+
+        {/* قسم دليل جدة للسائقين */}
+        <section className="mb-12">
+          <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-green-600 text-transparent bg-clip-text">دليل جدة للسائقين</h3>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <p className="text-lg text-gray-700 mb-4">
+              هل أنت جديد في جدة أو تحتاج إلى معلومات حول القيادة في المدينة؟ تصفح دليلنا الشامل للسائقين في جدة للحصول على معلومات قيمة عن حركة المرور، الطرق الرئيسية، ونصائح مفيدة.
+            </p>
+            <Link href="/jeddah-drivers-guide" className="inline-flex items-center bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition duration-300">
+              <FaBook className="ml-2" />
+              تصفح دليل جدة للسائقين
+            </Link>
+          </div>
+        </section>
+
+        {/* قسم أحياء جدة */}
+        <section className="mb-12">
+          <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 text-transparent bg-clip-text">أحياء جدة</h3>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <p className="text-lg text-gray-700 mb-4">
+              تعرف على أحياء جدة المختلفة وخصائصها الفريدة. سواء كنت تبحث عن سكن أو ترغب في استكشاف المدينة، ستجد معلومات قيمة عن كل حي.
+            </p>
+            <Link href="/jeddah-neighborhoods" className="inline-flex items-center bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition duration-300">
+              <FaBuilding className="ml-2" />
+              استكشف أحياء جدة
+            </Link>
+          </div>
         </section>
 
         {/* من نحن Section */}
@@ -246,7 +288,9 @@ export default function Home() {
         <section id="مناطق الخدمة" className="mb-12">
           <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-green-600 text-transparent bg-clip-text">مناطق الخدمة</h3>
           <div className="bg-white p-4 rounded-lg shadow-md">
-            <LocalMapComponent />
+            <Suspense fallback={<div>جاري تحميل الخريطة...</div>}>
+              <MapComponent />
+            </Suspense>
           </div>
         </section>
 

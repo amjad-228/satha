@@ -62,7 +62,7 @@ export default function RootLayout({
         {/* title and description*/}
         <title>سطحة جدة - أفضل واقرب خدمة سطحة في جدة 0535142000 </title>
         <meta name="description" content={"سطحة جدة هي اقرب سطحة في جدة 0535142000 توفر خدمة سحب السيارات بأسعار مناسبة. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان."} />
-        <meta name="keywords" content={"سطحة جدة, تطبيق سطحة, اقرب سطحة, سطحة لنقل السيارات, خدمة فتح الأبواب, السيارات المتعطلة, جدة, سطحة قريبة مني, خدمة سحب السيارات في جدة, سطحة لنقل السيارات, سيارات الطوارئ جدة, سطحة هيدروليك, سطحة سيارات, سطحة جدة 50 ريال, سسطحة جدة 90 ريال, سطحة جدة 100 ريال, سطحة ونش, سطحة جدة الحمدانية, سطحة ابو فارس, سطحة جدة هيدروليك, سطحة جدة ابحر الشمالية, سطحة جدة السامر, سطحة جدة الخمرة, سطحة جدة حراج, سطحة جدة حي السلامة, سطحة جدة المعارض, سطحة جدة مفتوح الان, سطحة جدة مكة, سطحة جديدة, سطحة 2023"} />
+        <meta name="keywords" content={"سطحة جدة, سطحة جده, سطحه جدة, سطحه جده, أقرب سطحة, أقرب سطحه, تطبيق سطحة, اقرب سطحة, سطحة لنقل السيارات, خدمة فتح الأبواب, السيارات المتعطلة, جدة, سطحة قريبة مني, خدمة سحب السيارات في جدة, سطحة لنقل السيارات, سيارات الطوارئ جدة, سطحة هيدروليك, سطحة سيارات, سطحة جدة 50 ريال, سسطحة جدة 90 ريال, سطحة جدة 100 ريال, سطحة ونش, سطحة جدة الحمدانية, سطحة ابو فارس, سطحة جدة هيدروليك, سطحة جدة ابحر الشمالية, سطحة جدة السامر, سطحة جدة الخمرة, سطحة جدة حراج, سطحة جدة حي السلامة, سطحة جدة المعارض, سطحة جدة مفتوح الان, سطحة جدة مكة, سطحة جديدة, سطحة 2023"} />
         <link rel="icon" href="/favicon.ico" />
         
         <link
@@ -112,12 +112,12 @@ export default function RootLayout({
         <meta name="og:email" content="amjad@sathaapp.com" />
         <meta name="og:phone_number" content="+966535142000" />
         <meta name="og:fax_number" content="+966535142001" />
-        <meta name="og:latitude" content="21.4858" />
-        <meta name="og:longitude" content="39.1925" />
+        <meta name="og:latitude" content="21.4946461" />
+        <meta name="og:longitude" content="39.1735574" />
         <meta name="og:street-address" content="شارع المدارس" />
         <meta name="og:locality" content="جدة" />
         <meta name="og:region" content="منطقة مكة المكرمة" />
-        <meta name="og:postal-code" content="21442" />
+        <meta name="og:postal-code" content="22232" />
         <meta name="og:country-name" content="المملكة العربية السعودية" />
 
         {/* Twitter Meta Tags */}
@@ -185,10 +185,10 @@ export default function RootLayout({
               ],
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "21.4225", // (مثال) إحداثيات العرض
-                "longitude": "39.8262", // (مثال) إحداثيات الطول
+                "latitude": "21.4946461", // (مثال) إحداثيات العرض
+                "longitude": "39.1735574", // (مثال) إحداثيات الطول
               },
-              "hasMap": "https://www.google.com/maps/place/21.4225,39.8262",
+              "hasMap": "https://www.google.com/maps/place/21.4946461,39.1735574",
               "mainEntityOfPage": "https://www.sathaapp.com",
               
               review: [{
