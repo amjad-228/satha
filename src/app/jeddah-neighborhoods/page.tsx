@@ -11,31 +11,31 @@ const neighborhoods = [
     id: 'albalad',
     name: 'البلد',
     description: 'المنطقة التاريخية في جدة، تشتهر بأسواقها التقليدية والعمارة الفريدة.',
-    image: '/images/al-balad.jpg',
+    image: '/images/satha2.webp',
   },
   {
     id: 'alhamra',
     name: 'الحمراء',
     description: 'حي راقي يضم العديد من المطاعم الفاخرة والمتاجر الراقية.',
-    image: '/images/al-hamra.jpg',
+    image: '/images/satha2.webp',
   },
   {
     id: 'alnahda',
     name: 'النهضة',
     description: 'حي سكني هادئ، مناسب للعائلات ويحتوي على العديد من المدارس والحدائق.',
-    image: '/images/al-nahda.jpg',
+    image: '/images/satha2.webp',
   },
   {
     id: 'alshati',
     name: 'الشاطئ',
     description: 'حي ساحلي يتميز بشواطئه الجميلة والمطاعم البحرية.',
-    image: '/images/al-shati.jpg',
+    image: '/images/satha2.webp',
   },
   {
     id: 'alsalamah',
     name: 'السلامة',
     description: 'حي حديث يضم العديد من المجمعات السكنية والمراكز التجارية.',
-    image: '/images/al-salamah.jpg',
+    image: '/images/satha2.webp',
   },
 ]
 

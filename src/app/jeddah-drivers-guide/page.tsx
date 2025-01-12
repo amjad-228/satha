@@ -95,9 +95,9 @@ const JeddahDriversGuide = () => {
         <div className="mt-12 text-center">
           <h3 className="text-2xl font-semibold mb-6 text-gray-800">صور من جدة</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <Image src="/images/jeddah-corniche.jpg" alt="كورنيش جدة" width={300} height={200} className="rounded-lg shadow-md" />
-            <Image src="/images/king-fahd-fountain.jpg" alt="نافورة الملك فهد" width={300} height={200} className="rounded-lg shadow-md" />
-            <Image src="/images/jeddah-traffic.jpg" alt="حركة المرور في جدة" width={300} height={200} className="rounded-lg shadow-md" />
+            <Image src="/images/satha2.webp" alt="كورنيش جدة" width={300} height={200} className="rounded-lg shadow-md" />
+            <Image src="/images/satha2.webp" alt="نافورة الملك فهد" width={300} height={200} className="rounded-lg shadow-md" />
+            <Image src="/images/satha2.webp" alt="حركة المرور في جدة" width={300} height={200} className="rounded-lg shadow-md" />
           </div>
         </div>
 
