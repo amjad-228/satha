@@ -369,6 +369,9 @@ export default function RootLayout({
           gtag('config', 'G-Y7HMBRLRML', { 'cookie_flags': 'SameSite=None; Secure' });
           `}
         </Script>
+        {/* Google tag (gtag.js) */}
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11526690338">
+</script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
