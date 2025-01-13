@@ -57,7 +57,7 @@ export default function BlogPage() {
           <div className="relative w-full md:w-1/2 mb-4 md:mb-0">
             <input
               type="text"
-              placeholder="ابحث في المقالات..."
+              placeholder="ابحث في المقالات ..."
               className="w-full p-3 pr-10 rounded-full border-2 border-blue-300 focus:border-blue-500 focus:outline-none transition duration-300"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -91,6 +91,9 @@ export default function BlogPage() {
                 width={400}
                 height={200}
                 className="w-full h-48 object-cover transition duration-300 hover:opacity-80"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
               />
               <div className="p-6">
                 <h2 className="text-xl font-semibold mb-2 text-gray-800 hover:text-blue-600 transition duration-300">

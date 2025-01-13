@@ -20,33 +20,37 @@ export default function CarUnlockingService() {
         <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">خدمة فتح أبواب السيارات المقفلة</h1>
         
         <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-8">
-          <Image 
-            src="/images/satha7.webp"
-            alt="خدمة فتح أبواب السيارات المقفلة" 
-            width={800} 
-            height={400} 
-            className="w-full h-64"
-            loading = "lazy"
-          />
+          <Image
+                src="/images/satha7.webp"
+                alt="سطحة جدة لفتح ابواب السيارات المقفلة"
+                title="سطحة جدة لفتح أبواب السيارات المقفلة"
+                width={800}
+                height={400}
+                object-fit="cover"
+                className="rounded-lg shadow-md mr-3"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+              />
           <div className="p-6">
             <p className="text-lg text-gray-700 mb-4">
               نقدم خدمة احترافية لفتح أبواب السيارات المقفلة دون إحداث أي ضرر. سواء نسيت مفاتيحك داخل السيارة أو واجهت مشكلة في قفل السيارة، فإن فريقنا المتخصص جاهز لمساعدتك في أي وقت.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-center">
-                <FaKey className="text-purple-500 text-2xl mr-2" />
+                <FaKey className="text-purple-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">فتح جميع أنواع أقفال السيارات</span>
               </div>
               <div className="flex items-center">
-                <FaClock className="text-purple-500 text-2xl mr-2" />
+                <FaClock className="text-purple-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">خدمة سريعة على مدار الساعة</span>
               </div>
               <div className="flex items-center">
-                <FaUserSecret className="text-purple-500 text-2xl mr-2" />
+                <FaUserSecret className="text-purple-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">فريق محترف وموثوق</span>
               </div>
               <div className="flex items-center">
-                <FaCheckCircle className="text-purple-500 text-2xl mr-2" />
+                <FaCheckCircle className="text-purple-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">ضمان عدم إلحاق أي ضرر بالسيارة</span>
               </div>
             </div>
@@ -67,7 +71,7 @@ export default function CarUnlockingService() {
         </div>
         
         <div className="text-center">
-          <Link href="/#اتصل بنا" className="inline-block bg-purple-500 text-white px-6 py-3 rounded-full hover:bg-purple-600 transition duration-300 text-lg font-semibold">
+          <Link href="/contact" className="inline-block bg-purple-500 text-white px-6 py-3 rounded-full hover:bg-purple-600 transition duration-300 text-lg font-semibold">
             اطلب خدمة فتح أبواب السيارات الآن
           </Link>
         </div>

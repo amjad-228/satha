@@ -95,9 +95,42 @@ const JeddahDriversGuide = () => {
         <div className="mt-12 text-center">
           <h3 className="text-2xl font-semibold mb-6 text-gray-800">صور من جدة</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <Image src="/images/satha2.webp" alt="كورنيش جدة" width={300} height={200} className="rounded-lg shadow-md" />
-            <Image src="/images/satha2.webp" alt="نافورة الملك فهد" width={300} height={200} className="rounded-lg shadow-md" />
-            <Image src="/images/satha2.webp" alt="حركة المرور في جدة" width={300} height={200} className="rounded-lg shadow-md" />
+            <Image
+                src="/images/صور-من-جدة/jeddah-corniche.webp" 
+                alt="كورنيش جدة الجديد ليلاً مع أضواء الزينة"
+                title="كورنيش جدة الجديد ليلاً"
+                width={1024}
+                height={768}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="rounded-lg shadow-md w-full h-64"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+              />
+              <Image
+                src="/images/صور-من-جدة/king-fahd-fountain.webp" 
+                alt="نافورة الملك فهد في جدة أثناء غروب الشمس"
+                title="أطول نافورة في العالم - نافورة الملك فهد بجدة"
+                width={1024}
+                height={768}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="rounded-lg shadow-md w-full h-64"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+              />
+              <Image
+                src="/images/صور-من-جدة/traffic-in-jeddah.webp" 
+                alt="حركة المرور في مدينة جدة أثناء ساعة الذروة"
+                title="حركة المرور في جدة وتكدس السيارات في الشوارع الرئيسية"
+                width={1024}
+                height={768}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="rounded-lg shadow-md w-full h-64"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+              />
           </div>
         </div>
 

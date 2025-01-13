@@ -18,6 +18,8 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link href="/" className="text-indigo-200 hover:text-white">الرئيسية</Link></li>
               <li><Link href="/services" className="text-indigo-200 hover:text-white">خدماتنا</Link></li>
+              <li><Link href="/jeddah-drivers-guide" className="text-indigo-200 hover:text-white">دليل جدة للسائقين</Link></li>
+              <li><Link href="/jeddah-neighborhoods" className="text-indigo-200 hover:text-white">أحياء جدة</Link></li>
               <li><Link href="/about" className="text-indigo-200 hover:text-white">من نحن</Link></li>
               <li><Link href="/coverage" className="text-indigo-200 hover:text-white">التغطية الجغرافية</Link></li>
               <li><Link href="/#مناطق الخدمة" className="text-indigo-200 hover:text-white">مناطق الخدمة</Link></li>

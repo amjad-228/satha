@@ -10,7 +10,7 @@ export async function submitContactForm(formData: FormData) {
   const email = formData.get('email')
   const phone = formData.get('phone')
   const message = formData.get('message')
-  console.log('بدء عملية إرسال النموذج:', { name, email, phone })
+  console.log('بدء عملية إرسال النموذج:', { name, email, phone, message })
   if (!name || !email || !phone || !message) {
     return { success: false, error: 'جميع الحقول مطلوبة' }
   }

@@ -20,33 +20,36 @@ export default function CarTransportService() {
         <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">خدمة نقل السيارات</h1>
         
         <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-8">
-          <Image 
-            src="/images/satha2.webp"
-            alt="خدمة نقل السيارات" 
-            width={800} 
-            height={400} 
-            loading = "lazy"
-            className="w-full h-64 object-cover"
-          />
+          <Image
+                className="rounded-lg shadow-md mr-3 "
+                src="/images/satha2.webp"
+                alt="سطحة جدة لسحب السيارات المتعطلة"
+                title="سطحة جدة تحت خدمة نقل وسحب السيارات المتعطلة"
+                width={800}
+                height={400}
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+              />
           <div className="p-6">
             <p className="text-lg text-gray-700 mb-4">
               نقدم خدمة نقل السيارات بكفاءة عالية وأمان تام. سواء كنت بحاجة لنقل سيارتك لمسافات قصيرة أو طويلة، فإن فريقنا المتخصص جاهز لتلبية احتياجاتك.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-center">
-                <FaCar className="text-blue-500 text-2xl mr-2" />
+                <FaCar className="text-blue-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">نقل آمن لجميع أنواع السيارات</span>
               </div>
               <div className="flex items-center">
-                <FaClock className="text-blue-500 text-2xl mr-2" />
+                <FaClock className="text-blue-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">خدمة سريعة على مدار الساعة</span>
               </div>
               <div className="flex items-center">
-                <FaShieldAlt className="text-blue-500 text-2xl mr-2" />
+                <FaShieldAlt className="text-blue-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">تأمين شامل أثناء النقل</span>
               </div>
               <div className="flex items-center">
-                <FaMoneyBillWave className="text-blue-500 text-2xl mr-2" />
+                <FaMoneyBillWave className="text-blue-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">أسعار تنافسية وشفافة</span>
               </div>
             </div>
@@ -67,7 +70,7 @@ export default function CarTransportService() {
         </div>
         
         <div className="text-center">
-          <Link href="/#اتصل بنا" className="inline-block bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 text-lg font-semibold">
+          <Link href="/contact" className="inline-block bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 text-lg font-semibold">
             احجز خدمة نقل السيارات الآن
           </Link>
         </div>

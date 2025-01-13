@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { FaHome, FaEye, FaFlag, FaHeart, FaBullseye } from 'react-icons/fa'
+import { FaHome, FaEye, FaFlag, FaHeart, FaBullseye, FaPhone, FaWhatsapp } from 'react-icons/fa'
 
 export default function AboutPage() {
   // Explicitly define the type of activeSection as one of the keys of content
@@ -46,13 +46,37 @@ export default function AboutPage() {
         <nav className="mb-8">
           <Link href="/" className="text-blue-600 hover:text-blue-800 transition duration-300 flex items-center">
             <FaHome className="ml-2" />
-            العودة إلى الصفحة الرئيسية
+            الرئيسية
           </Link>
         </nav>
 
-        <h1 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
+        <h1 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
           تعرف على سطحة جدة
         </h1>
+        <div className="flex justify-center space-x-4 space-x-reverse mb-14">
+            
+          <a 
+              href="tel:0535142000" 
+              title="اجراء مكالمة هاتفية"
+              className="bg-blue-600 hover:from-indigo-700 hover:bg-blue-800 text-white px-6 py-2 rounded-full flex items-center transition duration-300 hover:scale-105"
+              aria-label="اتصل الآن على الرقم 0535142000"
+            >
+              <FaPhone className="ml-2" />
+              اتصل الآن
+            </a>
+
+            <a 
+              href="https://wa.me/966535142000?text=مرحبا،%20أحتاج%20إلى%20خدمة%20سطحة" 
+              title="الذهاب الى محادثة واتساب"
+              className="bg-green-500 hover:bg-green-700 text-white px-6 py-2 rounded-full flex items-center hover:bg-green-600 transition duration-300 hover:scale-105"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="تواصل عبر واتساب للحصول على خدمة سطحة"
+            >
+              <FaWhatsapp className="ml-2 size-5" />
+              واتساب
+            </a>
+          </div>
 
         <div className="flex flex-col md:flex-row gap-8">
           {/* Sidebar navigation */}
@@ -62,14 +86,14 @@ export default function AboutPage() {
                 <li key={section.id}>
                   <button
                     onClick={() => setActiveSection(section.id as 'about' | 'vision' | 'mission' | 'values' | 'goals')}
-                    className={`w-full text-right px-4 py-2 rounded-md transition duration-300 flex items-center justify-end ${
+                    className={`w-full text-right px-4 py-2 rounded-md transition duration-300 flex items-center ${
                       activeSection === section.id
                         ? 'bg-blue-500 text-white'
                         : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                     }`}
                   >
+                    <section.icon className="text-xl ml-3" />
                     <span className="ml-2">{section.title}</span>
-                    <section.icon className="text-xl" />
                   </button>
                 </li>
               ))}
@@ -102,14 +126,14 @@ export default function AboutPage() {
             
             {/* Timeline items */}
             {[
-              { year: '2018', event: 'تأسيس سطحة جدة' },
-              { year: '2020', event: 'توسيع نطاق الخدمات لتشمل جميع أنحاء جدة' },
-              { year: '2022', event: 'إطلاق تطبيق سطحة جدة للهواتف الذكية' },
-              { year: '2024', event: 'افتتاح مركز خدمة العملاء الجديد' },
+              { year: '2016', event: 'تأسيس سطحة جدة' },
+              { year: '2018', event: 'توسيع نطاق الخدمات لتشمل جميع أنحاء جدة' },
+              { year: '2021', event: 'توسيع نطاق الخدمات لتشمل أنحاء مدن المملكة' },
+              { year: '2024', event: 'إطلاق موقع سطحة جدة على الويب' },
             ].map((item, index) => (
               <div key={index} className={`flex items-center justify-${index % 2 === 0 ? 'start' : 'end'} mb-8`}>
-                <div className={`w-5/12 ${index % 2 === 0 ? 'text-left' : 'text-right'}`}>
-                  <div className="bg-blue-500 text-white p-3 rounded-lg shadow-md inline-block">
+                <div className={`w-5/12 ${index % 2 === 0 ? 'text-left' : 'text-left'}`}>
+                  <div className="bg-blue-500 text-white p-3 rounded-lg shadow-md ">
                     <h3 className="font-bold">{item.year}</h3>
                     <p>{item.event}</p>
                   </div>
@@ -118,29 +142,6 @@ export default function AboutPage() {
                   <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
                 </div>
                 <div className="w-5/12"></div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Team section */}
-        <section className="mt-16">
-          <h2 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
-            فريقنا
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { name: 'أحمد محمد', role: 'المدير التنفيذي' },
-              { name: 'سارة علي', role: 'مدير العمليات' },
-              { name: 'خالد عبدالله', role: 'رئيس قسم خدمة العملاء' },
-              { name: 'فاطمة حسن', role: 'مدير التسويق' },
-              { name: 'عمر يوسف', role: 'رئيس الفريق التقني' },
-              { name: 'نورة سعيد', role: 'مدير الموارد البشرية' },
-            ].map((member, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg p-6 text-center transform transition duration-300 hover:scale-105">
-                <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"></div>
-                <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                <p className="text-gray-600">{member.role}</p>
               </div>
             ))}
           </div>

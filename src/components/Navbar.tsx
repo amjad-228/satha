@@ -57,6 +57,8 @@ const Navbar = () => {
           <div className={`hidden sm:flex sm:space-x-8 mt-4 sm:space-x-reverse`}>
             <NavLink href="/">الرئيسية</NavLink>
             <NavLink href="/services">خدماتنا</NavLink>
+            <NavLink href="/jeddah-drivers-guide">دليل جدة للسائقين</NavLink>
+            <NavLink href="/jeddah-neighborhoods">أحياء جدة</NavLink>
             <NavLink href="/about">من نحن</NavLink>
             <NavLink href="/coverage">التغطية الجغرافية</NavLink>
             <NavLink href="/#مناطق الخدمة">مناطق الخدمة</NavLink>
@@ -80,6 +82,8 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
             <NavLink href="/">الرئيسية</NavLink>
             <NavLink href="/services">خدماتنا</NavLink>
+            <NavLink href="/jeddah-drivers-guide">دليل جدة للسائقين</NavLink>
+            <NavLink href="/jeddah-neighborhoods">أحياء جدة</NavLink>
             <NavLink href="/about">من نحن</NavLink>
             <NavLink href="/coverage">التغطية الجغرافية</NavLink>
             <NavLink href="/#مناطق الخدمة">مناطق الخدمة</NavLink>

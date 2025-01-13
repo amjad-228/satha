@@ -1,4 +1,4 @@
-import { use } from 'react'
+import { Metadata } from 'next'
 import { article1 } from '../articles/article1'
 import { article2 } from '../articles/article2'
 import { article3 } from '../articles/article3'
@@ -14,14 +14,76 @@ interface Params {
   id: string;
 }
 
-export default function BlogPost({ params }: { params: Promise<Params> }) {
-  const { id } = use(params)
-  const article = articles.find(a => a.id === parseInt(id))
-
-  if (!article) {
-    return <ArticleNotFound />
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+    const articleId = parseInt(params.id);  // مباشرة استخدام params دون انتظار
+    const article = articles.find(a => a.id === articleId);
+  
+    if (!article) {
+      return {
+        title: 'المقال غير موجود - مدونة سطحة جدة',
+        description: 'عذرًا، لم نتمكن من العثور على المقال الذي تبحث عنه.',
+        metadataBase: new URL('https://www.sathaapp.com'), // تعيين base URL للموقع
+      };
+    }
+  
+    return {
+      title: `${article.title} - مدونة سطحة جدة`,
+      description: article.excerpt,
+      metadataBase: new URL('https://www.sathaapp.com'), // تعيين base URL للموقع
+      openGraph: {
+        title: article.title,
+        description: article.excerpt,
+        images: [{ url: article.image }],
+        type: 'article',
+        publishedTime: article.date,
+        authors: ['سطحة جدة'],
+        tags: [article.category],
+      },
+    };
   }
+  
 
-  return <BlogPostContent post={article} />
-}
-
+  export default function BlogPost({ params }: { params: Params }) {
+    const articleId = parseInt(params.id);  // مباشرة استخدام params دون await
+    const article = articles.find(a => a.id === articleId);
+  
+    if (!article) {
+      return <ArticleNotFound />;
+    }
+  
+    return (
+      <>
+        <BlogPostContent post={article} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "headline": article.title,
+              "description": article.excerpt,
+              "image": article.image,
+              "datePublished": article.date,
+              "author": {
+                "@type": "Organization",
+                "name": "سطحة جدة",
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "سطحة جدة",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.sathaapp.com/logo.png",
+                },
+              },
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://www.sathaapp.com/blog/${article.id}`,
+              },
+            }),
+          }}
+        />
+      </>
+    );
+  }
+  

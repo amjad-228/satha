@@ -20,33 +20,36 @@ export default function CarTowingService() {
         <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-green-600 to-blue-600 text-transparent bg-clip-text">خدمة سحب السيارات المتعطلة</h1>
         
         <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-8">
-          <Image 
-            src="/images/satha6.webp" 
-            alt="خدمة سحب السيارات المتعطلة" 
-            width={800} 
-            height={400} 
-            loading = "lazy"
-            className="w-full h-64 object-cover"
-          />
+          <Image
+                src="/images/satha6.webp"
+                alt="سطحة جدة لنقل السيارات في مدينة جدة"
+                title="سطحة جدة اقرب سطحة لنقل وسحب السيارات المتعطلة"
+                width={800}
+                height={400}
+                className="rounded-lg shadow-md mr-2"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="
+              />
           <div className="p-6">
             <p className="text-lg text-gray-700 mb-4">
               نقدم خدمة سحب السيارات المتعطلة بسرعة واحترافية عالية. سواء كانت سيارتك معطلة بسبب حادث أو عطل فني، فإن فريقنا جاهز للوصول إليك وحل مشكلتك في أسرع وقت.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-center">
-                <FaTruck className="text-green-500 text-2xl mr-2" />
+                <FaTruck className="text-green-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">سحب لجميع أنواع المركبات</span>
               </div>
               <div className="flex items-center">
-                <FaTools className="text-green-500 text-2xl mr-2" />
+                <FaTools className="text-green-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">فريق فني متخصص</span>
               </div>
               <div className="flex items-center">
-                <FaRoad className="text-green-500 text-2xl mr-2" />
+                <FaRoad className="text-green-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">تغطية لجميع الطرق في جدة</span>
               </div>
               <div className="flex items-center">
-                <FaHandshake className="text-green-500 text-2xl mr-2" />
+                <FaHandshake className="text-green-500 text-2xl mr-2 ml-2" />
                 <span className="text-gray-700">خدمة عملاء متميزة</span>
               </div>
             </div>
@@ -67,7 +70,7 @@ export default function CarTowingService() {
         </div>
         
         <div className="text-center">
-          <Link href="/#اتصل بنا" className="inline-block bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition duration-300 text-lg font-semibold">
+          <Link href="/contact" className="inline-block bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition duration-300 text-lg font-semibold">
             اطلب خدمة سحب السيارات الآن
           </Link>
         </div>
