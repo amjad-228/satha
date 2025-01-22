@@ -222,7 +222,7 @@ export default function Home() {
 
         {/* قسم أحياء جدة */}
         <section className="mb-12">
-          <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 text-transparent bg-clip-text">أحياء جدة</h3>
+          <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 text-transparent bg-clip-text">سطحات جدة</h3>
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <p className="text-lg text-gray-700 mb-4">
               تعرف على أحياء جدة المختلفة وخصائصها الفريدة. سواء كنت تبحث عن سكن أو ترغب في استكشاف المدينة، ستجد معلومات قيمة عن كل حي.
