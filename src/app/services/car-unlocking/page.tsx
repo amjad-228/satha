@@ -27,7 +27,7 @@ export default function CarUnlockingService() {
                 width={800}
                 height={400}
                 object-fit="cover"
-                className="rounded-lg shadow-md mr-3"
+                className="rounded-lg shadow-md w-full h-64 object-cover"
                 loading="lazy"
                 placeholder="blur"
                 blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACklEQVR4nGMAAQAABQABDQottAAAAABJRU5ErkJggg=="

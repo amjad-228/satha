@@ -21,7 +21,7 @@ export default function CarTransportService() {
         
         <div className="bg-white shadow-lg rounded-lg overflow-hidden mb-8">
           <Image
-                className="rounded-lg shadow-md mr-3 "
+                className="rounded-lg shadow-md w-full h-64 object-cover"
                 src="/images/satha2.webp"
                 alt="سطحة جدة لسحب السيارات المتعطلة"
                 title="سطحة جدة تحت خدمة نقل وسحب السيارات المتعطلة"

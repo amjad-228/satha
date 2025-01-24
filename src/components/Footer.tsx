@@ -15,12 +15,19 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">روابط سريعة</h3>
+            <div className="grid grid-cols-2 gap-8">
+              <div>
             <ul className="space-y-2">
               <li><Link href="/" className="text-indigo-200 hover:text-white">الرئيسية</Link></li>
+              <li><Link href="/satahat-jeddah" className="text-indigo-200 hover:text-white">سطحات جدة</Link></li>
               <li><Link href="/services" className="text-indigo-200 hover:text-white">خدماتنا</Link></li>
               <li><Link href="/jeddah-drivers-guide" className="text-indigo-200 hover:text-white">دليل جدة للسائقين</Link></li>
               <li><Link href="/jeddah-neighborhoods" className="text-indigo-200 hover:text-white">أحياء جدة</Link></li>
               <li><Link href="/about" className="text-indigo-200 hover:text-white">من نحن</Link></li>
+              
+              </ul>
+              </div>
+              <ul className="space-y-2">
               <li><Link href="/coverage" className="text-indigo-200 hover:text-white">التغطية الجغرافية</Link></li>
               <li><Link href="/#مناطق الخدمة" className="text-indigo-200 hover:text-white">مناطق الخدمة</Link></li>
               <li><Link href="/contact" className="text-indigo-200 hover:text-white">اتصل بنا</Link></li>
@@ -28,6 +35,7 @@ const Footer = () => {
               <li><Link href="/faq" className="text-indigo-200 hover:text-white">الأسئلة الشائعة</Link></li>
               <li><Link href="/blog" className="text-indigo-200 hover:text-white">المدونة</Link></li>
             </ul>
+            </div>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">اتصل بنا</h3>
