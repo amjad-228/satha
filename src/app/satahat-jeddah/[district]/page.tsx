@@ -25,13 +25,17 @@ export function generateStaticParams() {
   return districts.map((district) => ({ district }))
 }
 
-export function generateMetadata({ params }: { params: { district: string } }): Metadata {
-  const district = decodeURIComponent(params.district)
+type Props = {
+  params: Promise<{ district: string }>
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { district } = await params
   return generateDistrictMetadata(district)
 }
 
-export default async function DistrictPage({ params }: { params: { district: string } }) {
-  const district = decodeURIComponent(params.district)
+export default async function DistrictPage({ params }: Props) {
+  const { district } = await params
 
   if (!districts.includes(district)) {
     notFound()
