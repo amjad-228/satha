@@ -125,7 +125,7 @@ export default function Home() {
 
         {/* New Section: سطحات جدة */}
         <section className="mb-12">
-          <h2 className="text-3xl font-bold mb-4 text-center bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
+          <h2 className="text-gray-900 text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
             سطحات جدة - اختر حيك
           </h2>
           <div className="mb-12 bg-white p-6 rounded-lg shadow-lg">
