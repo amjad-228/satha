@@ -7,3 +7,4 @@ Host: https://www.sathaapp.com
 
 # Sitemaps
 Sitemap: https://www.sathaapp.com/sitemap.xml
+Sitemap: https://www.sathaapp.com/satahat-jeddah/sitemap.xml
