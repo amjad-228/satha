@@ -124,7 +124,7 @@ export default function Home() {
         </section>
 
         {/* New Section: سطحات جدة */}
-        <section className="mb-12">
+        <section className="mb-12 text-gray-900">
           <h2 className="text-gray-900 text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
             سطحات جدة - اختر حيك
           </h2>
@@ -133,8 +133,6 @@ export default function Home() {
             صفحة سطحات جدة تتيح لك اختيار خدمة السطحة بناءً على الحي الذي تتواجد فيه. ببساطة، اختر حيك للحصول على اقرب سطحة من موقعك تقدم خدمة نقل
             سريعة وموثوقة في منطقتك.
           </p>
-          <div className="flex justify-center mb-4">
-          </div>
           <Link href="/satahat-jeddah" className="inline-flex items-center bg-green-500 text-white px-7 py-2 rounded-full hover:bg-green-600 transition duration-300">
               <FaBuilding className="ml-2" />
               اختر حيك الان

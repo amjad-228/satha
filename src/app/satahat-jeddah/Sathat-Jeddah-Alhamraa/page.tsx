@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function SathatJeddahAlhamraaPage() {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6">
+    <div className="bg-white shadow-md rounded-lg p-6 text-gray-900">
       <div className="mb-6">
         <Image
           src="/images/satha2.webp"
