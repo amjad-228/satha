@@ -3,8 +3,8 @@ import { Phone, Clock, CreditCard, MapPin } from "lucide-react"
 import type { Metadata } from "next"
 import { FaPhone, FaWhatsapp } from "react-icons/fa"
 
-const name: string = "الحمراء";
-const id: string = "Alhamraa";
+const name: string = "الفضيلة";
+const id: string = "Alfadyla";
 
 export const metadata: Metadata = {
   title: `سطحة جدة ${name} | أقرب سطحة في حي ${name} 0535142000`,

@@ -69,7 +69,7 @@ export default function RootLayout({
           rel="alternate"
           type="application/rss+xml"
           title="سطحة جدة لنقل السيارات 0535142000 &laquo; الخلاصة"
-          href="https://www.sathaapp.com/خدماتنا"
+          href="https://www.sathaapp.com/contact"
         />
 
         

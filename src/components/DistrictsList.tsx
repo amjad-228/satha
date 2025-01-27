@@ -13,71 +13,83 @@ const districts: District[] = [
   name: "سطحة جدة الحمراء",
 },
 {
-  id: "سطحة-جدة-الأندلس",
+  id: "Sathat-Jeddah-Alandalus",
   name: "سطحة جدة الأندلس",
 },
 {
-  id: "سطحة-جدة-الشرفية",
+  id: "Sathat-Jeddah-Alsharafiya",
   name: "سطحة جدة الشرفية",
 },
 {
-  id: "سطحة-جدة-مشرفة",
+  id: "Sathat-Jeddah-Mushrifa",
   name: "سطحة جدة مشرفة",
 },
 {
-  id: "سطحة-جدة-البغدادية الغربية",
+  id: "Sathat-Jeddah-Albaghdadiah-Algharbia",
   name: "سطحة جدة البغدادية الغربية",
 },
 {
-  id: "سطحة-جدة-الشاطئ",
+  id: "Sathat-Jeddah-Alshaati",
   name: "سطحة جدة الشاطئ",
 },
 {
-  id: "سطحة-جدة-الورود",
+  id: "Sathat-Jeddah-Alwurud",
   name: "سطحة جدة الورود",
 },
 {
-  id: "سطحة-جدة-النزهة",
+  id: "Sathat-Jeddah-Alkhumra",
+  name: "سطحة جدة الخمرة",
+},
+{
+  id: "Sathat-Jeddah-Alfadyla",
+  name: "سطحة جدة الفضيلة"
+},
+{
+  id: "Sathat-Jeddah-Alqarania",
+  name: "سطحة جدة القرنية",
+},
+{
+  id: "Sathat-Jeddah-Alnuzha",
   name: "سطحة جدة النزهة",
 },
 {
-  id: "سطحة-جدة-الروضة",
+  id: "Sathat-Jeddah-Alrawda",
   name: "سطحة جدة الروضة",
 },
 {
-  id: "سطحة-جدة-الصفاء",
+  id: "Sathat-Jeddah-Alsafa",
   name: "سطحة جدة الصفاء",
 },
 {
-  id: "سطحة-جدة-المروة",
+  id: "Sathat-Jeddah-Almarua",
   name: "سطحة جدة المروة",
 },
 {
-  id: "سطحة-جدة-البوادي",
+  id: "Sathat-Jeddah-Albawadi",
   name: "سطحة جدة البوادي",
 },
 {
-  id: "سطحة-جدة-الفيصلية",
+  id: "Sathat-Jeddah-Alfaysaliyah",
   name: "سطحة جدة الفيصلية",
 },
 {
-  id: "سطحة-جدة-الربوة",
+  id: "Sathat-Jeddah-Alrabwa",
   name: "سطحة جدة الربوة",
 },
 {
-  id: "سطحة-جدة-الزهراء",
+  id: "Sathat-Jeddah-Alzahra",
   name: "سطحة جدة الزهراء",
 },
 {
-  id: "سطحة-جدة-السلامة",
+  id: "Sathat-Jeddah-Alsalama",
   name: "سطحة جدة السلامة",
 },
 {
-  id: "سطحة-جدة-العزيزية",
+  id: "Sathat-Jeddah-Alazizia",
   name: "سطحة جدة العزيزية",
 },
 {
-  id: "سطحة-جدة-الفيحاء",
+  id: "Sathat-Jeddah-Alfayha",
   name: "سطحة جدة الفيحاء",
 },
 ]
