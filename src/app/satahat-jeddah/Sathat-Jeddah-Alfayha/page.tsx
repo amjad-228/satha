@@ -49,7 +49,7 @@ export default function SathatJeddahAlhamraaPage() {
       <h3 className="text-xl mb-6 mr-2">تقدم سطحات جدة خدمة نقل وسحب السيارت في مدينة جدة حي {name}</h3>
       <div className="bg-blue-100 p-4 rounded-lg mb-8">
         <h3 className="text-xl font-semibold mb-2">اطلب سطحة الآن</h3>
-        <p className="text-lg mb-4">نصلك في أقل من 30 دقيقة!</p>
+        <p className="text-lg mb-4">نصلك في أقرب وقت!</p>
         <div className="flex justify-center space-x-4 space-x-reverse">
             
           <a 
