@@ -92,6 +92,63 @@ const districts: District[] = [
   id: "Sathat-Jeddah-Alfayha",
   name: "سطحة جدة الفيحاء",
 },
+{
+  id: "Sathat-Jeddah-Alnahda",
+  name: "سطحة جدة النهضة",
+},
+{
+  id: "Sathat-Jeddah-Alkhalidia",
+  name: "سطحة جدة الخالدية",
+},
+{
+  id: "Sathat-Jeddah-Almarjan",
+  name: "سطحة جدة المرجان",
+},
+{
+  id: "Sathat-Jeddah-Albasateen",
+  name: "سطحة جدة البساتين",
+},
+{
+  id: "Sathat-Jeddah-Alrihab",
+  name: "سطحة جدة الرحاب",
+},
+{
+  id: "Sathat-Jeddah-Alnakheel",
+  name: "سطحة جدة النخيل",
+},
+{
+  id: "Sathat-Jeddah-Alsamer",
+  name: "سطحة جدة السامر",
+},
+{
+  id: "Sathat-Jeddah-Almanar",
+  name: "سطحة جدة المنار",
+},
+{
+  id: "Sathat-Jeddah-Alwaha",
+  name: "سطحة جدة الواحة",
+},
+{
+  id: "Sathat-Jeddah-Abhor-Alshmalia",
+  name: "سطحة جدة ابحر الشمالية",
+},
+{
+  id: "Sathat-Jeddah-Abhor-Aljanubia",
+  name: "سطحة جدة ابحر الجنوبية",
+},
+{
+  id: "Sathat-Jeddah-Quayza",
+  name: "سطحة جدة قويزة",
+},
+{
+  id: "Sathat-Jeddah-Abraq-Alraghama",
+  name: "سطحة جدة ابرق الرغامة",
+},
+{
+  id: "Sathat-Jeddah-Alruis",
+  name: "سطحة جدة الرويس",
+},
+
 ]
 
 export default function DistrictsList() {
