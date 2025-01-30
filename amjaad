@@ -45,3 +45,76 @@ sk-24af84991e014d0bb0d572be38c9e1b4
 6. تنفيذ نظام التحقق من WhatsApp OTP
 7. إضافة تتبع الموقع في الوقت الفعلي
 8. تنفيذ نظام إشعار السائق القريب
+
+
+أداة اختبار البيانات المنظمة (Structured Data Testing Tool)
+🔗 https://search.google.com/test/rich-results
+
+
+
+<NextSeo
+        title="سطحة جدة الرويس | أقرب سطحة في حي الرويس 0535142000"
+        description="سطحة جدة الرويس هي اقرب سطحة في حي الرويس 0535142000 توفر خدمة سحب السيارات بأسعار منافسة. ايضا نقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان."
+        canonical="https://www.sathaapp.com/satahat-jeddah/Sathat-Jeddah-Alruis"
+        openGraph={{
+          url: "https://www.sathaapp.com/satahat-jeddah/Sathat-Jeddah-Alruis",
+          title: "سطحة جدة الرويس | أقرب سطحة في حي الرويس 0535142000",
+          description: "سطحة جدة الرويس هي اقرب سطحة في حي الرويس 0535142000 توفر خدمة سحب السيارات بأسعار منافسة. ايضا نقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.",
+          site_name: "سطحة جدة الرويس 0535142000",
+          images: [
+            {
+              url: "/images/satha2.webp",
+              width: 1200,
+              height: 630,
+              alt: "سطحة جدة الرويس",
+            },
+          ],
+          type: "website",
+          locale: "ar_SA",
+        }}
+        twitter={{
+          handle: "@sathaapp",
+          site: "@sathaapp",
+          cardType: "summary_large_image",
+        }}
+      />
+      <LocalBusinessJsonLd
+        type="TowingService"
+        id="https://www.sathaapp.com/satahat-jeddah/Sathat-Jeddah-Alruis"
+        name="سطحة جدة الرويس 0535142000"
+        description="سطحة جدة الرويس هي اقرب سطحة في حي الرويس 0535142000 توفر خدمة سحب السيارات بأسعار منافسة. ايضا نقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان."
+        url="https://www.sathaapp.com/satahat-jeddah/Sathat-Jeddah-Alruis"
+        telephone="+966535142000"
+        priceRange="SAR 50 - SAR 500"
+        address={{
+          streetAddress: "حي الرويس",
+          addressLocality: "جدة",
+          addressRegion: "مكة المكرمة",
+          postalCode: "23211",
+          addressCountry: "SA",
+        }}
+        geo={{
+          latitude: "21.510796",
+          longitude: "39.165439",
+        }}
+        openingHours={[
+          {
+            opens: "00:00",
+            closes: "23:59",
+            dayOfWeek: [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday",
+            ],
+          },
+        ]}
+        sameAs={[
+          "https://www.facebook.com/profile.php?id=61571033757810",
+          "https://x.com/sathaapp?",
+          "https://www.instagram.com/sathat_jida",
+        ]}
+      />
