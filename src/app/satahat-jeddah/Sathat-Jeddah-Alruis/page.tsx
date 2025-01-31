@@ -4,16 +4,16 @@ import {SatahatJeddahMain} from '@/components/satahat-jeddah-main';
 
 
 
-export default function SathatJeddahAlhamraaPage() {
+export default function SathatJeddahAlruis() {
   const name = "الرويس";
   const id = "Alruis";
-  const metaData = generateMetaData(name, id);
+  
+  const metaData = generateMetaData(name, id,"23211", "21.511023", "39.165058");
   return (
     <>
     <Head>
       <title>{metaData.title}</title>
       <meta name="description" content={metaData.description} />
-      {/*<meta name="keywords" content={metaData.keywords} />*/}
       <meta property="og:title" content={metaData.openGraph.title} />
       <meta property="og:description" content={metaData.openGraph.description} />
       <meta property="og:image" content={metaData.openGraph.images[0].url} />
@@ -29,6 +29,10 @@ export default function SathatJeddahAlhamraaPage() {
       <meta property="twitter:site" content={metaData.twitter.site} />
       <meta property="twitter:handle" content={metaData.twitter.handle} />
       <link rel="canonical" href={metaData.canonical} />
+      {/* ✅ Schema.org JSON-LD */}
+      <script type="application/ld+json">
+          {JSON.stringify(metaData.schema)}
+      </script>
 
     </Head>
       <div>

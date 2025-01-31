@@ -1,4 +1,4 @@
-export function generateMetaData(name: string, id: string) {
+export function generateMetaData(name: string, id: string, postalCode: string, latitude: string, longitude: string) {
     return {
         title: `سطحة جدة ${name} | أقرب سطحة في حي ${name} 0535142000`,
         description:
@@ -11,11 +11,12 @@ export function generateMetaData(name: string, id: string) {
               site_name: `سطحة جدة ${name} 0535142000`,
             url: `https://www.sathaapp.com/satahat-jeddah/Sathat-Jeddah-${id}`,
             images: [
-              {
-                url: "/images/satha2.webp",
+              { 
+                url: "https://www.sathaapp.com/images/satha2.webp",
                 width: 1200,
                 height: 630,
                 alt: `سطحة جدة ${name}`,
+                type: "image/webp",
               },
             ],
             type: "website",
@@ -26,6 +27,56 @@ export function generateMetaData(name: string, id: string) {
             handle: "@sathaapp",
             site: "@sathaapp",
             cardType: "summary_large_image",
+          },
+          schema: {
+            "@context": "https://schema.org",
+            "@type": "TowingService",
+            "name": `سطحة جدة ${name}`,
+            "description":  `سطحة جدة ${name} هي اقرب سطحة في حي ${name} 0535142000 توفر خدمة سحب السيارات بأسعار منافسة. ايضا نقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.`,
+            "url":`https://www.sathaapp.com/satahat-jeddah/Sathat-Jeddah-${id}`,
+            "telephone": "+966535142000",
+            "priceRange": "SAR 50 - SAR 500",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": `حي ${name}`,
+              "addressLocality": "جدة",
+              "addressRegion": "مكة المكرمة",
+              "postalCode": postalCode,
+              "addressCountry": "SA"
+            },
+            image: "https://www.sathaapp.com/images/satha2.webp",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+               "ratingValue": "4.5",
+               "reviewCount": "24"
+            },
+            "hasMap": `https://www.google.com/maps/place/${latitude},${longitude}`,
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": latitude,
+              "longitude": longitude,
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/profile.php?id=61571033757810",
+              "https://x.com/sathaapp",
+              "https://www.instagram.com/sathat_jida"
+            ]
           },
           
     }
