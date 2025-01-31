@@ -370,7 +370,7 @@ export default function RootLayout({
           `}
         </Script>
         {/* Google tag (gtag.js) */}
-<Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11526690338"/>
+<Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16845698559"/>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
