@@ -13,7 +13,6 @@ import FaqSection from '@/app/faq/section'
 import BlogSection from '@/app/blog/section'
 import Testimonials from '@/components/Testimonials'
 import SearchBar from '@/components/SearchBar'
-import Head from 'next/head'
 
 const FaWhatsapp = dynamic(() => import('react-icons/fa').then((mod) => mod.FaWhatsapp));
 const FaPhone = dynamic(() => import('react-icons/fa').then((mod) => mod.FaPhone));
