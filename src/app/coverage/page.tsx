@@ -9,15 +9,50 @@ import dynamic from 'next/dynamic'
 const MapComponent = dynamic(() => import('@/components/MapComponent'), { ssr: false })
 
 const coverageAreas = [
-  { name: 'وسط جدة', response: '15-20 دقيقة' },
-  { name: 'شمال جدة', response: '20-25 دقيقة' },
-  { name: 'جنوب جدة', response: '20-25 دقيقة' },
-  { name: 'شرق جدة', response: '25-30 دقيقة' },
-  { name: 'غرب جدة', response: '15-20 دقيقة' },
-  { name: 'أبحر الشمالية', response: '30-35 دقيقة' },
-  { name: 'الحمدانية', response: '25-30 دقيقة' },
-  { name: 'السامر', response: '20-25 دقيقة' },
-  { name: 'الخمرة', response: '30-35 دقيقة' },
+  { name: 'سطحة شمال جدة'},
+  { name: 'سطحة جنوب جدة'},
+  { name: 'سطحة وسط جدة'},
+  { name: 'سطحة شرق جدة'},
+  { name: 'سطحة غرب جدة'},
+  { name: 'سطحة الحمراء جدة'},
+  { name: 'سطحة الاندلس جدة'},
+  { name: 'سطحة الشرفية جدة'},
+  { name: 'سطحة مشرفة جدة'},
+  { name: 'سطحة البغدادية الغربية جدة'},
+  { name: 'سطحة الشاطئ جدة'},
+  { name: 'سطحة الورود جدة'},
+  { name: 'سطحة الخمرة جدة'},
+  { name: 'سطحة الفضيلة جدة'},
+  { name: 'سطحة القرنية جدة'},
+  { name: 'سطحة النزهة جدة'},
+  { name: 'سطحة الروضة جدة'},
+  { name: 'سطحة الصفاء جدة'},
+  { name: 'سطحة المروة جدة'},
+  { name: 'سطحة البوادي جدة'},
+  { name: 'سطحة الفيصلية جدة'},
+  { name: 'سطحة الربوة جدة'},
+  { name: 'سطحة الزهراء جدة'},
+  { name: 'سطحة السلامة جدة'},
+  { name: 'سطحة العزيزية جدة'},
+  { name: 'سطحة الفيحاء جدة'},
+  { name: 'سطحة النهضة جدة'},
+  { name: 'سطحة الخالدية جدة'},
+  { name: 'سطحة المرجان جدة'},
+  { name: 'سطحة البساتين جدة'},
+  { name: 'سطحة الرحاب جدة'},
+  { name: 'سطحة النخيل جدة'},
+  { name: 'سطحة السامر جدة'},
+  { name: 'سطحة المنار جدة'},
+  { name: 'سطحة الواحة جدة'},
+  { name: 'سطحة ابحر الشمالية جدة'},
+  { name: 'سطحة ابحر الجنوبية جدة'},
+  { name: 'سطحة قويزة جدة'},
+  { name: 'سطحة ابرق الرغامة جدة'},
+  { name: 'سطحة الرويس جدة'},
+  { name: 'سطحة الحمدانية جدة'},
+  { name: 'سطحة الاجاويد جدة'},
+  { name: 'سطحة الاجواد جدة'},
+  { name: 'سطحة طيبة جدة'},
 ]
 
 export default function GeographicCoverage() {
@@ -63,7 +98,7 @@ export default function GeographicCoverage() {
                 >
                   <h3 className="font-semibold">{area.name}</h3>
                   <p className="text-sm mt-2">
-                    <FaClock className="inline mr-1" /> {area.response}
+                    <FaClock className="inline mr-1" /> نصلك في أقرب وقت !
                   </p>
                 </motion.div>
               ))}
@@ -80,7 +115,7 @@ export default function GeographicCoverage() {
             {selectedArea ? (
               <div>
                 <h3 className="text-blue-700 text-xl font-semibold mb-2">{selectedArea}</h3>
-                <p className="text-gray-900 mb-4">وقت الاستجابة المتوقع: {coverageAreas.find(area => area.name === selectedArea)?.response}</p>
+                <p className="text-gray-900 mb-4">وقت الاستجابة المتوقع: نصل في أقرب وقت استجابة متوقع (-:</p>
                 <ul className="list-disc list-inside text-gray-700">
                   <li>خدمة سحب السيارات متوفرة 24/7</li>
                   <li>فريق فني متخصص في المنطقة</li>

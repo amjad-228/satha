@@ -1,43 +1,81 @@
-import { generateMetaData} from '../metadata';
-import Head from "next/head";
-import {SatahatJeddahMain} from '@/components/satahat-jeddah-main';
+import { SatahatJeddahMain } from '@/components/satahat-jeddah-main';
+import type { Metadata } from "next"
+
+const name = "الأندلس";
+const id = "Alandalus";
+const latitude = "21.547674";
+const longitude = "39.168472";
+const postalCode = "23326";
 
 
+export const metadata: Metadata = {
+  title: `سطحة جدة ${name} | أقرب سطحة في حي ${name} 0535142000`,
+  description:
+    `سطحة جدة ${name} هي اقرب سطحة في حي ${name} 0535142000 توفر خدمة سحب السيارات بأسعار منافسة. ايضا نقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.`,
+  keywords: ["سطحة جدة", "سطحات جدة", "أقرب سطحة من موقعي", "سطحة قريبة مني", "أقرب سطحة", "سطحة جدة الحمراء", "سطحة جدة", "سطحة الحمراء", "اقرب سطحه", "سطحة جدة الأندلس", "سطحة جدة الشرفية", "سطحة جدة مشرفة", "سطحة جدة البغدادية الغربية", "سطحة جدة الشاطئ", "سطحة جدة الوروود", "سطحة جدة الخمرة", "سطحة جدة الفضيلة", "سطحة جدة القرنية", "سطحة جدة النزهة", "سطحة جدة الروضة", "سطحة جدة الصفاء", "سطحة جدة المروة", "سطحة جدة البوادي", "سطحة جدة الفيصلية", "سطحة جدة الربوة", "سطحة جدة الزهراء", "سطحة جدة السلامة", "سطحة جدة العزيزية", "سطحة جدة الفيحاء"],
+  openGraph: {
+    title: `سطحة جدة ${name} | اقرب سطحة في حي ${name} تقدم خدمة سحب السيارات`,
+    description:
+      `سطحة جدة ${name} هي اقرب سطحة في حي ${name} 0535142000 توفر خدمة سحب السيارات بأسعار منافسة. ايضا نقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.`,
+    siteName: `سطحة جدة ${name} 0535142000`,
+    url: `https://www.sathaapp.com/satahat-jeddah/Sathat-Jeddah-${id}`,
+    images: [
+      {
+        url: "https://www.sathaapp.com/images/satha2.webp",
+        width: 1200,
+        height: 630,
+        alt: `سطحة جدة ${name}`,
+        type: "image/webp",
+      },
+    ],
+    type: "website",
+    locale: "ar_SA",
+  },
 
-export default function SathatJeddahAlandalus() {
-  const name = "الأندلس";
-  const id = "Alandalus";
-  
-  const metaData = generateMetaData(name, id,"23326", "21.547674", "39.168472");
+  twitter: {
+    card: "summary_large_image",
+    title: `سطحة جدة ${name} | أقرب سطحة في حي ${name} 0535142000`,
+    description: `سطحة جدة ${name} هي اقرب سطحة في حي ${name} 0535142000 توفر خدمة سحب السيارات بأسعار منافسة. ايضا نقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.`,
+    site: "@sathaapp",
+    images: ["https://sathaapp.com/images/satha2.webp"],
+  },
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": `سطحة جدة ${name}`,
+      "description": `سطحة جدة ${name} هي اقرب سطحة في حي ${name} 0535142000 توفر خدمة سحب السيارات بأسعار منافسة. ايضا نقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.`,
+      "url": `https://sathaapp.com/satahat-jeddah/${id}`,
+      "telephone": "+966535142000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": `حي ${name}`,
+        "addressLocality": "جدة",
+        "addressRegion": "مكة المكرمة",
+        "postalCode": postalCode,
+        "addressCountry": "SA"
+      },
+      image: "https://www.sathaapp.com/images/satha2.webp",
+      "priceRange": "SAR 50 - SAR 500",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": latitude,
+        "longitude": longitude,
+      },
+      "hasMap": `https://www.google.com/maps/place/${latitude},${longitude}`,
+    }),
+    "openingHours": "24/7",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61571033757810",
+      "https://x.com/sathaapp",
+      "https://www.instagram.com/sathat_jida"
+    ]
+  },
+}
+export default function SathatJeddah() {
   return (
-    <>
-    <Head>
-      <title>{metaData.title}</title>
-      <meta name="description" content={metaData.description} />
-      <meta property="og:title" content={metaData.openGraph.title} />
-      <meta property="og:description" content={metaData.openGraph.description} />
-      <meta property="og:image" content={metaData.openGraph.images[0].url} />
-      <meta property="og:image:width" content={metaData.openGraph.images[0].width.toString()} />
-      <meta property="og:image:height" content={metaData.openGraph.images[0].height.toString()} />
-      <meta property="og:image:alt" content={metaData.openGraph.images[0].alt} />
-      <meta property="og:type" content={metaData.openGraph.type} />
-      <meta property="og:locale" content={metaData.openGraph.locale} />
-      <meta property="og:site_name" content={metaData.openGraph.site_name} />
-      <meta property="og:url" content={metaData.openGraph.url} />
-      <meta property="og:locale" content={metaData.openGraph.locale} />
-      <meta property="twitter:card" content={metaData.twitter.cardType} />
-      <meta property="twitter:site" content={metaData.twitter.site} />
-      <meta property="twitter:handle" content={metaData.twitter.handle} />
-      <link rel="canonical" href={metaData.canonical} />
-      {/* ✅ Schema.org JSON-LD */}
-      <script type="application/ld+json">
-          {JSON.stringify(metaData.schema)}
-      </script>
-
-    </Head>
-      <div>
+    <div>
       {SatahatJeddahMain(name)}
-      </div>
-    </>
+    </div>
   );
 }

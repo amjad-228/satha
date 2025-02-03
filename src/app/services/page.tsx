@@ -1,8 +1,8 @@
-'use client'
-
+import { Metadata } from 'next'
 import Link from 'next/link'
 import { FaCar, FaTruck, FaKey, FaArrowLeft, FaHome, FaBook, FaLightbulb } from 'react-icons/fa'
 import { Button } from '@/components/ui/button'
+import Head from 'next/head'
 
 const services = [
   {
@@ -28,8 +28,78 @@ const services = [
   },
 ]
 
+export const metadata: Metadata = {
+  title: "سطحة جدة | خدماتنا - 0535142000 أفضل واقرب خدمة سطحة في جدة",
+  description:
+   "سطحة جدة هي اقرب سطحة في جدة 0535142000 توفر خدمة سحب السيارات بأسعار مناسبة. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.",
+  keywords: ["سطحة جدة", "سطحات جدة", "أقرب سطحة من موقعي", "سطحة قريبة مني", "أقرب سطحة", "سطحة جدة الحمراء", "سطحة جدة", "سطحة الحمراء", "اقرب سطحه", "سطحة جدة الأندلس", "سطحة جدة الشرفية", "سطحة جدة مشرفة", "سطحة جدة البغدادية الغربية", "سطحة جدة الشاطئ", "سطحة جدة الوروود", "سطحة جدة الخمرة", "سطحة جدة الفضيلة", "سطحة جدة القرنية", "سطحة جدة النزهة", "سطحة جدة الروضة", "سطحة جدة الصفاء", "سطحة جدة المروة", "سطحة جدة البوادي", "سطحة جدة الفيصلية", "سطحة جدة الربوة", "سطحة جدة الزهراء", "سطحة جدة السلامة", "سطحة جدة العزيزية", "سطحة جدة الفيحاء"],
+  openGraph: {
+    title: "سطحة جدة | خدماتنا - 0535142000 أفضل واقرب خدمة سطحة في جدة",
+    description:
+      "سطحة جدة هي اقرب سطحة في جدة 0535142000 توفر خدمة سحب السيارات بأسعار مناسبة. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.",
+    siteName: `سطحة جدة 0535142000`,
+    url: "https://www.sathaapp.com/services",
+    images: [
+      {
+        url: "https://www.sathaapp.com/images/satha2.webp",
+        width: 1200,
+        height: 630,
+        alt: "سطحة جدة",
+        type: "image/webp",
+      },
+    ],
+    type: "website",
+    locale: "ar_SA",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "سطحة جدة | خدماتنا - 0535142000 أفضل واقرب خدمة سطحة في جدة",
+    description: "سطحة جدة هي اقرب سطحة في جدة 0535142000 توفر خدمة سحب السيارات بأسعار مناسبة. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.",
+    site: "@sathaapp",
+    images: ["https://sathaapp.com/images/satha2.webp"],
+  },
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "سطحة جدة",
+      "description": "سطحة جدة هي اقرب سطحة في جدة 0535142000 توفر خدمة سحب السيارات بأسعار مناسبة. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان.",
+      "url": "https://sathaapp.com/services",
+      "telephone": "+966535142000",
+      "serviceType": "نقل سيارات",
+      "address": {
+        "@type": "23212",
+        "addressLocality": "جدة",
+        "addressRegion": "مكة المكرمة",
+        "postalCode": 23212,
+        "addressCountry": "SA"
+      },
+      image: "https://www.sathaapp.com/images/satha2.webp",
+      "priceRange": "SAR 50 - SAR 500",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.516305,
+        "longitude": 39.163583,
+      },
+      "hasMap": "https://www.google.com/maps/place/21.516305,23212",
+    }),
+    "openingHours": "24/7",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61571033757810",
+      "https://x.com/sathaapp",
+      "https://www.instagram.com/sathat_jida"
+    ]
+  },
+}
+
 export default function ServicesPage() {
   return (
+    <>
+    <Head>
+      <title>سطحة جدة | خدماتنا - 0535142000 أفضل واقرب خدمة سطحة في جدة </title>
+      <meta name="description" content={"سطحة جدة هي اقرب سطحة في جدة 0535142000 توفر خدمة سحب السيارات بأسعار مناسبة. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وامان."} />
+    </Head>
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white py-12 px-4 sm:px-6 lg:px-8 -mt-6" dir="rtl">
       <div className="max-w-7xl mx-auto">
         <nav className="mb-10 flex justify-between items-center">
@@ -117,5 +187,6 @@ export default function ServicesPage() {
         </div>
       </div>
     </div>
+    </>
   )
 }

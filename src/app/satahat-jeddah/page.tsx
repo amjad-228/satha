@@ -1,8 +1,9 @@
 import type { Metadata } from "next"
 import DistrictsList from "@/components/DistrictsList"
-import Hero from "@/components/Hero"
+import Hero from "./Hero"
 import Features from "@/components/Features"
 import { ArrowDown } from "lucide-react"
+import Head from "next/head"
 
 export const metadata: Metadata = {
   title: "سطحات جدة - اختر حيك | خدمة اقرب سطحة اختر حيك وابشر بأقرب سطحة",

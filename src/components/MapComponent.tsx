@@ -19,7 +19,10 @@ const customIcon = new DivIcon({
 })
 
 // Sample data for a single tow truck location
-const towTruckLocation = { position: [21.4946461, 39.1735574] as LatLngTuple, name: 'سطحة 1' }
+const towTruckLocation = [
+  { position: [21.4946461, 39.1735574] as LatLngTuple, name: 'سطحة 1' },
+  {position: [21.516305, 39.163583] as LatLngTuple, name: 'سطحة 2'},
+]
 
 const UpdateInteractivity = ({ isInteractive }: { isInteractive: boolean }) => {
   const map = useMap()
@@ -75,23 +78,23 @@ const LocalMapComponent = () => {
       
       {/* MapContainer */}
       <MapContainer 
-        center={towTruckLocation.position} 
+        center={towTruckLocation[0].position} 
         zoom={14} 
         style={{ height: '400px', width: '100%' }}
         attributionControl={false}  // Optional: Remove attribution controls if needed
       >
+        
         <UpdateInteractivity isInteractive={isInteractive} />
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
         {/* Display single marker */}
-        <Marker 
-          position={towTruckLocation.position} 
-          icon={customIcon}
-        >
-          <Popup>{towTruckLocation.name}</Popup>
-        </Marker>
+        {towTruckLocation.map((location, index) => (
+          <Marker key={index} position={location.position} icon={customIcon}>
+            <Popup>{location.name}</Popup>
+          </Marker>
+        ))}
       </MapContainer>
     </div>
   )
