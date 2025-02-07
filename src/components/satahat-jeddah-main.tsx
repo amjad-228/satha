@@ -4,7 +4,7 @@ import { FaPhone, FaWhatsapp } from "react-icons/fa";
 export function SatahatJeddahMain(name: string) {
     return (
         <div className="bg-white shadow-md rounded-lg p-6 text-gray-900">
-        <h1 className="text-3xl font-semibold mb-4 text-center text-purple-900">سطحة جدة {name}</h1>
+        <h1 className="text-3xl font-semibold mb-4 text-center text-purple-900">سطحة جدة name | أقرب سطحة في حي name 0535142000</h1>
         <div className="mb-6">
           <Image
             src="/images/satha2.webp"
