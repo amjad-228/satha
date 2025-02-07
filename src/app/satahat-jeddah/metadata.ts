@@ -45,11 +45,7 @@ export function generateMetaData(name: string, id: string, postalCode: string, l
               "addressCountry": "SA"
             },
             image: "https://www.sathaapp.com/images/satha2.webp",
-            "aggregateRating": {
-              "@type": "AggregateRating",
-               "ratingValue": "4.5",
-               "reviewCount": "24"
-            },
+            
             "hasMap": `https://www.google.com/maps/place/${latitude},${longitude}`,
             "geo": {
               "@type": "GeoCoordinates",
