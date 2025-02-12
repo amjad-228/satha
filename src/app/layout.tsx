@@ -163,13 +163,13 @@ export default function RootLayout({
         />
 
         {/* Google tag (gtag.js) */}
-<Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11563332087"></Script>
-<Script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11563332087"></script>
+<script>
   {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-11563332087');`}
-</Script>
+</script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
