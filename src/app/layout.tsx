@@ -18,37 +18,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  /*
-  applicationName: "سطحة جدة",
-  authors: [{ name: "سطحة جدة فريق الدعم" }],
-  robots: "index, follow",
-  openGraph: {
-    title: "سطحة جدة - اقرب سطحة في جدة لنقل وسحب السيارات المتعطلة",
-    description:
-      "احصل على خدمات موثوقة لنقل السيارات المتعطلة وفتح الأبواب بأمان في جدة.",
-    url: "https://sathaapp.com",
-    type: "website",
-    locale: "ar",
-    images: [
-      {
-        url: "https://sathaapp.com/images/satha2.webp",
-        width: 1200,
-        height: 630,
-        alt: "سطحة جدة - نقل السيارات",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@sathaapp",
-    title: "سطحة جدة - اقرب خدمة سحب سيارات سريعة وآمنة في جدة",
-    description:
-      "سطحة جدة هي اقرب سطحة في جدة تقدم خدمات مميزة لنقل وسحب السيارات المتعطلة والمتضررة. سطحة جدة ايضا تقدم خدمة فتح أبواب السيارات المقفلة بكل احترافية وسهولة.",
-    images: ["https://sathaapp.com/images/satha2.webp"],
-  },
-  */
-};
 
 
 export default function RootLayout({
@@ -204,7 +173,13 @@ export default function RootLayout({
           `}
         </Script>
         {/* Google tag (gtag.js) */}
-<Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11526690338"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11563332087"></script>
+<Script>
+  {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-11563332087');`}
+</Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
