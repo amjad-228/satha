@@ -161,18 +161,9 @@ export default function RootLayout({
             }),
           }}
         />
-        {/* Google Analytics */} 
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7HMBRLRML" 
-        />
-        <Script id="google-analytics">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-Y7HMBRLRML', { 'cookie_flags': 'SameSite=None; Secure' });
-          `}
-        </Script>
+
         {/* Google tag (gtag.js) */}
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11563332087"></script>
+<Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11563332087"></Script>
 <Script>
   {`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
