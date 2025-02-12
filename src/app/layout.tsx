@@ -1,4 +1,4 @@
-import Script from "next/script";
+
 import localFont from "next/font/local";
 import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"
