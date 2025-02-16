@@ -7,6 +7,7 @@ import {SatahatJeddahMain} from '@/components/satahat-jeddah-main';
 export default function SathatJeddahAlshaati() {
   const name = "الشاطئ";
   const id = "Alshaati";
+  const url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118704.5702251305!2d39.195327404497576!3d21.604736776262207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3dade64b5f9b9%3A0x5acb46f4a9be8cda!2z2KfZhNi02KfYt9im2Iwg2KzYr9ipINin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2s!4v1739682318334!5m2!1sar!2s"
   
   const metaData = generateMetaData(name, id,"22411", "21.603405", "39.117519");
   return (
@@ -36,7 +37,7 @@ export default function SathatJeddahAlshaati() {
 
     </Head>
       <div>
-      {SatahatJeddahMain(name)}
+      {SatahatJeddahMain(name, url)}
       </div>
     </>
   );

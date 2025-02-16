@@ -5,6 +5,7 @@ import { FaPhone, FaWhatsapp } from "react-icons/fa"
 
 const name: string = "قويزة";
 const id: string = "Quayza";
+const url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29702.62955475617!2d39.30937358301042!3d21.47523722500979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cd04a594a883%3A0x70426e77c60abec7!2z2YLZiNmK2LLYqdiMINis2K_YqSDYp9mE2LPYudmI2K_Zitip!5e0!3m2!1sar!2s!4v1739682930901!5m2!1sar!2s"
 
 export const metadata: Metadata = {
   title: `سطحة جدة ${name} | أقرب سطحة في حي ${name} 0535142000`,

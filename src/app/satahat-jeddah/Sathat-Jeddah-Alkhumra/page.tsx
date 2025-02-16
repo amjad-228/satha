@@ -3,6 +3,7 @@ import {SatahatJeddahMain} from '@/components/satahat-jeddah-main';
 
 const id = "22534";
 const name = "الخمرة";
+const url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59455.3958470112!2d39.28518590361819!3d21.351984568705674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3c9de92c5b481%3A0x89bb87b7a8bd6400!2z2KfZhNiu2YXYsdip2Iwg2KzYr9ipINin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2s!4v1739681040701!5m2!1sar!2s"
 const latitude = "21.329973";
 const longitude = "39.248478";
 const postalCode = "22534";
@@ -74,7 +75,7 @@ export const metadata: Metadata = {
 export default function SathatJeddah() {
   return (
     <div>
-      {SatahatJeddahMain(name)}
+      {SatahatJeddahMain(name, url)}
     </div>
   );
 }

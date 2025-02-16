@@ -1,8 +1,9 @@
 import { SatahatJeddahMain } from '@/components/satahat-jeddah-main';
-import type { Metadata } from "next"
+  import type { Metadata } from "next"
 
 const name = "الأندلس";
 const id = "Alandalus";
+const url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59383.01171146918!2d39.185355852253785!3d21.529713287708276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3c567e2371de7%3A0x7027c2fed32e2e61!2z2KfZhNij2YbYr9mE2LPYjCDYrNiv2Kkg2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2s!4v1739680189517!5m2!1sar!2s"
 const latitude = "21.547674";
 const longitude = "39.168472";
 const postalCode = "23326";
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
 export default function SathatJeddah() {
   return (
     <div>
-      {SatahatJeddahMain(name)}
+      {SatahatJeddahMain(name, url)}
     </div>
   );
 }
