@@ -6,7 +6,7 @@ import {SatahatJeddahMain} from '@/components/satahat-jeddah-main';
 
 export default function SathatJeddahAlmanar() {
   const name = "المنار";
-  const id = "Almanaar";
+  const id = "Almanar";
   const url = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29676.611207625952!2d39.27239274991606!3d21.602451883607696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d1553d852431%3A0xdc560956f0253e5f!2z2KfZhNmF2YbYp9ix2Iwg2KzYr9ipINin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2s!4v1739681137358!5m2!1sar!2s"
   
   const metaData = generateMetaData(name, id,"23462", "21.602478", "39.237655");
