@@ -121,11 +121,6 @@ export default function RootLayout({
                 "Mo-Su 00:00-23:59", // ساعات العمل (على سبيل المثال، العمل طوال الأسبوع)
                 "publicHolidays 00:00-23:59"
               ],
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.5",
-                "reviewCount": "24"
-              },
               "offers": {
                 "@type": "Offer",
                 "priceCurrency": "SAR",
