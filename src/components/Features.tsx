@@ -1,7 +1,7 @@
 import { Truck, Clock, CreditCard, Phone } from "lucide-react"
 
 const features = [
-  { icon: Truck, title: "خدمة سريعة", description: "نصل إليك في أقل من 30 دقيقة" },
+  { icon: Truck, title: "خدمة سريعة", description: "نصل إليك في أسرع وقت" },
   { icon: Clock, title: "متاح 24/7", description: "خدمة على مدار الساعة طوال أيام الأسبوع" },
   { icon: CreditCard, title: "أسعار تنافسية", description: "أفضل الأسعار في جدة" },
   { icon: Phone, title: "دعم فني", description: "فريق دعم متخصص لمساعدتك" },
