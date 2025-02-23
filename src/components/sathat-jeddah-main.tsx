@@ -9,7 +9,7 @@ export function SatahatJeddahMain(name: string, url: string) {
     return (
         <div>
             <main className="bg-gray-100 shadow-md rounded-lg px-3 py-5 text-gray-900">
-                <h2 className="text-2xl font-semibold mb-4 text-center text-purple-900">سطحة جدة {name} | أقرب سطحة في حي {name} 0535142000</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-center text-purple-900">سطحة {name} جدة | أقرب سطحة في حي {name} 0535142000</h2>
                 <section className="bg-white shadow-md rounded-lg p-3 mb-8">
                     <div className="mb-6">
                         <Image
@@ -59,7 +59,7 @@ export function SatahatJeddahMain(name: string, url: string) {
                 </section>
 
                 <section className="bg-white shadow-md rounded-lg p-4 mb-8">
-                    <h2 className="text-2xl font-semibold mb-4">لماذا تختار سطحة جدة {name}؟</h2>
+                    <h2 className="text-2xl font-semibold mb-4">لماذا تختار سطحة {name} جدة؟</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="flex items-start">
                             <Clock className="h-8 w-8 text-blue-500 mr-1 ml-2" />
@@ -93,7 +93,8 @@ export function SatahatJeddahMain(name: string, url: string) {
                 </section>
 
                 <section className="bg-white shadow-md rounded-lg p-4 mb-8">
-                    <h2 className="text-2xl font-semibold mb-6">خدمات سطحة جدة {name}</h2>
+                    <h2 className="text-2xl font-semibold mb-6">خدماتنا في حي {name}</h2>
+                    <h2 className="text-2xl font-semibold mb-6">خدمات سطحة {name} جدة</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <Link href="../../services/car-towing" className="border rounded-lg p-4">
                             <div>
@@ -161,13 +162,13 @@ export function SatahatJeddahMain(name: string, url: string) {
                 </section>
 
                 <section className="bg-white shadow-md rounded-lg p-4 mb-8">
-                    <h2 className="text-2xl font-semibold mb-6">فريق ومعدات سطحة جدة {name}</h2>
+                    <h2 className="text-2xl font-semibold mb-6">فريق ومعدات سطحة {name} جدة</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="flex items-start">
                             <Users className="h-8 w-8 text-blue-500 mr-1 ml-2" />
                             <div>
                                 <h3 className="font-semibold text-lg mb-1">فريق متخصص</h3>
-                                <p>يتكون فريق سطحة جدة {name} في حي {name} من فنيين ذوي خبرة عالية ومدربين على أحدث تقنيات سحب ونقل السيارات.</p>
+                                <p>يتكون فريق سطحة {name} جدة في حي {name} من فنيين ذوي خبرة عالية ومدربين على أحدث تقنيات سحب ونقل السيارات.</p>
                             </div>
                         </div>
                         <div className="flex items-start">
@@ -237,7 +238,7 @@ export function SatahatJeddahMain(name: string, url: string) {
                 </section>
 
                 <section className="bg-white shadow-md rounded-lg p-4 mb-8">
-                    <h2 className="text-2xl font-semibold mb-6">الأسئلة الشائعة عن خدمات سطحة جدة {name}</h2>
+                    <h2 className="text-2xl font-semibold mb-6">الأسئلة الشائعة عن خدمات سطحة {name} جدة</h2>
                     <div className="space-y-4">
                         <div>
                             <h3 className="font-semibold text-lg mb-2 text-blue-600">كم تستغرق مدة الوصول إلى حي {name}؟</h3>
@@ -248,7 +249,7 @@ export function SatahatJeddahMain(name: string, url: string) {
                         </div>
                         <div>
                             <h3 className="font-semibold text-lg mb-2 text-blue-600">هل تعملون خلال العطلات الرسمية في حي {name}؟</h3>
-                            <p>نعم، نحن فريق سطحة جدة {name} نعمل على مدار الساعة طوال أيام الأسبوع في حي {name}، بما في ذلك العطلات الرسمية.</p>
+                            <p>نعم، نحن فريق سطحة {name} جدة نعمل على مدار الساعة طوال أيام الأسبوع في حي {name}، بما في ذلك العطلات الرسمية.</p>
                         </div>
                         <div>
                             <h3 className="font-semibold text-lg mb-2 text-blue-600">هل تقدمون خدمات خارج حي {name}؟</h3>

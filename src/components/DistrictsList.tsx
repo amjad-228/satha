@@ -148,6 +148,146 @@ const districts: District[] = [
   id: "Sathat-Jeddah-Alruis",
   name: "سطحة جدة الرويس",
 },
+{
+  id: "Sathat-Alhamraa-Jeddah",
+  name: "سطحة الحمراء جدة",
+},
+{
+  id: "Sathat-Alandalus-Jeddah",
+  name: "سطحة الأندلس جدة",
+},
+{
+  id: "Sathat-Jeddah-Alsharafiya",
+  name: "سطحة الشرفية جدة",
+},
+{
+  id: "Sathat-Mushrifa-Jeddah",
+  name: "سطحة مشرفة جدة",
+},
+{
+  id: "Sathat-Albaghdadiah-Algharbia-Jeddah",
+  name: "سطحة البغدادية الغربية جدة",
+},
+{
+  id: "Sathat-Alshaati-Jeddah",
+  name: "سطحة الشاطئ جدة",
+},
+{
+  id: "Sathat-Alwurud-Jeddah",
+  name: "سطحة الورود جدة",
+},
+{
+  id: "Sathat-Alkhumra-Jeddah",
+  name: "سطحة الخمرة جدة",
+},
+{
+  id: "Sathat-Alfadyla-Jeddah",
+  name: "سطحة الفضيلة جدة"
+},
+{
+  id: "Sathat-Alqarania-Jeddah",
+  name: "سطحة القرنية جدة",
+},
+{
+  id: "Sathat-Alnuzha-Jeddah",
+  name: "سطحة النزهة جدة",
+},
+{
+  id: "Sathat-Alrawda-Jeddah",
+  name: "سطحة الروضة جدة",
+},
+{
+  id: "Sathat-Alsafa-Jeddah",
+  name: "سطحة الصفاء جدة",
+},
+{
+  id: "Sathat-Almarua-Jeddah",
+  name: "سطحة المروة جدة",
+},
+{
+  id: "Sathat-Albawadi-Jeddah",
+  name: "سطحة البوادي جدة",
+},
+{
+  id: "Sathat-Alfaysaliyah-Jeddah",
+  name: "سطحة الفيصلية جدة",
+},
+{
+  id: "Sathat-Alrabwa-Jeddah",
+  name: "سطحة الربوة جدة",
+},
+{
+  id: "Sathat-Alzahra-Jeddah",
+  name: "سطحة الزهراء جدة",
+},
+{
+  id: "Sathat-Alsalama-Jeddah",
+  name: "سطحة السلامة جدة",
+},
+{
+  id: "Sathat-Alazizia-Jeddah",
+  name: "سطحة العزيزية جدة",
+},
+{
+  id: "Sathat-Alfayha-Jeddah",
+  name: "سطحة الفيحاء جدة",
+},
+{
+  id: "Sathat-Alnahda-Jeddah",
+  name: "سطحة النهضة جدة",
+},
+{
+  id: "Sathat-Alkhalidia-Jeddah",
+  name: "سطحة الخالدية جدة",
+},
+{
+  id: "Sathat-Almarjan-Jeddah",
+  name: "سطحة المرجان جدة",
+},
+{
+  id: "Sathat-Albasateen-Jeddah",
+  name: "سطحة البساتين جدة",
+},
+{
+  id: "Sathat-Alrihab-Jeddah",
+  name: "سطحة الرحاب جدة",
+},
+{
+  id: "Sathat-Alnakheel-Jeddah",
+  name: "سطحة النخيل جدة",
+},
+{
+  id: "Sathat-Alsamer-Jeddah",
+  name: "سطحة السامر جدة",
+},
+{
+  id: "Sathat-Almanar-Jeddah",
+  name: "سطحة المنار جدة",
+},
+{
+  id: "Sathat-Alwaha-Jeddah",
+  name: "سطحة الواحة جدة",
+},
+{
+  id: "Sathat-Abhor-Alshmalia-Jeddah",
+  name: "سطحة ابحر الشمالية جدة",
+},
+{
+  id: "Sathat-Abhor-Aljanubia-Jeddah",
+  name: "سطحة ابحر الجنوبية جدة",
+},
+{
+  id: "Sathat-Quayza-Jeddah",
+  name: "سطحة قويزة جدة",
+},
+{
+  id: "Sathat-Abraq-Alraghama-Jeddah",
+  name: "سطحة ابرق الرغامة جدة",
+},
+{
+  id: "Sathat-Alruis-Jeddah",
+  name: "سطحة الرويس جدة",
+},
 
 ]
 
